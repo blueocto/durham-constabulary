@@ -1,0 +1,1021 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-us" xml:lang="en-us">
+<head id="ctl00_Head1"><meta http-equiv="x-ua-compatible" content="IE=8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" />
+
+    <!-- robots -->
+    
+    
+
+    <!-- page title - overridden by asp:content on pages or page layouts -->
+    <title>
+	
+	Ebchester and Medomsley
+
+</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Style%20Library/img/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!-- all OOTB css -->
+        <link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/Menu.css?rev=yPVeKt0FHzxA%2FW4JR0hJng%3D%3D" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=iIikGkMuXBs8CWzKDAyjsQ%3D%3D" />
+
+ <!--   <link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=3TRomkG1g2gMGz4rekMIQg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/overridecorev4.css"/>
+-->
+    <link rel="stylesheet" type="text/css" href="/Style%20Library/css/reset.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/css/indexrevised.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=3TRomkG1g2gMGz4rekMIQg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/overridecorev4.css"/>
+
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/Style%20Library/css/ie7.css" />
+	<![endif]-->
+
+    <!-- page manager -->
+    
+
+    <!-- unified logging service -->
+    
+
+    <!-- required for some scrolling? -->
+    <script type="text/javascript">
+        var _fV4UI = true;
+        
+        function FixRibbonAndWorkspaceDimensions(){
+  ULSxSy:;
+  g_frl = true;
+  var elmRibbon = GetCachedElement("s4-ribbonrow");
+  var elmWorkspace = GetCachedElement("s4-workspace");
+  var elmTitleArea = GetCachedElement("s4-titlerow");
+  var elmBodyTable = GetCachedElement("s4-bodyContainer");
+  if(!elmRibbon || !elmWorkspace || !elmBodyTable){
+    return;
+  }
+  if (!g_setWidthInited){
+    var setWidth = true;
+    if (elmWorkspace.className.indexOf("s4-nosetwidth") > -1)
+      setWidth = false;
+    g_setWidth = setWidth;
+    g_setWidthInited = true;
+  }
+  else{
+    var setWidth = g_setWidth;
+  }
+  var baseRibbonHeight = RibbonIsMinimized() ? 44 : 135;
+  var ribbonHeight = baseRibbonHeight + g_wpadderHeight;
+  if(GetCurrentEltStyle(elmRibbon, "visibility") == "hidden"){
+    ribbonHeight = 0;
+  }
+
+  // Override default resizing behavior
+  // -- adds padding to the top of the "s4-workspace" <div> if the ribbon exists and has content
+  // -- allows the ribbon to be positioned using CSS instead of JavaScript (more accessible)
+  // -- checks to see if the page is inside a "no-ribbon" dialog
+  if(elmRibbon.children.length > 0 && document.getElementsByTagName("html")[0].className.indexOf('ms-dialog-nr') == -1){
+    elmWorkspace.style.paddingTop = ribbonHeight + 'px';
+  }
+  
+		
+}
+    </script>
+
+    <!-- load SharePoint javascript -->
+    <script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=lEi61hsCxcBAfvfQNZA%2FsQ%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=Ht1_arwafpCwM2FjkVBIsOc8L_ddcDO8Dps-qMSv2TYHFWj5wezD3-Zr6FJbAcipRjR_O-RmUN04QzKBQvqW7UBmx76Ko5wWHnfYz_66eZW3AAByoyzTzP2ih1ICxBJQVQeGUP-FGyI3y7USFi-TEXmnpqI1&amp;t=3f4a792d"></' + 'script>');
+document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
+// ]]>
+</script>
+
+
+    <style type="text/css">
+        /* fix scrolling on list pages */
+        #s4-bodyContainer
+        {
+            position: relative;
+        }
+        
+        /* hide body scrolling (SharePoint will handle) */
+        body
+        {
+            /*height: 100%;
+       
+            width: 100%;*/
+        }
+        
+        /* popout breadcrumb menu needs background color for firefox */
+        .s4-breadcrumb-menu
+        {
+            background: #F2F2F2;
+        }
+        
+        /* left nav needs some space to hold the nav */
+        .customLeftNavHolder
+        {
+            float: left;
+            width: 155px;
+        }
+        
+        /* body area needs to allow room for left nav */
+        /*.customBodyHolder
+        {
+            margin-left: 155px;
+            margin-right: 0;
+            min-height: 324px;
+        }
+        
+        /* hide the left margin when dialog is up */
+        .ms-dialog .customBodyHolder
+        /*{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            min-height: 0 !important;
+            min-width: 0 !important;
+            width: 100% !important;
+        }
+        .ms-wpContentDivSpace{
+	
+	margin:0px !important;
+	
+}
+
+
+	.edit-mode-border {
+    border: 0px !Important;
+    margin: 0px !Important;
+    padding: 0px !Important;
+    }
+    
+  */
+  @-moz-document url-prefix() {
+	
+       #postcode-r input{
+       left: 110px;
+       }
+       }
+
+    </style>
+
+    <!-- link to our custom css  -->
+    
+    <!-- javascript to override the active-x message in ie 
+		// See support.microsoft.com/default.aspx/kb/931509 for info on the issue
+		// Remove if the IM pressence icons are needed in SharePoint
+	-->
+
+    <script type="text/javascript">
+        function ProcessImn() { }
+        function ProcessImnMarkers() { }	
+    </script>
+
+    <!-- additional header delegate control -->
+    <!-- _lcid="1033" _version="14.0.6136" _dal="1" -->
+<!-- _LocalBinding -->
+<span id="ctl00_ctl21_iprRibbon"><span></span></span>
+
+
+    <!-- additional header placeholder - overridden by asp:content on pages or page layouts -->
+    
+	
+	
+
+	
+
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.cycle/2.88/jquery.cycle.all.js"></script> 
+
+	<script type="text/javascript" src="/style%20library/scripts/thickbox.js"></script>
+    <link rel="stylesheet" href="/style%20library/css/thickbox.css" type="text/css" media="screen" />
+    
+    <script src="/Style%20Library/js/jquery.readmore.js" type="text/javascript"></script> 
+
+
+
+	<!-- Text Size Scripts -->
+	<link id="ctl00_textsize" href="/style%20library/css/hide_text.css" rel="stylesheet" type="text/css" /></head>
+
+<body onload="javascript:_spBodyOnLoadWrapper();">
+
+    <form name="aspnetForm" method="post" action="Ebchester-and-Medomsley.aspx" id="aspnetForm">
+<input type="hidden" name="__SPSCEditMenu" id="__SPSCEditMenu" value="true" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="InvalidFormDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIED2QWDAIBD2QWAmYPZBYCZg8PFgIeB1Zpc2libGVoZGQCBw9kFgJmD2QWAgIBDxYCHgRUZXh0BZQGPGxpIGNsYXNzPSJob21lIj48YSB0aXRsZT0iaG9tZSIgaHJlZj0iL1BhZ2VzL2RlZmF1bHQuYXNweCI+SG9tZTwvYT48L2xpPg0KPGxpIGNsYXNzPSJBYm91dC1VcyI+PGEgdGl0bGU9ImFib3V0IHVzIiBocmVmPSIvQWJvdXQtVXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5BYm91dCBVczwvYT48L2xpPg0KPGxpIGNsYXNzPSJZb3VyLU5laWdoYm91cmhvb2QgYWN0aXZlIj48YSBocmVmPSJodHRwczovL3d3dy5wb2xpY2UudWsvcHUveW91ci1hcmVhL2R1cmhhbS1jb25zdGFidWxhcnkvIj5Zb3VyIE5laWdoYm91cmhvb2TigIs8L2E+PC9saT4NCjxsaSBjbGFzcz0iQ29udGFjdC11cyI+PGEgdGl0bGU9ImNvbnRhY3QgdXMiIGhyZWY9Ii9Db250YWN0LXVzL1BhZ2VzL2RlZmF1bHQuYXNweCI+Q29udGFjdCBVczwvYT48L2xpPg0KPGxpIGNsYXNzPSJMYXRlc3QtbmV3cyI+PGEgdGl0bGU9ImxhdGVzdCBuZXdzIiBocmVmPSIvbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL2RlZmF1bHQuYXNweCI+TmV3cyAmYW1wOyBFdmVudHM8L2E+PC9saT4NCjxsaSBjbGFzcz0iSW5mb3JtYXRpb24tYW5kLWFkdmljZSI+PGEgdGl0bGU9ImluZm9ybWF0aW9uIGFuZCBhZHZpY2UiIGhyZWY9Ii9JbmZvcm1hdGlvbi1hbmQtYWR2aWNlL1BhZ2VzL2RlZmF1bHQuYXNweCI+SW5mb3JtYXRpb24gJmFtcDsgQWR2aWNlPC9hPjwvbGk+DQo8bGkgY2xhc3M9IkpvaW4tdXMgZW5kIj48YSB0aXRsZT0iam9pbiB1cyIgaHJlZj0iL0pvaW4tdXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5Kb2luIFVzPC9hPjwvbGk+DQrigIvigIvigItkAg0PZBYCZg9kFgICAQ8WAh8BBQxVQS0xNjU1OTA4LTFkAg8PZBYCAgEPZBYEZg9kFgICAQ8WAh8AaBYCZg9kFgQCAg9kFgYCAQ8WAh8AaGQCAw8WCB4TQ2xpZW50T25DbGlja1NjcmlwdAWRAWphdmFTY3JpcHQ6Q29yZUludm9rZSgnVGFrZU9mZmxpbmVUb0NsaWVudFJlYWwnLDEsIDUzLCAnaHR0cHM6XHUwMDJmXHUwMDJmZHVyaGFtLnBvbGljZS51a1x1MDAyZllvdXItTmVpZ2hib3VyaG9vZFx1MDAyZkNvbnNldHQnLCAtMSwgLTEsICcnLCAnJykeGENsaWVudE9uQ2xpY2tOYXZpZ2F0ZVVybGQeKENsaWVudE9uQ2xpY2tTY3JpcHRDb250YWluaW5nUHJlZml4ZWRVcmxkHgxIaWRkZW5TY3JpcHQFIlRha2VPZmZsaW5lRGlzYWJsZWQoMSwgNTMsIC0xLCAtMSlkAgUPFgIfAGhkAgMPDxYKHglBY2Nlc3NLZXkFAS8eD0Fycm93SW1hZ2VXaWR0aAIFHhBBcnJvd0ltYWdlSGVpZ2h0AgMeEUFycm93SW1hZ2VPZmZzZXRYZh4RQXJyb3dJbWFnZU9mZnNldFkC6wNkZAIBD2QWAgIFD2QWAmYPZBYCZg8UKwADZGRkZAIRD2QWAgIED2QWFgIBD2QWAmYPZBYCAgEPFgIeC18hSXRlbUNvdW50Ag0WGgIBD2QWAgIBDw8WBB8BBQxCZW5maWVsZHNpZGUeC05hdmlnYXRlVXJsBTMvWW91ci1OZWlnaGJvdXJob29kL0NvbnNldHQvUGFnZXMvQmVuZmllbGRzaWRlLmFzcHhkZAICD2QWAgIBDw8WBB8BBQlCbGFja2hpbGwfDAUwL1lvdXItTmVpZ2hib3VyaG9vZC9Db25zZXR0L1BhZ2VzL0JsYWNraGlsbC5hc3B4ZGQCAw9kFgICAQ8PFgQfAQUIQnVybmhvcGUfDAUvL1lvdXItTmVpZ2hib3VyaG9vZC9Db25zZXR0L1BhZ2VzL0J1cm5ob3BlLmFzcHhkZAIED2QWAgIBDw8WBB8BBQpDYXN0bGVzaWRlHwwFMS9Zb3VyLU5laWdoYm91cmhvb2QvQ29uc2V0dC9QYWdlcy9DYXN0bGVzaWRlLmFzcHhkZAIFD2QWAgIBDw8WBB8BBQxDb25zZXR0IEVhc3QfDAUzL1lvdXItTmVpZ2hib3VyaG9vZC9Db25zZXR0L1BhZ2VzL0NvbnNldHQtRWFzdC5hc3B4ZGQCBg9kFgICAQ8PFgQfAQUNQ29uc2V0dCBOb3J0aB8MBTQvWW91ci1OZWlnaGJvdXJob29kL0NvbnNldHQvUGFnZXMvQ29uc2V0dC1Ob3J0aC5hc3B4ZGQCBw9kFgICAQ8PFgQfAQUNQ29uc2V0dCBTb3V0aB8MBTQvWW91ci1OZWlnaGJvdXJob29kL0NvbnNldHQvUGFnZXMvQ29uc2V0dC1Tb3V0aC5hc3B4ZGQCCA9kFgICAQ8PFgQfAQUHQ29ybnNheR8MBS4vWW91ci1OZWlnaGJvdXJob29kL0NvbnNldHQvUGFnZXMvQ29ybnNheS5hc3B4ZGQCCQ9kFgICAQ8PFgQfAQULRGVsdmVzIExhbmUfDAUyL1lvdXItTmVpZ2hib3VyaG9vZC9Db25zZXR0L1BhZ2VzL0RlbHZlcy1MYW5lLmFzcHhkZAIKD2QWAgIBDw8WBB8BBRdFYmNoZXN0ZXIgYW5kIE1lZG9tc2xleR8MBT4vWW91ci1OZWlnaGJvdXJob29kL0NvbnNldHQvUGFnZXMvRWJjaGVzdGVyLWFuZC1NZWRvbXNsZXkuYXNweGRkAgsPZBYCAgEPDxYEHwEFFEVzaCBhbmQgTGFuZ2xleSBQYXJrHwwFOy9Zb3VyLU5laWdoYm91cmhvb2QvQ29uc2V0dC9QYWdlcy9Fc2gtYW5kLUxhbmdsZXktUGFyay5hc3B4ZGQCDA9kFgICAQ8PFgQfAQUKTGFuY2hlc3Rlch8MBTEvWW91ci1OZWlnaGJvdXJob29kL0NvbnNldHQvUGFnZXMvTGFuY2hlc3Rlci5hc3B4ZGQCDQ9kFgICAQ8PFgQfAQUITGVhZGdhdGUfDAUvL1lvdXItTmVpZ2hib3VyaG9vZC9Db25zZXR0L1BhZ2VzL0xlYWRnYXRlLmFzcHhkZAIHDxYCHhNQcmV2aW91c0NvbnRyb2xNb2RlCymIAU1pY3Jvc29mdC5TaGFyZVBvaW50LldlYkNvbnRyb2xzLlNQQ29udHJvbE1vZGUsIE1pY3Jvc29mdC5TaGFyZVBvaW50LCBWZXJzaW9uPTE0LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTcxZTliY2UxMTFlOTQyOWMBZAIJDxYCHw0LKwQBZAILD2QWAmYPZBYEAgEPFgIfCwIBFgICAQ9kFgJmDxUDCzA1IE1heSAyMDE5Pk1lZG9tc2xleSBQQUNUIHByaW9yaXR5IGZvciBIYW1zdGVybGV5LEViY2hlc3RlciBhbmQgTWVkb21zbGV5djxkaXYgY2xhc3M9IkV4dGVybmFsQ2xhc3M4ODM3RjkyNkVFQkM0MTM2ODk0NjU0RENDRTgwNTVGRSI+PHAgY2xhc3M9Ik1zb05vcm1hbCI+wqBQQUNUIHByaW9yaXR5IGlzIHNwZWVkaW5nLjwvcD48L2Rpdj5kAgUPFgIfCwIBFgICAQ9kFgJmDxUDCzA1IE1heSAyMDE5Pk1lZG9tc2xleSBQQUNUIHByaW9yaXR5IGZvciBIYW1zdGVybGV5LEViY2hlc3RlciBhbmQgTWVkb21zbGV5s1k8ZGl2IGNsYXNzPSJFeHRlcm5hbENsYXNzMTQzQjdEMzlBNzdCNEM1OThGNEU2QTM3ODM5RDZDRjciPjxwIGNsYXNzPSJNc29Ob3JtYWwiPsKgPC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCI+PHN0cm9uZz5Db21tdW5pdHkgU3BlZWQgV2F0Y2guPC9zdHJvbmc+PC9wPg0KPGRpdiBzdHlsZT0ibWFyZ2luOjBjbSAwY20gMHB0Ij48Zm9udCBmYWNlPSJDYWxpYnJpIj5CNjMwOCBNZWRvbXNsZXkgRmluZXMgcm9hZCBub3J0aDwvZm9udD48L2Rpdj4NCjxkaXYgc3R5bGU9Im1hcmdpbjowY20gMGNtIDBwdCI+PGZvbnQgZmFjZT0iQ2FsaWJyaSI+MTAzNSB0byAxMTAwwqAgNDQgdmVoaWNsZXMgcGFzc2VkwqAgNyBzcGVlZGluZzwvZm9udD48L2Rpdj4NCjxkaXYgc3R5bGU9Im1hcmdpbjowY20gMGNtIDBwdCI+PGZvbnQgZmFjZT0iQ2FsaWJyaSI+wqA8L2ZvbnQ+PC9kaXY+DQo8ZGl2IHN0eWxlPSJtYXJnaW46MGNtIDBjbSAwcHQiPjxmb250IGZhY2U9IkNhbGlicmkiPkI2MzEwIE1lZG9tc2xleSBNYW5vciByb2FkIG5vcnRoZWFzdDwvZm9udD48L2Rpdj4NCjxkaXYgc3R5bGU9Im1hcmdpbjowY20gMGNtIDBwdCI+PGZvbnQgZmFjZT0iQ2FsaWJyaSI+MTExMCB0byAxMTM1wqAgNTEgdmVoaWNsZXMgcGFzc2VkwqAgNCBzcGVlZGluZzwvZm9udD48L2Rpdj4NCjxkaXYgc3R5bGU9Im1hcmdpbjowY20gMGNtIDBwdCI+PGRpdiBzdHlsZT0ibWFyZ2luOjBjbSAwY20gMHB0Ij48Zm9udCBmYWNlPSJDYWxpYnJpIj7CoDwvZm9udD48L2Rpdj48L2Rpdj4NCjxkaXYgc3R5bGU9Im1hcmdpbjowY20gMGNtIDBwdCI+PGZvbnQgZmFjZT0iQ2FsaWJyaSI+PC9mb250PsKgT3VyIFBvbGljZSB2b2x1bnRlZXJzwqBjb250aW51ZSB0byBjYXJyeSBvdXTCoHNwZWVkIGNoZWNrc8KgaW4gdGhlIGFyZWEgb2YgTWVkb21zbGV5LCBFYmNoZXN0ZXIgYW5kIEhhbXN0ZXJsZXkuIDxzcGFuPjxmb250IGZhY2U9IkNhbGlicmkiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjojNTk1OTU5Ij5PdXIgUm9hZCBQb2xpY2luZyBVbml0cyBoYXZlwqAgYWxzbyBiZWVuIGdpdmluZyBhdHRlbnRpb24gdG8gdGhlc2UgYXJlYXMgdG8gc3VwcG9ydCB0aGUgdmFsdWFibGUgd29yayBvdXLCoHZvbHVudGVlcnMgZG8uwqA8L3NwYW4+PC9mb250Pjwvc3Bhbj48L2Rpdj48L2Rpdj4NCjxkaXYgY2xhc3M9IkV4dGVybmFsQ2xhc3MxNDNCN0QzOUE3N0I0QzU5OEY0RTZBMzc4MzlENkNGNyIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOiM1OTU5NTk7bWFyZ2luOjBjbSAwY20gMHB0Ij48c3Bhbj48Zm9udCBmYWNlPSJDYWxpYnJpIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6IzU5NTk1OSI+wqA8L3NwYW4+PC9mb250Pjwvc3Bhbj48L2Rpdj4NCjxkaXYgY2xhc3M9IkV4dGVybmFsQ2xhc3MxNDNCN0QzOUE3N0I0QzU5OEY0RTZBMzc4MzlENkNGNyIgc3R5bGU9ImZvbnQtZmFtaWx5OnZlcmRhbmE7bWFyZ2luOjBjbSAwY20gMHB0Ij48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Y2FsaWJyaSZxdW90Oywgc2Fucy1zZXJpZjtjb2xvcjpibGFjayI+PHN0cm9uZz5Ib21lIFNlY3VyaXR5IFRpcHM6PC9zdHJvbmc+PC9zcGFuPjwvZGl2Pg0KPGRpdiBjbGFzcz0iRXh0ZXJuYWxDbGFzczE0M0I3RDM5QTc3QjRDNTk4RjRFNkEzNzgzOUQ2Q0Y3IiBzdHlsZT0iZm9udC1mYW1pbHk6dmVyZGFuYTttYXJnaW46MGNtIDBjbSAwcHQiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTFwdDtmb250LWZhbWlseTomcXVvdDtjYWxpYnJpJnF1b3Q7LCBzYW5zLXNlcmlmO2NvbG9yOmJsYWNrIj5Eb24ndCBiZWNvbWUgYSB2aWN0aW0gb2YgY3JpbWUsIGZvbGxvdyB0aGVzZSBlYXN5IHN0ZXBzIGJlbG93Ojwvc3Bhbj48L2Rpdj4NCjxkaXYgY2xhc3M9IkV4dGVybmFsQ2xhc3MxNDNCN0QzOUE3N0I0QzU5OEY0RTZBMzc4MzlENkNGNyIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2ZvbnQtZmFtaWx5OnZlcmRhbmE7bWFyZ2luOjBjbSAwY20gMHB0Ij48ZGl2IHN0eWxlPSJtYXJnaW46MGNtIDBjbSAwcHQiPjxkaXYgc3R5bGU9Im1hcmdpbjowY20gMGNtIDBwdCI+PGRpdiBzdHlsZT0idmVydGljYWwtYWxpZ246YmFzZWxpbmU7bWFyZ2luOjBjbSAwY20gMHB0O3B1bmN0dWF0aW9uLXdyYXA6c2ltcGxlIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Y2FsaWJyaSZxdW90Oywgc2Fucy1zZXJpZjtjb2xvcjpibGFjayI+PGJyIC8+4oCiwqBMb2NrIGFsbCB3aW5kb3dzIGFuZCBkb29ycyDigJMgZXZlbiBpZiB5b3XigJlyZSBhdCBob21lLsKgPGJyIC8+4oCiwqBBIHdlbGwtbGl0IGhvbWUgZ2l2ZXMgdGhlIGltcHJlc3Npb24gc29tZW9uZSBpcyBpbi48YnIgLz7igKLCoExlYXZlIGEgbGlnaHQgb24gb3IgdXNlIHRpbWVyIHN3aXRjaGVzIHNvIGxpZ2h0cyBjb21lIG9uIHdoZW4gaXQgZ2V0cyBkYXJrLjxiciAvPuKAosKgRG9u4oCZdCBsZWF2ZSB2YWx1YWJsZXMgb24gc2hvdy7CoDxiciAvPuKAosKgRG9u4oCZdCBsZWF2ZSB5b3VyIGhvdXNlIGFuZCB2ZWhpY2xlIGtleXMgaW4gdGhlIGxvY2sgb3Igb24gYSBzaWRlIHRhYmxlIGluIHZpZXcgb2YgYSB3aW5kb3csIG1ha2luZyBpdCBlYXN5IGZvciBhIHRoaWVmIHRvIGZpc2ggdGhlbSB0aHJvdWdoIHlvdXIgbGV0dGVyYm94LjxiciAvPuKAosKgRG9u4oCZdCBsZWF2ZSBjdXJ0YWlucyBjbG9zZWQgZHVyaW5nIHRoZSBkYXksIG9ubHkgaW4gdGhlIGV2ZW5pbmcgYW5kIG92ZXJuaWdodC48YnIgLz7igKLCoElmIHlvdSBoYXZlIGEgaG91c2UgYWxhcm0sIHVzZSBpdC7CoDxiciAvPuKAosKgQ29udGFjdCB5b3VyIGxvY2FsIG5laWdoYm91cmhvb2QgcG9saWNlIHRlYW0gaWYgeW91IHNlZSBhbnl0aGluZyBzdXNwaWNpb3VzIGluIHlvdXIgYXJlYS48L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWYiPjwvc3Bhbj48L2Rpdj4NCjxkaXYgc3R5bGU9InZlcnRpY2FsLWFsaWduOmJhc2VsaW5lO21hcmdpbjowY20gMGNtIDBwdDtwdW5jdHVhdGlvbi13cmFwOnNpbXBsZSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWY7Y29sb3I6YmxhY2siPjxiciAvPkFzIHBhcnQgb2YgdGhlIGNhbXBhaWduLCBwZW9wbGUgYXJlIGFsc28gYmVpbmcgcmVtaW5kZWQgdG8gYWx3YXlzIGxvY2sgdGhlaXIgdmVoaWNsZXMgd2hlbiBsZWF2aW5nIHRoZW0gdW5hdHRlbmRlZCwgYW5kIHJlbW92ZSBhbGwgdmFsdWFibGVzIGZyb20gc2lnaHQuPC9zcGFuPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTFwdDtmb250LWZhbWlseTomcXVvdDtjYWxpYnJpJnF1b3Q7LCBzYW5zLXNlcmlmIj48L3NwYW4+PC9kaXY+DQo8ZGl2IHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjpiYXNlbGluZTttYXJnaW46MGNtIDBjbSAwcHQ7cHVuY3R1YXRpb24td3JhcDpzaW1wbGUiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTFwdDtmb250LWZhbWlseTomcXVvdDtjYWxpYnJpJnF1b3Q7LCBzYW5zLXNlcmlmO2NvbG9yOmJsYWNrIj7igJxWZWhpY2xlcyBsZWZ0IHVuYXR0ZW5kZWQgd2l0aCB2YWx1YWJsZXMgbGVmdCBvbiBkaXNwbGF5IG9yIHVubG9ja2VkIGFyZSBhIG1hZ25ldCBmb3IgY3JpbWluYWxzLCB3aG8gd2lsbCBvZnRlbiB0cnkgYSBudW1iZXIgb2YgY2FyIGRvb3IgaGFuZGxlcyB1bnRpbCB0aGV5IGZpbmQgb25lIHRoYXQgaGFzIGJlZW4gbGVmdCBvcGVuLOKAnSBhZGRlZCBDaCBJbnNwIERhdmllcy48L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWYiPjwvc3Bhbj48L2Rpdj4NCjxkaXYgc3R5bGU9InZlcnRpY2FsLWFsaWduOmJhc2VsaW5lO21hcmdpbjowY20gMGNtIDBwdDtwdW5jdHVhdGlvbi13cmFwOnNpbXBsZSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWY7Y29sb3I6YmxhY2siPuKAnEl0IG9ubHkgdGFrZXMgYSBmZXcgc2Vjb25kcyB0byBtYWtlIHN1cmUgeW914oCZdmUgbG9ja2VkIHRoZSBkb29yLCBidXQgaXQgY291bGQgbWVhbiB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIGhhdmluZyB5b3VyIGNhciBzdG9sZW4gb3IgaGF2aW5nIGl0IHRoZXJlIHdoZW4geW91IHJldHVybi48L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWYiPjwvc3Bhbj48L2Rpdj4NCjxkaXYgc3R5bGU9InZlcnRpY2FsLWFsaWduOmJhc2VsaW5lO21hcmdpbjowY20gMGNtIDBwdDtwdW5jdHVhdGlvbi13cmFwOnNpbXBsZSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWY7Y29sb3I6YmxhY2siPuKAnEluIHRoZSBydW4gdXAgdG8gdGhlIGZlc3RpdmUgc2Vhc29uIHdoZW4gdHJhZGl0aW9uYWxseSBwZW9wbGUgYXJlIGRvaW5nIG1vcmUgc2hvcHBpbmcsIHRoZXkgc2hvdWxkIGFsc28gcmVtb3ZlIGl0ZW1zIGZyb20gdGhlaXIgdmVoaWNsZXMgYmVmb3JlIGxlYXZpbmcgdGhlbSB1bmF0dGVuZGVkLCBvciBsb2NrIHRoZW0gb3V0IG9mIHNpZ2h0IGluIHRoZSBib290LuKAnTwvc3Bhbj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Y2FsaWJyaSZxdW90Oywgc2Fucy1zZXJpZiI+PC9zcGFuPjwvZGl2Pg0KPGRpdiBzdHlsZT0idmVydGljYWwtYWxpZ246YmFzZWxpbmU7bWFyZ2luOjBjbSAwY20gMHB0O3B1bmN0dWF0aW9uLXdyYXA6c2ltcGxlIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Y2FsaWJyaSZxdW90Oywgc2Fucy1zZXJpZjtjb2xvcjpibGFjayI+PGJyIC8+RHVyaW5nIHRoZSBjYW1wYWlnbiwgUENTT3Mgd2lsbCBhbHNvIGJlIHBhdHJvbGxpbmcga2V5IGhvdHNwb3QgYXJlYXMgd2hpY2ggaGF2ZSBzZWVuIGFuIGluY3JlYXNlIGluIGJ1cmdsYXJpZXMsIHRoZWZ0cyBmcm9tIHZlaGljbGVzIGFuZCBhbnRpc29jaWFsIGJlaGF2aW91ci48L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWYiPjwvc3Bhbj48L2Rpdj4NCjxkaXYgc3R5bGU9InZlcnRpY2FsLWFsaWduOmJhc2VsaW5lO21hcmdpbjowY20gMGNtIDBwdDtwdW5jdHVhdGlvbi13cmFwOnNpbXBsZSI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB0O2ZvbnQtZmFtaWx5OiZxdW90O2NhbGlicmkmcXVvdDssIHNhbnMtc2VyaWY7Y29sb3I6YmxhY2siPlRvIHJlcG9ydCBhbnkgc3VzcGljaW91cyBhY3Rpdml0eSBpbiB5b3VyIGFyZWEsIGNvbnRhY3QgRHVyaGFtIENvbnN0YWJ1bGFyeSBvbiAxMDEsIG9yIGNhbGwgQ3JpbWVzdG9wcGVycyBhbm9ueW1vdXNseSBvbiAwODAwIDU1NSAxMTEuPC9zcGFuPjwvZGl2Pg0KPGRpdiBzdHlsZT0idmVydGljYWwtYWxpZ246YmFzZWxpbmU7bWFyZ2luOjBjbSAwY20gMHB0O3B1bmN0dWF0aW9uLXdyYXA6c2ltcGxlIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjExcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7Y2FsaWJyaSZxdW90Oywgc2Fucy1zZXJpZjtjb2xvcjpibGFjayI+PC9zcGFuPsKgPC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+DQo8aDIgY2xhc3M9IkV4dGVybmFsQ2xhc3MxNDNCN0QzOUE3N0I0QzU5OEY0RTZBMzc4MzlENkNGNyI+wqAgPGRpdiBzdHlsZT0iZGlzcGxheTppbmxpbmUiPjxpbWcgd2lkdGg9IjIyMyIgaGVpZ2h0PSIyMDkiIHNyYz0iL05ld3MlMjBJbWFnZXMvaW4lMjB0aGUlMjBrbm93JTIwd2ViLmpwZyIgYWx0PSIiIHN0eWxlPSJib3JkZXItdG9wOjBweCBzb2xpZDtoZWlnaHQ6MTQ5cHg7Ym9yZGVyLXJpZ2h0OjBweCBzb2xpZDt3aWR0aDoxNTlweDtib3JkZXItYm90dG9tOjBweCBzb2xpZDtib3JkZXItbGVmdDowcHggc29saWQiIC8+PC9kaXY+PC9oMj4NCjxkaXYgY2xhc3M9Im5ld3MtYXJ0aWNsZS1pdGVtIj48ZGl2IHN0eWxlPSJkaXNwbGF5OmlubGluZSI+PGRpdj5EbyB5b3Ugd2FudCB0byBmaW5kIG91dCB3aGF0J3MgcmVhbGx5IGhhcHBlbmluZyBpbiB5b3VyIGFyZWEgLSByZWNlaXZlIHJlZ3VsYXIgY3JpbWUgdXBkYXRlcywgaW5mb3JtYXRpb24gb24gcm9hZCBjbG9zdXJlcyBhbmQgbGVhcm4gYWJvdXQgd2hhdCB5b3VyIHBvbGljaW5nIHRlYW0gaXMgZG9pbmc/PC9kaXY+DQo8ZGl2PsKgPC9kaXY+DQo8ZGl2PktlZXAgSW4gVGhlIEtub3cgaXMgYSBmcmVlIG1lc3NhZ2luZyBzZXJ2aWNlIGJyb3VnaHQgdG8geW91IGJ5IER1cmhhbSBDb25zdGFidWxhcnkgd2hlcmUgeW91IGRlY2lkZSB3aGVuIGFuZCBob3cgeW91IGFyZSBrZXB0IGluZm9ybWVkIGFib3V0IHRoZSBpc3N1ZXMgdGhhdCBtYXR0ZXIgdG8geW91LjwvZGl2Pg0KPGRpdj7CoDwvZGl2Pg0KPGRpdj5XZSBiZWxpZXZlIHRoYXQgYnkgaW1wcm92aW5nIHRoZSBmbG93IG9mIGluZm9ybWF0aW9uIGJldHdlZW4gdGhlIGNvbW11bml0eSBhbmQgaXRzIHBvbGljZSB3ZSBjYW4gYWxsIG1ha2UgYSBncmVhdGVyIGltcGFjdCBpbiB0aGUgcHJldmVudGlvbiBhbmQgZGV0ZWN0aW9uIG9mIGNyaW1lIGFuZCBhbnRpLXNvY2lhbCBiZWhhdmlvdXIuPC9kaXY+DQo8ZGl2PsKgPC9kaXY+DQo8ZGl2PjxhIGhyZWY9Imh0dHBzOi8vd3d3LmtlZXBpbnRoZWtub3cuY28udWsvIiB0YXJnZXQ9Il9ibGFuayI+d3d3LmtlZXBpbnRoZWtub3cuY28udWs8L2E+IHByb3ZpZGVzIGFuIGludml0YXRpb24gZm9yIHlvdSB0byBwYXJ0aWNpcGF0ZSBpbiB0aGUgZXhjaGFuZ2Ugb2YgaW5mb3JtYXRpb24gd2l0aCBEdXJoYW0gQ29uc3RhYnVsYXJ5IGFuZCBOZWlnaGJvdXJob29kIFdhdGNoLjwvZGl2Pg0KPGRpdj7CoDwvZGl2Pg0KPGRpdj5Zb3UgZG8gbm90IG5lZWQgdG8gam9pbiBhIHNwZWNpZmljIHdhdGNoIHNjaGVtZSBidXQgeW91IG1heSBmaW5kIHRoYXQgdGhlcmUgYXJlIGxpa2UtbWluZGVkIHJlc2lkZW50cyBvciBidXNpbmVzc2VzIGluIHlvdXIgYXJlYSB3aG8gd291bGQgd2VsY29tZSB5b3VyIHN1cHBvcnQuPC9kaXY+DQo8ZGl2PsKgPC9kaXY+DQo8ZGl2PkFzIGEgcmVnaXN0ZXJlZCByZWNpcGllbnQgeW91IHdpbGwgbm90IG9ubHkgYmVuZWZpdCBmcm9tIHR3byB3YXkgbWVzc2FnaW5nIGJ1dCBtYXkgYWxzbyBoZWFyIGFib3V0IHBvc2l0aXZlIHBvbGljZSBhY3Rpb24gaW4geW91ciBjb21tdW5pdHksIGhlbHAgaWRlbnRpZnkgc3VzcGVjdGVkIG9yIHdhbnRlZCBjcmltaW5hbHMgb3IgbGVhcm4gYWJvdXQgY29tbXVuaXR5IGdyb3VwcywgZXZlbnRzIG9yIG1lZXRpbmdzIGluIHlvdXIgYXJlYS48L2Rpdj4NCjxkaXY+wqA8L2Rpdj4NCjxkaXY+TWVhbndoaWxlLCB3ZSBoYXZlIGFsc28gbGF1bmNoZWQgYSBzaXN0ZXIgc2l0ZSB3d3cuZmFybXdhdGNoZHVyaGFtYW5kZGFybGluZ3Rvbi5jby51ayB0byBrZWVwIHlvdSBpbmZvcm1lZCBhYm91dCBydXJhbCBhbmQgZmFybWluZyBpc3N1ZXMgdGhhdCBtYXR0ZXIgdG8geW91LjwvZGl2Pg0KPGRpdj7CoDwvZGl2Pg0KPGRpdj5XZSBsb29rIGZvcndhcmQgdG8ga2VlcGluZyB5b3UgSW4gVGhlIEtub3chPC9kaXY+PC9kaXY+PC9kaXY+DQo8cCBjbGFzcz0iTXNvTm9ybWFsIj7CoDwvcD4NCjxwIGNsYXNzPSJNc29Ob3JtYWwiPsKgPC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+PHN0cm9uZz5ESUQgWU9VIEtOT1c/PC9zdHJvbmc+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+WW91IGNhbiBjaGF0IHRvIHlvdXIgbG9jYWwgb2ZmaWNlcnMsIGRpc2N1c3MgYW55IGNvbmNlcm5zIGFuZMKgYXNrIGZvciBhZHZpY2XCoGF0IGRyb3AgaW4gc2Vzc2lvbnMgYXQgdGhlIGZvbGxvd2luZyBsb2NhdGlvbnM6PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+PHN0cm9uZz5NZWRvbXNsZXkgQ2h1cmNoLCBNYW5vciBSb2FkPC9zdHJvbmc+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+wqBUaGUgZmlyc3QgV2VkIG9mIGV2ZXJ5IG1vbnRoIGJldHdlZW4gMTA6MDBhbSBhbmQgMTE6MDBhbS4gPC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+PHN0cm9uZz5MaW50emZvcmQgR2FyZGVuIENlbnRyZTwvc3Ryb25nPiAtIE9uIEZyaWRheSdzwqBiZXR3ZWVuIDEwOjMwLTExOjMwYW08L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6cmVkIj48c3Ryb25nPjIwMTkgZGF0ZXM6PC9zdHJvbmc+PC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+TWF5IDI0dGg8L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6cmVkIj5KdW5lIDIxc3Q8L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6cmVkIj5KdWx5IDE5dGg8L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6cmVkIj5BdWcgMTZ0aDwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPlNlcHQgMTN0aDwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPk9jdCAxMXRoPC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+Tm92IDh0aDwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPkRlYyA2dGg8L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6cmVkIj7CoDwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPjxzdHJvbmc+RWJjaGVzdGVyIENvbW11bml0eSBDZW50cmUsIFNoYXcgTGFuZS48L3N0cm9uZz4gPC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+RXZlcnkgc2Vjb25kIFR1ZXNkYXkgb2YgdGhlIG1vbnRoLiA8L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQ7Y29sb3I6cmVkIj5Gcm9tIFR1ZXNkYXkgMTZ0aCBBcHJpbCAyMDE5IHdoZW4gdGhlIGZpcnN0IHNlc3Npb24gd2lsbCBiZSAxMDowMGFtIHVudGlsIDEyOjAwLjwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPjxzdHJvbmc+U3dlZXRoYXJ0cywgRHVyaGFtIFJvYWQuPC9zdHJvbmc+PC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+VGhlIGZpcnN0IEZyaWRheSBvZiBldmVyeSBtb250aCBiZXR3ZWVuIDEzOjMwIHVudGlsIDE0OjMwLjwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPjxzdHJvbmc+SXNhYmVsbGFzIENvZmZlZSBTaG9wLCBGcm9udCBTdHJlZXQsIFNob3RsZXkgQnJpZGdlLjwvc3Ryb25nPjwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPkxhc3QgRnJpZGF5IG9mIGV2ZXJ5IG1vbnRoIGJldHdlZW4gMTM6MzAgdW50aWwgMTQ6MzAuPC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0O2NvbG9yOnJlZCI+UGxlYXNlIGZlZWwgZnJlZSB0byBjb250YWN0IGFueSBvZiB0aGUgYmVsb3cgb2ZmaWNlcnMgZm9yIGFueSBmdXJ0aGVyIGluZm9ybWF0aW9uOjwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPlBDU08gNzE4MiBKdWxpZSBCUk9XTjwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPlBDU08gNzUxNyBJYW4gTWNLRU5OQTwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPlBDIDEzNzQgVG9ueSBCVVJHRVNTLjwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdDtjb2xvcjpyZWQiPkNvbnNldHQgTlBUIG9uIDEwMS48L3A+DQo8cCBjbGFzcz0iRXh0ZXJuYWxDbGFzczc2QUYzMUMxRkVCMzRBOEI4QkEyQUJFRjcxODNGMkZBIiBzdHlsZT0iZm9udC1zaXplOjEwcHQiPsKgPC9wPg0KPHAgY2xhc3M9IkV4dGVybmFsQ2xhc3M3NkFGMzFDMUZFQjM0QThCOEJBMkFCRUY3MTgzRjJGQSIgc3R5bGU9ImZvbnQtc2l6ZToxMHB0Ij7CoDwvcD4NCjxwIGNsYXNzPSJFeHRlcm5hbENsYXNzNzZBRjMxQzFGRUIzNEE4QjhCQTJBQkVGNzE4M0YyRkEiIHN0eWxlPSJmb250LXNpemU6MTBwdCI+wqA8L3A+ZAIND2QWAmYPZBYGAgEPFgIfAQW5ATxhIGhyZWY9JyNzb2NpYWxQYW5lbCcgY2xhc3M9J3NvY2lhbC1leHBhbmQgZmInIHRpdGxlPSdGYWNlYm9vayc+PHNwYW4+RmFjZWJvb2s8L3NwYW4+PC9hPjxhIGhyZWY9JyNzb2NpYWxQYW5lbCcgY2xhc3M9J3NvY2lhbC1leHBhbmQgYWN0aXZlIHR3JyB0aXRsZT0nVHdpdHRlcic+PHNwYW4+VHdpdHRlcjwvc3Bhbj48L2E+ZAIDD2QWAmYPZBYCAgIPZBYCAgEPFgIfAQXBAjxhIGNsYXNzPSJ0d2l0dGVyLXRpbWVsaW5lIiBkYXRhLXdpZGdldC1pZD0iMjU4OTA5MDUwNzUyODY0MjU2Ij5Ud2VldHM8L2E+PHNjcmlwdD4hZnVuY3Rpb24oZCxzLGlkKXt2YXIganMsZmpzPWQuZ2V0RWxlbWVudHNCeVRhZ05hbWUocylbMF07aWYoIWQuZ2V0RWxlbWVudEJ5SWQoaWQpKXtqcz1kLmNyZWF0ZUVsZW1lbnQocyk7anMuaWQ9aWQ7anMuc3JjPSIvL3BsYXRmb3JtLnR3aXR0ZXIuY29tL3dpZGdldHMuanMiO2Zqcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqcyxmanMpO319KGRvY3VtZW50LCJzY3JpcHQiLCJ0d2l0dGVyLXdqcyIpOzwvc2NyaXB0PmQCBQ9kFgJmD2QWBAICDxYCHwEFmAI8aWZyYW1lIHNyYz0iaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3BsdWdpbnMvbGlrZWJveC5waHA/aHJlZj1odHRwcyUzYSUyZiUyZm0uZmFjZWJvb2suY29tJTJmcHJvZmlsZS5waHAlM2ZpZCUzZDM0ODYwNzIxNTMzNzQwMyZ3aWR0aD01NzAmaGVpZ2h0PTQwMCZjb2xvcnNjaGVtZT1saWdodCZzaG93X2ZhY2VzPWZhbHNlJmJvcmRlcl9jb2xvciZzdHJlYW09dHJ1ZSZoZWFkZXI9ZmFsc2UiIGZyYW1lQm9yZGVyPSIwIiB3aWR0aD0iNTcwcHgiIGhlaWdodCA9ICI0MDBweCI+PC9pZnJhbWU+ZAIGD2QWAgIBDw8WAh8MBU9odHRwOi8vd3d3LmZhY2Vib29rLmNvbS9wYWdlcy9Db25zZXR0LU5laWdoYm91cmhvb2QtUG9saWNlLVRlYW0vMTM3NTE3NTQ5NTk1ODcxZGQCDw9kFgJmD2QWBgIBDw8WAh8MBVgvTmV3cy1hbmQtRXZlbnRzL1BhZ2VzL0V2ZW50cy1DYWxlbmRhci5hc3B4P05JRD0xMDV8ZGVmYzg3ZmItMTFhMS00NWNiLWE4YTgtYTJlMzZlODc3NmZiZGQCAw8PFgIfDAVGL1BhZ2VzL0V2ZW50LUxpc3RpbmcuYXNweD9OSUQ9MTA1fGRlZmM4N2ZiLTExYTEtNDVjYi1hOGE4LWEyZTM2ZTg3NzZmYmRkAgUPFgIfC2ZkAhEPFgIfDQsrBAFkAhMPZBYCZg9kFgJmDw8WAh8AZ2QWAgIBDw8WAh8MBSBodHRwczovL3d3dy5wb2xpY2UudWsvZHVyaGFtLzMwL2RkAhUPZBYCZg9kFgICAQ8WAh8LAgQWCGYPZBYIAgEPFgIfAQV3PGltZyBhbHQ9IlBDIDI2ODQgUGF1bCBNYXdzb24iIHNyYz0iL05QVCUyME1lbWJlcnMlMjBJbWFnZXMvUEMlMjAyNjg0JTIwUGF1bCUyME1hd3Nvbi5qcGciIHN0eWxlPSJCT1JERVI6IDBweCBzb2xpZDsgIj5kAgMPFgIfAQUDU2d0ZAIFDxYCHwEFC1BhdWwgTWF3c29uZAIHDxYCHwFlZAIBD2QWCAIBDxYCHwEFdzxpbWcgYWx0PSJTZ3QgMjYzMiBKYXNvbiBNb2xlIiBzcmM9Ii9OUFQlMjBNZW1iZXJzJTIwSW1hZ2VzL1NndCUyMDI2MzIlMjBKYXNvbiUyME1vbGUuanBnIiBzdHlsZT0iQk9SREVSOiAwcHggc29saWQ7ICI+ZAIDDxYCHwEFA1NndGQCBQ8WAh8BBQpKYXNvbiBNb2xlZAIHDxYCHwFlZAICD2QWCAIBDxYCHwEFZTxpbWcgYWx0PSIiIHNyYz0iL05QVCUyME1lbWJlcnMlMjBJbWFnZXMvUEMlMjAxMzc0JTIwVG9ueSUyMEJ1cmdlc3MuSlBHIiBzdHlsZT0iQk9SREVSOiAwcHggc29saWQ7ICI+ZAIDDxYCHwEFAlBDZAIFDxYCHwEFFFBDIDEzNzQgVG9ueSBCdXJnZXNzZAIHDxYCHwFlZAIDD2QWCAIBDxYCHwEFezxpbWcgYWx0PSJQQ1NPIDcxODIgSnVsaWUgQnJvd24iIHNyYz0iL05QVCUyME1lbWJlcnMlMjBJbWFnZXMvUENTTyUyMDcxODIlMjBKVUxJRSUyMEJST1dOLmpwZyIgc3R5bGU9IkJPUkRFUjogMHB4IHNvbGlkOyAiPmQCAw8WAh8BBQRQQ1NPZAIFDxYCHwEFC0p1bGllIEJyb3duZAIHDxYCHwFlZAIXD2QWAmYPZBYKAgEPFgIfAQUWQ29uc2V0dCBQb2xpY2UgU3RhdGlvbmQCAw8WAh8BBTtQYXJsaWFtZW50IFN0cmVldCw8YnIgLz5Db25zZXR0LDxiciAvPkNvdW50eSBEdXJoYW0gREg4IDVETGQCBQ8WAh8BBQMxMDFkAgcPDxYEHwEFHENvbnNldHRAZHVyaGFtLnBubi5wb2xpY2UudWsfDAUjbWFpbHRvOkNvbnNldHRAZHVyaGFtLnBubi5wb2xpY2UudWtkZAIJDw8WAh8MBaYBL1BhZ2VzL05laWdoYm91cmhvb2QtQ29udGFjdC1Gb3JtLmFzcHg/TmVpZ2hib3VyaG9vZElEPTEwNSZTb3VyY2U9aHR0cHMlM2ElMmYlMmZkdXJoYW0ucG9saWNlLnVrJTJmWW91ci1OZWlnaGJvdXJob29kJTJmQ29uc2V0dCUyZlBhZ2VzJTJmRWJjaGVzdGVyLWFuZC1NZWRvbXNsZXkuYXNweGRkAhkPZBYCZg9kFgICAQ8PFgIfDAVCaHR0cHM6Ly9kdXJoYW0ucG9saWNlLnVrL1lvdXItTmVpZ2hib3VyaG9vZC9Db25zZXR0L1BhZ2VzL05IVy5hc3B4ZGQCHQ9kFgJmD2QWAmYPFgIfAQXZBjxkaXYgY2xhc3M9ImxpbmtzLWJveCI+PHVsPjxsaSBjbGFzcz0iaGVhZGluZyI+SW5mb3JtYXRpb248L2xpPg0KPGxpPjxhIGhyZWY9Ii9JbmZvcm1hdGlvbi1hbmQtYWR2aWNlL1BhZ2VzL0xvY2FsLVJlc2lsaWVuY2UtRm9ydW0uYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlByZXBhcmluZyBmb3IgRW1lcmdlbmNpZXM8L2E+PC9saT4NCjxsaT48YSBocmVmPSIvQWJvdXQtVXMvVHJhbnNwYXJlbmN5LWFuZC1JbnRlZ3JpdHktUHJvZ3JhbW1lL1BhZ2VzL2RlZmF1bHQuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlRyYW5zcGFyZW5jeSAmYW1wOyBJbnRlZ3JpdHkgUHJvZ3JhbW1lPC9hPjwvbGk+PC91bD48L2Rpdj4NCjxkaXYgY2xhc3M9ImxpbmtzLWJveCI+PHVsPjxsaSBjbGFzcz0iaGVhZGluZyI+TGVnYWw8L2xpPg0KPGxpPjxhIGhyZWY9Ii9wYWdlcy9wcml2YWN5LXBvbGljeS5hc3B4IiB0YXJnZXQ9Il9ibGFuayI+Q29va2llczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Ii9BYm91dC1Vcy9GcmVlZG9tLW9mLWluZm9ybWF0aW9uL0dlbmVyYWwvUGFnZXMvUHJpdmFjeS1Ob3RpY2UuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlByaXZhY3kgTm90aWNlPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iL1BhZ2VzL1Rlcm1zLWFuZC1Db25kaXRpb25zLW9mLVVzZS5hc3B4IiB0YXJnZXQ9Il9ibGFuayI+VGVybXMgJmFtcDsgQ29uZGl0aW9ucyBvZiBVc2U8L2E+PC9saT4NCjxsaT48YSBocmVmPSIvUGFnZXMvRS1NYWlsJTIwYW5kJTIwU01TJTIwVGV4dCUyMERpc2NsYWltZXIuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPkVtYWlsICZhbXA7IFNNUyBUZXh0IERpc2NsYWltZXI8L2E+PC9saT48L3VsPjwvZGl2Pg0KPHA+4oCLwqA8L3A+ZGQWyvAkPB/e2OjKqUOf7mK+rVjBmg==" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#2';
+var g_wsaListTemplateId = 850;
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fYour-Neighbourhood\u002fConsett", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,pageListId:"{d2bfc115-b312-4068-b41e-1d43899f598e}",pageItemId:24, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};//]]>
+</script>
+<script type='text/javascript' src='https://durham.police.uk/style%20library/js/textsize.js'></script><script language='javascript' type='text/javascript'>
+$(document).ready(function () {
+$('#show-twitter').show();
+$('#show-facebook').hide();
+$('.title-r .fb').click(function () {
+ $('#show-twitter').hide();
+$('#show-facebook').show();
+$('#show-coveritlive').hide();
+$('.social-expand.fb').addClass('active');
+$('.social-expand.tw').removeClass('active');
+$('.social-line').addClass('fb');
+$('.social-line').removeClass('tw');
+});
+$('.title-r .tw').click(function () {
+$('#show-facebook').hide();
+$('#show-twitter').show();
+$('#show-coveritlive').hide();
+$('.social-expand.tw').addClass('active');
+$('.social-expand.fb').removeClass('active');
+$('.social-line').removeClass('fb');
+$('.social-line').addClass('tw');
+});
+}); 
+</script>
+
+<script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwK2jpaoCgK3+sjSDgLD6IqxBhSVPuaKRTcbSKUQxgRoegAoR9ML" />
+       
+    
+	<div id="ctl00_g_c317d0e3_0c08_46f8_a764_9e02151ed10b" __MarkupType="vsattributemarkup" __WebPartId="{c317d0e3-0c08-46f8-a764-9e02151ed10b}" WebPart="true">
+	
+
+</div>
+        
+        <div id="header"> 
+   		<div id="titlebar">
+   		<p class="skipNavigation"><a href="#maincontent" title="Skip Navigation">Skip Navigation</a></p>
+   		<img id="titlepicture" alt="Member of Durham Constabulary staff"src="/Style%20Library/Images/Redesign/titlepicturecrop.jpg"/>
+
+		
+		<div id="banner-top-l">
+			<div id="banner-top-l-links">
+				&nbsp;<div id="ctl00_g_2afd175c_4998_486a_b113_efb47ac23b2a" __MarkupType="vsattributemarkup" __WebPartId="{2afd175c-4998-486a-b113-efb47ac23b2a}" WebPart="true">
+	
+<span id="textSizeLinks">
+Text Size: <a id="ts1" href="javascript:setsize('1');" class="a1" title="Small Text">A</a><a  id="ts2" href="javascript:setsize('2');" class="a2" title="Medium Text">A</a><a  id="ts3" href="javascript:setsize('3');" class="a3" title="Large Text">A</a> | 
+</span>
+
+</div><a href="/Pages/Accessibility.aspx " title="Accessibility">Accessibility</a> | <a href="/Pages/Site-Map.aspx " title="Site Map">Site Map</a>
+			</div>
+			<div id="banner-top-r-trans">
+				<div id="google_translate_element"></div>
+			</div>
+			<script type="text/javascript">
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+				}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+
+
+        <!-- banner 
+                        <a href="http://durham.activclient.com/Pages/default.aspx" title="Home"><img id="crest" src="/Style%20Library/Images/Redesign/crestsmall.png" alt="Durham Constabulary Crest "title="Home"/>
+                		<div id="title">
+						Durham Constabulary
+						</div>
+						<div id="subtitle">
+						Altogether Better Policing.
+						</div></a>      
+			-->
+			<img alt="Durham Constabulary Logo" src="/Style%20Library/Images/Redesign/logo-durham.png"/>
+			
+			
+            <div id="banner-right">
+            	<div class="toppanel clearfix">
+            		<div id="banner-top-r">
+            			<div id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28" __MarkupType="vsattributemarkup" __WebPartId="{70bc48d8-a848-43e0-a1cb-8cf49fc64d28}" WebPart="true">
+	<div>
+		
+<div id="site-search" class="clearfix">
+                	<div id="site-search-r"><input type="submit" name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_cmdSearch" /></div>
+                    <div id="site-search-l"><input name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$txtSearch" type="text" value="Search Site..." id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_txtSearch" title="Search Site" onclick="this.value = '';" /></div>
+</div>
+
+	</div>
+
+</div>
+            		</div>
+            	</div>
+                <div class="minicom"><a href="/Contact-us/General-contact-information/Pages/default.aspx" title="Contact for deaf users">Helplines for deaf users</a></div>
+                <div class="durham101 clearfix">
+					                <a href="/Contact-us/Pages/default.aspx" title="When it's less urgent than 999"><img id="phone" title="When it's less urgent than 999" alt="When it's less urgent than 999 call 101. In an emergency always call 999." src="/Style%20Library/Images/Redesign/101.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="navigation">
+        <div id="navigationwrapper">
+		 <div id="ctl00_g_0505093c_fd61_4d54_bdc2_ae5be1c41fcc" __MarkupType="vsattributemarkup" __WebPartId="{0505093c-fd61-4d54-bdc2-ae5be1c41fcc}" WebPart="true">
+	
+<!-- navigation -->
+<div id="navigation" class="clearfix">
+    <ul class="clearfix">
+        <li class="home"><a title="home" href="/Pages/default.aspx">Home</a></li>
+<li class="About-Us"><a title="about us" href="/About-Us/Pages/default.aspx">About Us</a></li>
+<li class="Your-Neighbourhood active"><a href="https://www.police.uk/pu/your-area/durham-constabulary/">Your Neighbourhood​</a></li>
+<li class="Contact-us"><a title="contact us" href="/Contact-us/Pages/default.aspx">Contact Us</a></li>
+<li class="Latest-news"><a title="latest news" href="/news-and-events/Pages/default.aspx">News &amp; Events</a></li>
+<li class="Information-and-advice"><a title="information and advice" href="/Information-and-advice/Pages/default.aspx">Information &amp; Advice</a></li>
+<li class="Join-us end"><a title="join us" href="/Join-us/Pages/default.aspx">Join Us</a></li>
+​​​
+    </ul>
+</div>
+
+</div> 
+		 </div>
+		</div>
+      <div id="container">
+       <!--form-->
+	<img id="backgroundimage" src="/Style%20Library/Images/Redesign/background12.jpg"/>
+        <!-- handles SharePoint scripts -->
+        
+
+        <!-- controls the web parts and zones -->
+        
+
+
+        
+        <!-- =====  Start Scrolling Body Area  JLBW REMOVED============================================================ -->
+        
+           
+        <!-- top navigation area -->
+        <div class="s4-notdlg">
+            <!-- top navigation publishing data source -->
+        </div>
+    
+        <!-- navigation -->
+<div id="ctl00_g_e08de639_4ef2_4f9f_bf59_f445cd760112" __MarkupType="vsattributemarkup" __WebPartId="{e08de639-4ef2-4f9f-bf59-f445cd760112}" WebPart="true">
+	
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1655908-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+
+
+ 
+
+</div>
+
+                <!-- =====  Begin Ribbon ============================================================ -->
+        
+        <!-- =====  End Ribbon and other Top Content ============================================================ -->
+
+        <!-- page editing status bar -->
+        <div class="s4-notdlg">
+            <div id="s4-statusbarcontainer" class="s4-notdlg">
+                <div id="pageStatusBar" class="s4-status-s1">
+                </div>
+            </div>
+        </div>
+   
+        <!-- mos_contentdiv helps SharePoint put the web part editing pane in the main body on the right -->
+        <div id="ctl00_MSO_ContentDiv">
+            <!-- styles needed to have left nav to the left of the main area -->
+         <!-- JLBW REMOVED Custom Nav Holder -->
+         
+            <!-- customBodyHolder class handles margin that allows for left margin to hold nav and hides it when dialogs are up -->
+            <!--<div >-->
+           <!-- JLBW Removed title and description placeholders -->
+       <!--<div class="s4-notdlg">-->
+                    <!-- page title -->
+                   <!-- -->
+               <!-- </div>-->
+                <!-- page description -->
+                <!-- JLBW Removed Description Place Holder -->
+     		<!-- content -->
+		<a name="maincontent" id="maincontent"></a>
+		<div id="content" class="clearfix">
+          
+
+	<div id="content-left">
+        <div class="edit-mode-border">
+			<div id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31" __MarkupType="vsattributemarkup" __WebPartId="{6ded3753-46a3-4aec-88e4-7cfbe7d39b31}" WebPart="true">
+	
+
+<div class="sideheading">
+    <span>
+        Neighbourhoods</span>
+</div>
+<div class="side-links clearfix">
+    
+            <ul>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl01_hlSector" href="/Your-Neighbourhood/Consett/Pages/Benfieldside.aspx">Benfieldside</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl02_hlSector" href="/Your-Neighbourhood/Consett/Pages/Blackhill.aspx">Blackhill</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl03_hlSector" href="/Your-Neighbourhood/Consett/Pages/Burnhope.aspx">Burnhope</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl04_hlSector" href="/Your-Neighbourhood/Consett/Pages/Castleside.aspx">Castleside</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl05_hlSector" href="/Your-Neighbourhood/Consett/Pages/Consett-East.aspx">Consett East</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl06_hlSector" href="/Your-Neighbourhood/Consett/Pages/Consett-North.aspx">Consett North</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl07_hlSector" href="/Your-Neighbourhood/Consett/Pages/Consett-South.aspx">Consett South</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl08_hlSector" href="/Your-Neighbourhood/Consett/Pages/Cornsay.aspx">Cornsay</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl09_hlSector" href="/Your-Neighbourhood/Consett/Pages/Delves-Lane.aspx">Delves Lane</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl10_hlSector" href="/Your-Neighbourhood/Consett/Pages/Ebchester-and-Medomsley.aspx">Ebchester and Medomsley</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl11_hlSector" href="/Your-Neighbourhood/Consett/Pages/Esh-and-Langley-Park.aspx">Esh and Langley Park</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl12_hlSector" href="/Your-Neighbourhood/Consett/Pages/Lanchester.aspx">Lanchester</a>
+        </li>
+        
+<li class=''>
+            <a id="ctl00_PlaceHolderMain_g_6ded3753_46a3_4aec_88e4_7cfbe7d39b31_ctl00_rptNeighbourhood_ctl13_hlSector" href="/Your-Neighbourhood/Consett/Pages/Leadgate.aspx">Leadgate</a>
+        </li>
+        
+            </ul>
+</div>
+
+</div>
+			<div class="sideheading"><span>The WOW! Awards</span></div>
+        	<p>&nbsp;</p>
+            <div class="img" style="text-align:center"><a href="http://www.thewowawardswebs.co.uk/durhamconstabulary/index.php " target="_blank"><img src="/style%20library/img/wow-awards.png" alt="The WOW! Awards. Get your nominations in now for the WOW! Awards" /></a></div>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+
+    <div id="content-middle">
+    
+	    <div id="breadcrumb" class="clearfix">
+	    	<span SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider" HideInteriorRootNodes="true"><span><a title="Home Page" class="breadcrumbRootNode" href="/Pages/default.aspx">Home</a></span><span> &gt; </span><span><a class="breadcrumbNode" href="/Your-Neighbourhood/Pages/default.aspx">Your Neighbourhood</a></span><span> &gt; </span><span><a class="breadcrumbNode" href="/Your-Neighbourhood/Consett/Pages/default.aspx">Consett</a></span><span> &gt; </span><span class="breadcrumbCurrentNode">Ebchester and Medomsley</span></span>
+			<div id="ctl00_PlaceHolderMain_g_299990b2_90e4_4ad9_a0c9_45557240450e" __MarkupType="vsattributemarkup" __WebPartId="{299990b2-90e4-4ad9-a0c9-45557240450e}" WebPart="true">
+	
+
+
+
+
+      
+
+</div>		
+		</div> 
+	
+        <div class="edit-mode-border">
+	        <div class="text-content">
+				<h1>
+				&nbsp;Ebchester and Medomsley</h1>
+			 	<div id="ctl00_PlaceHolderMain_ctl02_label" style='display:none'>Rollup Image</div><div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label"><div class="ms-rtestate-field"><img alt="Ebchester and Medomsley" height="410" src="/EventImages/Consett/Ebchester%20and%20Medomsley.PNG" width="572" style="border:0px solid" /></div></div>
+			    <div id="ctl00_PlaceHolderMain_g_7b1c73a4_9888_4a0f_b7ad_850b48d7f8f2" __MarkupType="vsattributemarkup" __WebPartId="{7b1c73a4-9888-4a0f-b7ad-850b48d7f8f2}" WebPart="true" partorder="2">
+	
+<div id="priorities" class="clearfix">
+    <div class="title clearfix">
+        <div class="title-l">
+            <h2>
+                Priorities</h2>
+        </div>
+        <div class="title-r">
+            &nbsp;</div>
+    </div>
+    <div class="priorities-item">
+        <h3>
+            You said your current priorities are:</h3>
+        
+                <p class="priority-heading">
+                    Active Priorities</p>
+                <ul>
+            
+                <li><span>05 May 2019 - Medomsley PACT priority for Hamsterley,Ebchester and Medomsley</span> <div class="ExternalClass8837F926EEBC4136894654DCCE8055FE"><p class="MsoNormal"> PACT priority is speeding.</p></div> </li>
+            
+                </ul>
+            
+        
+        
+
+        <p class="priority-heading">
+                    This is what we have done</p>
+
+        
+                
+                     <ul>
+            
+                <li><span>05 May 2019 - Medomsley PACT priority for Hamsterley,Ebchester and Medomsley</span> <div class="ExternalClass143B7D39A77B4C598F4E6A37839D6CF7"><p class="MsoNormal"> </p>
+<p class="MsoNormal"><strong>Community Speed Watch.</strong></p>
+<div style="margin:0cm 0cm 0pt"><font face="Calibri">B6308 Medomsley Fines road north</font></div>
+<div style="margin:0cm 0cm 0pt"><font face="Calibri">1035 to 1100  44 vehicles passed  7 speeding</font></div>
+<div style="margin:0cm 0cm 0pt"><font face="Calibri"> </font></div>
+<div style="margin:0cm 0cm 0pt"><font face="Calibri">B6310 Medomsley Manor road northeast</font></div>
+<div style="margin:0cm 0cm 0pt"><font face="Calibri">1110 to 1135  51 vehicles passed  4 speeding</font></div>
+<div style="margin:0cm 0cm 0pt"><div style="margin:0cm 0cm 0pt"><font face="Calibri"> </font></div></div>
+<div style="margin:0cm 0cm 0pt"><font face="Calibri"></font> Our Police volunteers continue to carry out speed checks in the area of Medomsley, Ebchester and Hamsterley. <span><font face="Calibri"><span style="font-size:10pt;color:#595959">Our Road Policing Units have  also been giving attention to these areas to support the valuable work our volunteers do. </span></font></span></div></div>
+<div class="ExternalClass143B7D39A77B4C598F4E6A37839D6CF7" style="font-size:10pt;color:#595959;margin:0cm 0cm 0pt"><span><font face="Calibri"><span style="font-size:10pt;color:#595959"> </span></font></span></div>
+<div class="ExternalClass143B7D39A77B4C598F4E6A37839D6CF7" style="font-family:verdana;margin:0cm 0cm 0pt"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black"><strong>Home Security Tips:</strong></span></div>
+<div class="ExternalClass143B7D39A77B4C598F4E6A37839D6CF7" style="font-family:verdana;margin:0cm 0cm 0pt"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black">Don't become a victim of crime, follow these easy steps below:</span></div>
+<div class="ExternalClass143B7D39A77B4C598F4E6A37839D6CF7" style="font-size:10pt;font-family:verdana;margin:0cm 0cm 0pt"><div style="margin:0cm 0cm 0pt"><div style="margin:0cm 0cm 0pt"><div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black"><br />• Lock all windows and doors – even if you’re at home. <br />• A well-lit home gives the impression someone is in.<br />• Leave a light on or use timer switches so lights come on when it gets dark.<br />• Don’t leave valuables on show. <br />• Don’t leave your house and vehicle keys in the lock or on a side table in view of a window, making it easy for a thief to fish them through your letterbox.<br />• Don’t leave curtains closed during the day, only in the evening and overnight.<br />• If you have a house alarm, use it. <br />• Contact your local neighbourhood police team if you see anything suspicious in your area.</span><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif"></span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black"><br />As part of the campaign, people are also being reminded to always lock their vehicles when leaving them unattended, and remove all valuables from sight.</span><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif"></span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black">“Vehicles left unattended with valuables left on display or unlocked are a magnet for criminals, who will often try a number of car door handles until they find one that has been left open,” added Ch Insp Davies.</span><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif"></span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black">“It only takes a few seconds to make sure you’ve locked the door, but it could mean the difference between having your car stolen or having it there when you return.</span><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif"></span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black">“In the run up to the festive season when traditionally people are doing more shopping, they should also remove items from their vehicles before leaving them unattended, or lock them out of sight in the boot.”</span><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif"></span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black"><br />During the campaign, PCSOs will also be patrolling key hotspot areas which have seen an increase in burglaries, thefts from vehicles and antisocial behaviour.</span><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif"></span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black">To report any suspicious activity in your area, contact Durham Constabulary on 101, or call Crimestoppers anonymously on 0800 555 111.</span></div>
+<div style="vertical-align:baseline;margin:0cm 0cm 0pt;punctuation-wrap:simple"><span style="font-size:11pt;font-family:&quot;calibri&quot;, sans-serif;color:black"></span> </div></div></div></div>
+<h2 class="ExternalClass143B7D39A77B4C598F4E6A37839D6CF7">  <div style="display:inline"><img width="223" height="209" src="/News%20Images/in%20the%20know%20web.jpg" alt="" style="border-top:0px solid;height:149px;border-right:0px solid;width:159px;border-bottom:0px solid;border-left:0px solid" /></div></h2>
+<div class="news-article-item"><div style="display:inline"><div>Do you want to find out what's really happening in your area - receive regular crime updates, information on road closures and learn about what your policing team is doing?</div>
+<div> </div>
+<div>Keep In The Know is a free messaging service brought to you by Durham Constabulary where you decide when and how you are kept informed about the issues that matter to you.</div>
+<div> </div>
+<div>We believe that by improving the flow of information between the community and its police we can all make a greater impact in the prevention and detection of crime and anti-social behaviour.</div>
+<div> </div>
+<div><a href="https://www.keepintheknow.co.uk/" target="_blank">www.keepintheknow.co.uk</a> provides an invitation for you to participate in the exchange of information with Durham Constabulary and Neighbourhood Watch.</div>
+<div> </div>
+<div>You do not need to join a specific watch scheme but you may find that there are like-minded residents or businesses in your area who would welcome your support.</div>
+<div> </div>
+<div>As a registered recipient you will not only benefit from two way messaging but may also hear about positive police action in your community, help identify suspected or wanted criminals or learn about community groups, events or meetings in your area.</div>
+<div> </div>
+<div>Meanwhile, we have also launched a sister site www.farmwatchdurhamanddarlington.co.uk to keep you informed about rural and farming issues that matter to you.</div>
+<div> </div>
+<div>We look forward to keeping you In The Know!</div></div></div>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal" style="font-size:10pt;color:red"><strong>DID YOU KNOW?</strong></p>
+<p class="MsoNormal" style="font-size:10pt;color:red">You can chat to your local officers, discuss any concerns and ask for advice at drop in sessions at the following locations:</p>
+<p class="MsoNormal" style="font-size:10pt;color:red"><strong>Medomsley Church, Manor Road</strong></p>
+<p class="MsoNormal" style="font-size:10pt;color:red"> The first Wed of every month between 10:00am and 11:00am. </p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red"><strong>Lintzford Garden Centre</strong> - On Friday's between 10:30-11:30am</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red"><strong>2019 dates:</strong></p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">May 24th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">June 21st</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">July 19th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Aug 16th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Sept 13th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Oct 11th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Nov 8th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Dec 6th</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red"> </p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red"><strong>Ebchester Community Centre, Shaw Lane.</strong> </p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Every second Tuesday of the month. </p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">From Tuesday 16th April 2019 when the first session will be 10:00am until 12:00.</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red"><strong>Sweetharts, Durham Road.</strong></p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">The first Friday of every month between 13:30 until 14:30.</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red"><strong>Isabellas Coffee Shop, Front Street, Shotley Bridge.</strong></p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Last Friday of every month between 13:30 until 14:30.</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Please feel free to contact any of the below officers for any further information:</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">PCSO 7182 Julie BROWN</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">PCSO 7517 Ian McKENNA</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">PC 1374 Tony BURGESS.</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt;color:red">Consett NPT on 101.</p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt"> </p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt"> </p>
+<p class="ExternalClass76AF31C1FEB34A8B8BA2ABEF7183F2FA" style="font-size:10pt"> </p> </li>
+            
+                </ul>
+            
+
+        
+       
+        <p class="note">
+            These are the policing priorities that local people have agreed with your policing
+            team. You can have some influence on future policing priorities by attending your
+            next PACT meeting.</p>
+    </div>
+</div>
+
+</div>
+			    <div id="ctl00_PlaceHolderMain_g_29fb624c_b262_4976_880d_5946f2d0bd30" __MarkupType="vsattributemarkup" __WebPartId="{29fb624c-b262-4976-880d-5946f2d0bd30}" WebPart="true" partorder="2">
+	
+
+<div id="facebook-links">
+    <a name="socialPanel"></a>
+    <div class="title clearfix">
+        <div class="title-l">
+            <h2>Social Networking</h2>
+        </div>
+        <div class="title-r">
+            <a href='#socialPanel' class='social-expand fb' title='Facebook'><span>Facebook</span></a><a href='#socialPanel' class='social-expand active tw' title='Twitter'><span>Twitter</span></a>
+        </div>
+    </div>
+    <div class="social-line tw">
+    </div>
+    <div id="social-panel">
+        <div id="show-twitter">
+            
+
+<div id="ctl00_PlaceHolderMain_g_29fb624c_b262_4976_880d_5946f2d0bd30_ctl00_ctl00_pnlTwitter">
+		
+    <a class="twitter-timeline" data-widget-id="258909050752864256">Tweets</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</div>
+
+
+
+
+        </div>
+        <div id="show-facebook">
+            
+
+<div id="show-facebook-1">
+<iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3a%2f%2fm.facebook.com%2fprofile.php%3fid%3d348607215337403&width=570&height=400&colorscheme=light&show_faces=false&border_color&stream=true&header=false" frameBorder="0" width="570px" height = "400px"></iframe>
+
+    
+    
+</div>
+
+
+
+        </div>
+        <div id="show-coveritlive">
+            
+        </div>
+    </div>
+</div>
+
+
+</div>
+		        <div id="ctl00_PlaceHolderMain_g_b645b682_16cd_4889_b66a_6419395bb088" __MarkupType="vsattributemarkup" __WebPartId="{b645b682-16cd-4889-b66a-6419395bb088}" WebPart="true" partorder="4">
+	
+<div id="event-meetings" class="clearfix">
+    <div class="title clearfix">
+        <div class="title-l">
+            <h2>
+                Local Events &amp; PACT Meetings</h2>
+        </div>
+         <div class="title-r">
+            <a id="ctl00_PlaceHolderMain_g_b645b682_16cd_4889_b66a_6419395bb088_ctl00_hlCal" href="/News-and-Events/Pages/Events-Calendar.aspx?NID=105|defc87fb-11a1-45cb-a8a8-a2e36e8776fb">View calendar &gt;</a></div>
+        <div class="title-r">
+            <a id="ctl00_PlaceHolderMain_g_b645b682_16cd_4889_b66a_6419395bb088_ctl00_hlViewAll" href="/Pages/Event-Listing.aspx?NID=105|defc87fb-11a1-45cb-a8a8-a2e36e8776fb">View all &gt;</a></div>
+    </div>
+    
+</div>
+
+</div>
+				<div id="ctl00_PlaceHolderMain_ctl03_label" style='display:none'>Page Content</div><div id="ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl03_label"></div>
+				
+			</div>
+        </div>
+    </div>
+    <div id="content-right">
+        <div class="edit-mode-border">
+            <div id="ctl00_PlaceHolderMain_g_4b9b7dd5_2c23_467a_b1e7_b18b7af301e6" __MarkupType="vsattributemarkup" __WebPartId="{4b9b7dd5-2c23-467a-b1e7-b18b7af301e6}" WebPart="true" partorder="2">
+	<div id="ctl00_PlaceHolderMain_g_4b9b7dd5_2c23_467a_b1e7_b18b7af301e6_ctl00_pnlMapper">
+		
+    <div class="sideheading"><h2>Crime Mapper</h2></div>    
+
+    <div class="side-links clearfix">
+
+        <a id="ctl00_PlaceHolderMain_g_4b9b7dd5_2c23_467a_b1e7_b18b7af301e6_ctl00_hlCrimeMapper" href="https://www.police.uk/durham/30/" target="_blank"><img src="/style%20Library/img/crimemapper.jpg" alt="crimemapper" /></a>
+
+    </div>
+
+	</div>
+
+</div>
+	        <div id="ctl00_PlaceHolderMain_g_adb3718c_f4ba_4be6_b41e_a5937726ff4f" __MarkupType="vsattributemarkup" __WebPartId="{adb3718c-f4ba-4be6-b41e-a5937726ff4f}" WebPart="true" partorder="4">
+	
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".answer").readmore();
+    }); 
+
+	</script>
+
+
+<div class="sideheading"><h2>NHP Team</h2></div>    
+
+
+
+<div class="n-h-team clearfix">
+
+			<img alt="PC 2684 Paul Mawson" src="/NPT%20Members%20Images/PC%202684%20Paul%20Mawson.jpg" style="BORDER: 0px solid; ">
+
+			<p class="name">Sgt Paul Mawson</p>
+			<p  class="answer"></p>
+
+
+
+                </div> 
+
+
+
+
+<div class="n-h-team clearfix">
+
+			<img alt="Sgt 2632 Jason Mole" src="/NPT%20Members%20Images/Sgt%202632%20Jason%20Mole.jpg" style="BORDER: 0px solid; ">
+
+			<p class="name">Sgt Jason Mole</p>
+			<p  class="answer"></p>
+
+
+
+                </div> 
+
+
+
+
+<div class="n-h-team clearfix">
+
+			<img alt="" src="/NPT%20Members%20Images/PC%201374%20Tony%20Burgess.JPG" style="BORDER: 0px solid; ">
+
+			<p class="name">PC PC 1374 Tony Burgess</p>
+			<p  class="answer"></p>
+
+
+
+                </div> 
+
+
+
+
+<div class="n-h-team clearfix">
+
+			<img alt="PCSO 7182 Julie Brown" src="/NPT%20Members%20Images/PCSO%207182%20JULIE%20BROWN.jpg" style="BORDER: 0px solid; ">
+
+			<p class="name">PCSO Julie Brown</p>
+			<p  class="answer"></p>
+
+
+
+                </div> 
+
+
+
+
+                
+
+               
+
+               
+
+</div>
+	        <div id="ctl00_PlaceHolderMain_g_bcb9cdcf_2d54_4430_8e11_b39fdf09123d" __MarkupType="vsattributemarkup" __WebPartId="{bcb9cdcf-2d54-4430-8e11-b39fdf09123d}" WebPart="true" partorder="6">
+	
+<div class="sideheading">
+    <h2>
+        How To Contact</h2>
+</div>
+<div class="local-station">
+    <p>
+        <strong>Consett Police Station,</strong>
+        <br />
+        Parliament Street,<br />Consett,<br />County Durham DH8 5DL</p>
+    <p>
+        Telephone: 101
+        <br />
+        Email: <a id="ctl00_PlaceHolderMain_g_bcb9cdcf_2d54_4430_8e11_b39fdf09123d_ctl00_hlEmail" href="mailto:Consett@durham.pnn.police.uk">Consett@durham.pnn.police.uk</a></p>
+
+        <a id="ctl00_PlaceHolderMain_g_bcb9cdcf_2d54_4430_8e11_b39fdf09123d_ctl00_hlContact" class="readmore" href="/Pages/Neighbourhood-Contact-Form.aspx?NeighbourhoodID=105&amp;Source=https%3a%2f%2fdurham.police.uk%2fYour-Neighbourhood%2fConsett%2fPages%2fEbchester-and-Medomsley.aspx">Contact Us</a>
+</div>
+
+</div>
+			<div id="ctl00_PlaceHolderMain_g_c367f590_b719_42ce_9feb_c60612089314" __MarkupType="vsattributemarkup" __WebPartId="{c367f590-b719-42ce-9feb-c60612089314}" WebPart="true">
+	>
+<a id="ctl00_PlaceHolderMain_g_c367f590_b719_42ce_9feb_c60612089314_ctl00_hlNHW" href="https://durham.police.uk/Your-Neighbourhood/Consett/Pages/NHW.aspx"><img src="/style%20library/img/n-watch.jpg" border="0" /></a>
+
+
+</div>
+			 
+ 		</div>
+    </div>
+    
+
+    
+
+ </div>
+            <!--</div>-->
+
+
+
+        </div>
+     
+        <!-- the developer dashboard can be turned on by administrators and shows debuging and performance info for the page -->
+        <div id="DeveloperDashboard" class="ms-developerdashboard">
+            
+        </div>
+      
+        <!-- =====  End scrolling body area with these two previous div's JLBW REMOVED ============================================================ -->
+      
+      
+        <!-- The form digest security control used to for security validation on forms -->
+        
+			
+        
+        <!-- =====  Hidden Placeholders ============================================================ -->
+        
+        <!-- Handle Search "enter" key from Firefox -->
+        <input type="text" name="__spDummyText1" style="display: none;" size="1" title="Dummy1"/>
+        <input type="text" name="__spDummyText2" style="display: none;" size="1" title="Dummy2"/>
+<!--Form-->       
+
+
+        <!-- extra form for some instances -->
+        
+        
+
+ <!-- footer -->
+        <div id="footer" class="clearfix">
+            <div id="footer-inner">
+                <div id="footer-left" class="clearfix">
+	                <div id="ctl00_g_210cefdb_c7e3_4268_a5d1_d8594a316a9f" __MarkupType="vsattributemarkup" __WebPartId="{210cefdb-c7e3-4268-a5d1-d8594a316a9f}" WebPart="true">
+	<div class="links-box"><ul><li class="heading">Information</li>
+<li><a href="/Information-and-advice/Pages/Local-Resilience-Forum.aspx" target="_blank">Preparing for Emergencies</a></li>
+<li><a href="/About-Us/Transparency-and-Integrity-Programme/Pages/default.aspx" target="_blank">Transparency &amp; Integrity Programme</a></li></ul></div>
+<div class="links-box"><ul><li class="heading">Legal</li>
+<li><a href="/pages/privacy-policy.aspx" target="_blank">Cookies</a></li>
+<li><a href="/About-Us/Freedom-of-information/General/Pages/Privacy-Notice.aspx" target="_blank">Privacy Notice</a></li>
+<li><a href="/Pages/Terms-and-Conditions-of-Use.aspx" target="_blank">Terms &amp; Conditions of Use</a></li>
+<li><a href="/Pages/E-Mail%20and%20SMS%20Text%20Disclaimer.aspx" target="_blank">Email &amp; SMS Text Disclaimer</a></li></ul></div>
+<p>​ </p>
+
+
+</div>
+				</div>
+				
+                <!--<div id="footer-right" class="clearfix">
+                    <div class="footer-social-l">
+                        Find us on</div>
+                    <div class="footer-social-r clearfix">
+                        <div class="footer-social-icon">
+                            <a href="http://www.flickr.com/photos/durhamconstabularyinpix" target="_blank" title="Durham Constabulary on Flickr">
+                                <img src="/Style%20Library/img/footer-icn-flickr.jpg" alt="Flickr" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://www.youtube.com/durhampolice999" target="_blank" title="Durham Constabulary on YouTube">
+                                <img src="/Style%20Library/img/footer-icn-youtube.jpg" alt="YouTube" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://twitter.com/DurhamPolice" target="_blank" title="Durham Constabulary on Twitter">
+                                <img src="/Style%20Library/img/footer-icn-twitter.jpg" alt="Twitter" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://www.facebook.com/pages/Durham-Constabulary/224330430978915" target="_blank" title="Durham Constabulary on Facebook">
+                                <img src="/Style%20Library/img/footer-icn-facebook.jpg" alt="Facebook" /></a></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+     <div id="ctl00_panelZone">
+	<div style='display:none' id='hidZone'><menu class="ms-SrvMenuUI">
+		<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu></div>
+</div><input type='hidden' id='_wpcmWpid' name='_wpcmWpid' value='' /><input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);
+function EnsureScripts(scriptInfoList, finalFunction)
+{
+if (scriptInfoList.length == 0)
+{
+finalFunction();
+}
+else
+{
+var scriptInfo = scriptInfoList.shift();
+var rest = function () { EnsureScripts(scriptInfoList, finalFunction); };
+var defd;
+try
+{
+eval('defd = typeof(' + scriptInfo[1] + ');');
+}
+catch (e)
+{
+defd = 'undefined';
+}
+if (scriptInfo[2])
+{
+EnsureScript(scriptInfo[0], defd, null);
+ExecuteOrDelayUntilScriptLoaded(rest, scriptInfo[0]);
+}
+else
+{
+EnsureScript(scriptInfo[0], defd, rest);
+}
+}
+}
+function PublishingRibbonUpdateRibbon()
+{
+var pageManager = SP.Ribbon.PageManager.get_instance();
+if (pageManager)
+{
+pageManager.get_commandDispatcher().executeCommand('appstatechanged', null);
+}
+}var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{d2bfc115-b312-4068-b41e-1d43899f598e}",itemId: 24,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fYour-Neighbourhood\u002fConsett\u002fPages",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+}
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js"); var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';//]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// ]]>
+</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002fsp.core.js?rev=7ByNlH\u00252BvcgRJg\u00252BRCctdC0w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=b6\u00252FcRx1a6orhAQ\u00252FcF\u00252B0ytQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002fsp.ui.dialog.js?rev=IuXtJ2CrScK6oX4zOTTy\u00252BA\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.core.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f1033\u002fcore.js?rev=thUAOrLfyaU\u00252Fgyxy0eiMiw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002fsp.runtime.js?rev=9sKdsC9N6p2BiRk3313M7Q\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.core.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002fsp.js?rev=SpGB4\u00252FzYmCWpwoPWNG2dsg\u00253D\u00253D");RegisterSodDep("sp.js", "sp.core.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002fcui.js?rev=k\u00252B4HtUzT9\u00252B3mSycgD7gPaQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002finplview.js?rev=ZfVDYd30Z2D01DIRRl8ETA\u00253D\u00253D");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002fsp.ribbon.js?rev=F\u00252BUEJ66rbXzSvpf7nN69wQ\u00253D\u00253D");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("sp.publishing.resources.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252EPublishing\u00252EResources\u0026rev=q6nxzZIVVXE5X1SPZIMD3A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.pub.ribbon.js", "\u002f_layouts\u002fsp.ui.pub.ribbon.js?rev=RGQSBI9Dm0E345iq\u00252FxUpHg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("msstring.js", "\u002f_layouts\u002f1033\u002fmsstring.js?rev=QtiIcPH3HV7LgVSO7vONFg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f1033\u002fnon_ie.js?rev=EVTj1bu32\u00252FMla6SDN\u00252FsNTA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSodDep("browserScript", "msstring.js");</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+
+ 
+</body>
+</html>
+<!-- Rendered using cache profile:Public Internet (Purely Anonymous) at: 2020-09-28T00:04:07 -->
