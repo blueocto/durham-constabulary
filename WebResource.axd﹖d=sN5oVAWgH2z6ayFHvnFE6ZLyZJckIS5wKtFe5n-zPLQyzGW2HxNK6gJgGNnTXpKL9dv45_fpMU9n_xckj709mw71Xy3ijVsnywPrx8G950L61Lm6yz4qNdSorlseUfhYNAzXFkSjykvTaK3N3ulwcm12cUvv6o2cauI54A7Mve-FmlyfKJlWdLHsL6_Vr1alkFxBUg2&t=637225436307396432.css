@@ -1,0 +1,504 @@
+﻿/* RadScheduler Default skin */
+
+/* common */
+.RadScheduler_Default,
+.RadScheduler_Default a,
+.RadScheduler_Default input,
+.RadScheduler_Default select,
+.RadScheduler_Default textarea
+{
+	font: normal 12px/14px "Segoe UI", Arial, sans-serif;
+}
+
+.RadScheduler_Default,
+.RadScheduler_Default a,
+.RadScheduler_Default input,
+.RadScheduler_Default select,
+.RadScheduler_Default textarea
+{
+	color: #333;
+}
+
+.RadScheduler_Default textarea
+{
+	background: #fff;
+}
+
+/* header */
+
+/* header sprites */
+.RadScheduler_Default .rsHeader,
+.RadScheduler_Default .rsHeader ul a:hover,
+.RadScheduler_Default .rsHeader ul a:hover span,
+.RadScheduler_Default .rsHeader .rsSelected,
+.RadScheduler_Default .rsHeader .rsSelected em,
+.RadScheduler_Default .rsHeader .rsDatePickerActivator,
+.RadScheduler_Default .rsHeader .rsPrevDay,
+.RadScheduler_Default .rsHeader .rsNextDay
+{
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsHeader
+{
+	border: 1px solid #929292;
+}
+
+.RadScheduler_Default .rsHeader,
+.RadScheduler_Default .rsHeader a,
+.RadScheduler_Default .rsHeader ul span,
+.RadScheduler_Default .rsHeader ul em
+{
+	color: #000;
+}
+
+.RadScheduler_Default .rsHeader a
+{
+	color: #333;
+}
+
+.RadScheduler_Default .rsHeader .rsSelected em,
+.RadScheduler_Default .rsHeader ul a:hover span
+{ 
+	color: #FFF;
+}
+
+/* content */
+
+.RadScheduler_Default .rsContent
+{
+	background: #fff;
+}
+
+/* <headers> */
+
+.RadScheduler_Default .rsHorizontalHeaderTable
+{
+	color: #333;
+	background: #e4e4e4;
+}
+
+.RadScheduler_Default .rsHorizontalHeaderWrapper {
+	border-color: #d2d2d2;
+	background: #eee;
+}
+
+.RadScheduler_Default .rsSpacerCell,
+.RadScheduler_Default .rsAllDayHeader,
+.RadScheduler_Default .rsVerticalHeaderWrapper,
+.RadScheduler_Default .rsVerticalHeaderTable
+{
+	background: #f1f1f1 url('WebResource.axd?d=VPswb9bMTTHRBXbvp8idhCDormWcLMEKWRHrWGdmlc1jiGl7xJPYrH9H0BXKQKUV0cywDLI_FgKuyKJS-t1FQYwDU_G47gOwiK8n-w6e4Apc3UATVc2tHzZTvAnhrZA14p3MWZp7993_geQRk6jfX3_DWjhIVghXn_XwOCA4xlQBWmLy_jEpbmTNISqroxDD2i3rOJZL3OUxyGiyOa5qx5EC2YU1&t=637225436307396432') repeat-y;
+}
+
+.RadScheduler_Default .rsVerticalHeaderTable th
+{
+	border-color: #868686 #d2d2d2;
+	color: #333;
+}
+
+.RadScheduler_Default .rsHorizontalHeaderTable th
+{
+	border-color: #d2d2d2;
+	background-color: #E4E4E4;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsVerticalHeaderTable th
+{
+	border-color: transparent #d2d2d2;
+}
+* html .RadScheduler_Default .rsVerticalHeaderTable th { border-bottom-color: #f1f1f1; }
+
+.RadScheduler_Default table.rsVerticalHeaderTable .rsAlt th
+{
+	border-color: #d2d2d2 #d2d2d2;
+}
+
+/* </headers> */
+
+/* <all-day-row> */
+
+.RadScheduler_Default .rsAllDayRow
+{
+	background: #eee;
+}
+
+.RadScheduler_Default .rsSpacerCell,
+.RadScheduler_Default .rsAllDayHeader,
+.RadScheduler_Default .rsVerticalHeaderTable .rsAllDayHeader
+{
+	border-color: #d2d2d2 #d2d2d2;
+}
+
+.RadScheduler_Default .rsAllDayRow td,
+.RadScheduler_Default .rsContentTable .rsAllDayRow td
+{
+	border-color: #d2d2d2; 
+	border-style: solid;
+}
+
+.RadScheduler_Default .rsVerticalHeaderTable .rsMainHeader th
+{
+	border-bottom-color: #d2d2d2;
+}
+
+.RadScheduler_Default .rsSpacerCell,
+.RadScheduler_Default .rsContent .rsAllDayHeader
+{
+	border-bottom-color: #d2d2d2;
+}
+
+/* </all-day-row> */
+
+.RadScheduler_Default .rsContent,
+.RadScheduler_Default .rsTopWrap .rsFooter
+{
+	border: 1px solid #929292;
+	border-top: 0;
+}
+
+.RadScheduler_Default .rsContentTable td
+{
+	border-color: #e8eaec #e8eaec;
+	border-bottom-style: dotted;
+}
+
+.RadScheduler_Default .rsContentTable .rsAlt td
+{
+	border-color: #c7cbd1 #e8eaec;
+	border-bottom-style: solid;
+}
+
+.RadScheduler_Default .rsMonthView .rsOtherMonth
+{
+	background-color: #F9F9F9;
+}
+
+/* <appointments> */
+.RadScheduler_Default .rsApt .rsArrowTop,
+.RadScheduler_Default .rsApt .rsArrowBottom,
+.RadScheduler_Default .rsApt .rsArrowLeft,
+.RadScheduler_Default .rsApt .rsArrowRight,
+.RadScheduler_Default .rsApt .rsAptDelete,
+.RadScheduler_Default .rsApt .rsAptResize,
+.RadScheduler_Default .rsApt .rsAptReminder,
+.RadScheduler_Default .rsApt .rsAptRecurrence,
+.RadScheduler_Default .rsApt .rsAptRecurrenceException
+{
+	background-color: transparent;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+	background-repeat: no-repeat;
+}
+
+.RadScheduler_Default .rsAptCreate,
+.RadScheduler_Default .rsMonthView .rsAptCreate
+{
+	background-color: #c5c5c5;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+	background-repeat: repeat-x;
+}
+
+.RadScheduler_Default .rsAptCreateRow2,
+.RadScheduler_Default .rsMonthView .rsAptCreateRow2
+{
+	background-color: #c5c5c5;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+	background-repeat: repeat-x;
+}
+
+.RadScheduler_Default .rsNonWorkHour,
+.RadScheduler_Default .rsSunCol,
+.RadScheduler_Default .rsSatCol
+{
+	background-color: #f9f9f9;
+}
+
+.RadScheduler_Default .rsAptCreateRow3,
+.RadScheduler_Default .rsMonthView .rsAptCreateRow3,
+.RadScheduler_Default .rsAptCreateRow4,
+.RadScheduler_Default .rsMonthView .rsAptCreateRow4,
+.RadScheduler_Default .rsAptCreateRow5,
+.RadScheduler_Default .rsMonthView .rsAptCreateRow5
+{
+	background: #c5c5c5;
+}
+
+.RadScheduler_Default .rsFullTime 
+{
+	color: #000;
+}
+
+.RadScheduler_Default .rsSelectedSlot,
+.RadScheduler_Default .rsMonthView .rsSelectedSlot
+{
+    background: #909090;
+    border-color: #808080;
+}
+
+.RadScheduler_Default .rsContentTable td.rsAptCreate.rsSelectedSlot
+{
+    background: #808080;
+    border-color: #707070;
+}
+
+.RadScheduler_Default .rsContentTable td.rsSelectedSlot
+{
+    background: #909090;
+    border-color: #808080;
+}
+
+/* <New appointment imageless rendering */
+.RadScheduler_Default .rsAptIn, 
+.RadScheduler_Default .rsAptMid, 
+.RadScheduler_Default .rsAptContent
+{
+    background-color: #efefef;
+	border-color: #949494;
+}
+
+.RadScheduler_Default .rsAptContent
+{
+    background-color: #dbdbdb;
+    background-image: url('WebResource.axd?d=EW1nRt3eRko74k5vPXviz7mBgKn4Y85gf1lhYY4Htulnrns5zvZ1no3uewrbEPRE6Mia9yO1-QPZYW1sBSMj_j2IzSfHOIUXKiiMEkqkMt8BwDdi7AnmkN5l5CIw3WpFxeqdn_t6kQ9wj0ZxDexh4_o2ZnTKnltCj45V-iUE_cdcqZb6Pahf3VsQju-EG-A0uw2cSDTWi2XG-AzC-pM8fN9DY_w1&t=637225436307396432');
+}
+/* </New appointment imageless rendering> */
+
+.RadScheduler_Default .rsAptSimple
+{
+	background-color: #dbdbdb;
+	border-color: #949494;
+}
+
+/* </appointments> */
+
+/* <footer> */
+
+.RadScheduler_Default .rsFooter
+{
+	background: #eee;
+}
+
+.RadScheduler_Default .rsFooter a
+{
+	color: #555;
+	background-color: transparent;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+	background-repeat: no-repeat;
+}
+
+.RadScheduler_Default div.rsFooter a:hover
+{
+	color: #888;
+}
+
+/* </footer> */
+
+/* <inline edit form> */
+
+.RadScheduler_Default .rsEditOptions a,
+.RadScheduler_Default .rsAptEditResizeHandle,
+.RadScheduler_Default .rsAptEditFormWrapper
+{
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsAptEditFormOuter, /* top */
+.RadScheduler_Default .rsAptEditFormInner  /* bottom */
+{
+	background-image: url('WebResource.axd?d=-ZPDT4cORNdNAoswNDtrSnXpf43DP7ikCIhBPdfhNdNcvs7rG0Tg5G_bYuDizVWmo1zFGgNqv3R-OZTtc1tdfUlMLn2fb3IKZcykgcsRZj4TVp36rADAE_6SLcTS6E7Pi8KwAHIUXxJwKR95wjFSdn2l11S5WBCSdkYZNMfYaA6Pfwyu-5jSsop4CCuSYozb8d2ICtZYSD3u3Kaa7--HYPclXwc1&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsAptEditFormMiddle, /* left */
+.RadScheduler_Default .rsAptEditFormMiddle2 /* right */
+{
+	background-image: url('WebResource.axd?d=HFGNtNBBahxwAD5pafDMDYw1BPsC5oo-CPwFvXBWnovCJ8PgcFCRjZB8OpceklzcT1fNqcPPnyyoX1TEV95S50PbypSl4isgHADoK2Z92q4qEPJc-I5zfOxb9Rlj7xkrKPWCxxD_F1wm5L9n80BVVJKjSEnwVsYJd2WguuhIW64BMTSen60g18Rr0gW0E1zGJggKfepGur7moC4iZrPI-_YyZ8M1&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsAptEditFormWrapper .rsAptEditTextareaWrapper
+{
+	border-color: #828282;
+	background: #fff;
+}
+
+.RadScheduler_Default .rsAptEditFormWrapper .rsAptEditTextareaWrapper textarea
+{
+	background: #fff;
+}
+
+.RadScheduler_Default .rsAptEditFormWrapper .rsEditOptions 
+{
+	background: #eee;
+}
+
+/* <inline edit form template> */
+
+.RadScheduler_Default .rsAptEditFormWrapper .rsTemplateWrapper 
+{
+	background: #eee;
+}
+
+/* </inline edit form template> */
+
+/* </inline edit form> */
+
+/* <advanced edit form> */
+
+.RadScheduler_Default .rsAdvancedEdit .rsAdvContentWrapper
+{
+	background: #f0f0f0;
+	border: 1px solid #828282;
+	border-top-color: #DDD;
+}
+
+* html .RadScheduler_Default div.rsAdvancedModal .rsAdvContentWrapper
+{
+	background: #f0f0f0;
+}
+
+/* <xref input skins> */
+
+.RadScheduler_Default .rsAdvancedEdit .rsAdvInput,
+.RadScheduler_Default .rsAdvancedEdit select,
+.RadScheduler_Default .rsAdvancedEdit .textareaWrapper
+{
+	border-color: #8e8e8e #b8b8b8 #b8b8b8 #8e8e8e;
+}
+
+.RadScheduler_Default .rsAdvancedEdit .rsInvalid textarea,
+.RadScheduler_Default .rsAdvancedEdit .rsInvalid input,
+.RadScheduler_Default .rsAdvancedEdit .rsAdvTimePicker .riEmpty
+{
+	background-image: url('WebResource.axd?d=zCU33DtsApKRPcIQCYGcZRI-hsrGpOE36fhbDssp85ZeM_ctH3V7enNUC8w-691IEtWXeVF-g4xqrXcxfQn0QGzggslB6p97-7aWh8kA05lP5enrQAXgspUhwzxiUDfPsSK1lDi5IunacYY5S7dMdNO1n82HoCOexdDae-4RV8EF9SRPDB5RLNPMT28_c2EtJ0ml3Q2&t=637225436307396432');
+	background-color: #fff;
+}
+
+.RadScheduler_Default .rsAdvancedEdit input.rsInvalid
+{
+	border-color: #d51923; 
+	color: #d51923;
+}
+/* </xref input skins> */
+
+.RadScheduler_Default .rsAdvancedEdit h2,
+.RadScheduler_Default .rsAdvancedEdit h3
+{
+	color: #6b6b6b;
+}
+
+.RadScheduler_Default .rsAdvancedEdit h2
+{
+	border-bottom: 1px solid #CCC;
+}
+
+.RadScheduler_Default .rsAdvancedEdit h2 span
+{
+	background: #f0f0f0;
+}
+
+.RadScheduler_Default .rsAdvancedEdit .rsAdvancedSubmitArea
+{
+	border-color: #CCC;
+}
+
+.RadScheduler_Default .rsAdvancedEdit div.rsAdvancedSubmitArea a 
+{
+	color: #333;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+/* </advanced edit form> */
+
+/* <date/time picker> */
+
+.RadScheduler_Default .rsTimePick .RadInput_Default input.riEnabled,
+.RadScheduler_Default .rsTimePick .RadInput_Default input.riHover,
+.RadScheduler_Default .rsTimePick .RadInput_Default input.riFocused
+{
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+/* </date/time picker> */
+
+/* <modal dialogs> */
+
+.RadScheduler_Default .rsModalBgTopLeft,
+.RadScheduler_Default .rsModalBgTopRight,
+.RadScheduler_Default .rsModalBgBottomLeft,
+.RadScheduler_Default .rsModalBgBottomRight
+{
+    background-image: url('WebResource.axd?d=fXc1MhudM-B214_fZoGDyYpFx9wZnllZakinSO1Xj6kq24KbWBmozBnXT0ZVvatAbXEc-bu_zWJiEL-OoV-v5TQH_NhAm7H5iPV59TKi-zXDoTzidRGz1szEo0tGw-usyotVPB9DtcBsKJiqgLlM9pGOZmWRlJxVS9dQpQfU1OzGhR4XUk3rDvra05avfx3lhQGO2A2&t=637225436307396432');
+}
+
+div.RadScheduler_Default .rsAnimating
+{
+    background-image: url('WebResource.axd?d=-USfAGIsvha7IIkfpNxwrrxrRUSFU76lqD3-E4xkqa0BRV4Pve0bbYBjwkx7bVT42rVAbZphBZO3gwtmHwdeb40VCmfY9MSjssZqEeU2Qn8ZRqBoHuDky4vZDw7y68Y8BfiSoH8mssWiV8ZdymnpCS1e5erWzg3GeMtTtzJMQPMw4WXVdQpsXGOossSBoQ2D4SNT2Q2&t=637225436307396432');
+}
+
+* html .RadScheduler_Default .rsModalBgTopLeft,
+* html .RadScheduler_Default .rsModalBgTopRight,
+* html .RadScheduler_Default .rsModalBgBottomLeft,
+* html .RadScheduler_Default .rsModalBgBottomRight
+{
+    background-image: url('WebResource.axd?d=-USfAGIsvha7IIkfpNxwrrxrRUSFU76lqD3-E4xkqa0BRV4Pve0bbYBjwkx7bVT42rVAbZphBZO3gwtmHwdeb40VCmfY9MSjssZqEeU2Qn8ZRqBoHuDky4vZDw7y68Y8BfiSoH8mssWiV8ZdymnpCS1e5erWzg3GeMtTtzJMQPMw4WXVdQpsXGOossSBoQ2D4SNT2Q2&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsAdvancedEdit .rsAdvTitle,
+.RadScheduler_Default .rsAdvancedEdit .rsAdvInnerTitle
+{
+    background-image: url('WebResource.axd?d=FDGnY7SKvFgA_QSjS1AWsCyfZugqYxUq50r6rVNkVaEQPxTR9V0OY0RgYk9NKU3oxyJvwbqAb0QI3Ayozns7yCpl1Zi3GH1fVGNblazHpivCKBMrl0ruWQfskvHRLltqj1qUXBPN24g2aaDc7TXdLIAL0lIymFlHlrzBYJwdtyZC5HBAG_EeUNBlavEwn0OJ6TCirewxkzzg5mlx5KSPuU9s3CQ1&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsAdvancedEdit a.rsAdvEditClose,
+.RadScheduler_Default .rsModalWrapper .rsModalWindowClose
+{
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsAdvancedEdit a.rsAdvEditClose
+{
+	margin-top: -23px;
+}
+
+.RadScheduler_Default .rsAdvancedEdit a.rsAdvEditClose:hover,
+.RadScheduler_Default .rsModalWrapper a.rsModalWindowClose:hover
+{
+	background-position: -30px -341px;
+}
+
+.RadScheduler_Default .rsModalWrapper .rsModalTitle
+{
+	color: #000;
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+.RadScheduler_Default .rsModalWrapper .rsModalInner
+{
+	border-color: #828282;
+	background: #fff;
+}
+
+.RadScheduler_Default .rsModalWrapper .rsModalIcon,
+.RadScheduler_Default .rsModalWrapper .rsModalButtons a
+{
+	background-image: url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432');
+}
+
+/* Inline Edit buttons + ModalDialog buttons */
+.RadScheduler_Default .rsModalWrapper .rsModalButtons a,
+.RadScheduler_Default .rsTopWrap .rsAptEditFormWrapper .rsEditOptions a
+{
+	color: #333;
+}
+
+/* </modal dialogs> */
+
+.RadScheduler_Default .rsBottomIndicator .rsOvertimeArrow
+{
+	background: transparent url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432') no-repeat -180px -31px;
+}        	
+
+.RadScheduler_Default .rsTopIndicator .rsOvertimeArrow
+{
+	background: transparent url('WebResource.axd?d=wb59j0hjrSFsTuKhzu1VZqoDdDT48RSb0IDL83tVf0BIMO3rjMm7-66TJFQPBewIYgmBJ8dZdfTM4iIe7_jyNymNdEnRyC8EGc3oKxwNgEnJrqtghiTsOcLjCZTFoFjsscs5kUq84Tq-t3kJeJ2-taNVC-bgiIZ9T-6rjxiPtUvfXjbTw7RdUIADXsx9K3EN8AvwKQ2&t=637225436307396432') no-repeat -134px -31px;
+}        	
