@@ -1,0 +1,873 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-us" xml:lang="en-us">
+<head id="ctl00_Head1"><meta http-equiv="x-ua-compatible" content="IE=8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" />
+
+    <!-- robots -->
+    
+    
+
+    <!-- page title - overridden by asp:content on pages or page layouts -->
+    <title>
+	
+	Latest News
+ 
+</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Style%20Library/img/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!-- all OOTB css -->
+        <link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/Menu.css?rev=yPVeKt0FHzxA%2FW4JR0hJng%3D%3D" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=iIikGkMuXBs8CWzKDAyjsQ%3D%3D" />
+
+ <!--   <link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=3TRomkG1g2gMGz4rekMIQg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/overridecorev4.css"/>
+-->
+    <link rel="stylesheet" type="text/css" href="/Style%20Library/css/reset.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/css/indexrevised.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=3TRomkG1g2gMGz4rekMIQg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/overridecorev4.css"/>
+
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/Style%20Library/css/ie7.css" />
+	<![endif]-->
+
+    <!-- page manager -->
+    
+
+    <!-- unified logging service -->
+    
+
+    <!-- required for some scrolling? -->
+    <script type="text/javascript">
+        var _fV4UI = true;
+        
+        function FixRibbonAndWorkspaceDimensions(){
+  ULSxSy:;
+  g_frl = true;
+  var elmRibbon = GetCachedElement("s4-ribbonrow");
+  var elmWorkspace = GetCachedElement("s4-workspace");
+  var elmTitleArea = GetCachedElement("s4-titlerow");
+  var elmBodyTable = GetCachedElement("s4-bodyContainer");
+  if(!elmRibbon || !elmWorkspace || !elmBodyTable){
+    return;
+  }
+  if (!g_setWidthInited){
+    var setWidth = true;
+    if (elmWorkspace.className.indexOf("s4-nosetwidth") > -1)
+      setWidth = false;
+    g_setWidth = setWidth;
+    g_setWidthInited = true;
+  }
+  else{
+    var setWidth = g_setWidth;
+  }
+  var baseRibbonHeight = RibbonIsMinimized() ? 44 : 135;
+  var ribbonHeight = baseRibbonHeight + g_wpadderHeight;
+  if(GetCurrentEltStyle(elmRibbon, "visibility") == "hidden"){
+    ribbonHeight = 0;
+  }
+
+  // Override default resizing behavior
+  // -- adds padding to the top of the "s4-workspace" <div> if the ribbon exists and has content
+  // -- allows the ribbon to be positioned using CSS instead of JavaScript (more accessible)
+  // -- checks to see if the page is inside a "no-ribbon" dialog
+  if(elmRibbon.children.length > 0 && document.getElementsByTagName("html")[0].className.indexOf('ms-dialog-nr') == -1){
+    elmWorkspace.style.paddingTop = ribbonHeight + 'px';
+  }
+  
+		
+}
+    </script>
+
+    <!-- load SharePoint javascript -->
+    <script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=lEi61hsCxcBAfvfQNZA%2FsQ%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=Ht1_arwafpCwM2FjkVBIsOc8L_ddcDO8Dps-qMSv2TYHFWj5wezD3-Zr6FJbAcipRjR_O-RmUN04QzKBQvqW7UBmx76Ko5wWHnfYz_66eZW3AAByoyzTzP2ih1ICxBJQVQeGUP-FGyI3y7USFi-TEXmnpqI1&amp;t=3f4a792d"></' + 'script>');
+document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
+// ]]>
+</script>
+
+
+    <style type="text/css">
+        /* fix scrolling on list pages */
+        #s4-bodyContainer
+        {
+            position: relative;
+        }
+        
+        /* hide body scrolling (SharePoint will handle) */
+        body
+        {
+            /*height: 100%;
+       
+            width: 100%;*/
+        }
+        
+        /* popout breadcrumb menu needs background color for firefox */
+        .s4-breadcrumb-menu
+        {
+            background: #F2F2F2;
+        }
+        
+        /* left nav needs some space to hold the nav */
+        .customLeftNavHolder
+        {
+            float: left;
+            width: 155px;
+        }
+        
+        /* body area needs to allow room for left nav */
+        /*.customBodyHolder
+        {
+            margin-left: 155px;
+            margin-right: 0;
+            min-height: 324px;
+        }
+        
+        /* hide the left margin when dialog is up */
+        .ms-dialog .customBodyHolder
+        /*{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            min-height: 0 !important;
+            min-width: 0 !important;
+            width: 100% !important;
+        }
+        .ms-wpContentDivSpace{
+	
+	margin:0px !important;
+	
+}
+
+
+	.edit-mode-border {
+    border: 0px !Important;
+    margin: 0px !Important;
+    padding: 0px !Important;
+    }
+    
+  */
+  @-moz-document url-prefix() {
+	
+       #postcode-r input{
+       left: 110px;
+       }
+       }
+
+    </style>
+
+    <!-- link to our custom css  -->
+    
+    <!-- javascript to override the active-x message in ie 
+		// See support.microsoft.com/default.aspx/kb/931509 for info on the issue
+		// Remove if the IM pressence icons are needed in SharePoint
+	-->
+
+    <script type="text/javascript">
+        function ProcessImn() { }
+        function ProcessImnMarkers() { }	
+    </script>
+
+    <!-- additional header delegate control -->
+    <!-- _lcid="1033" _version="14.0.6136" _dal="1" -->
+<!-- _LocalBinding -->
+<span id="ctl00_ctl21_iprRibbon"><span></span></span>
+
+
+    <!-- additional header placeholder - overridden by asp:content on pages or page layouts -->
+    
+	
+	
+
+	
+
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.cycle/2.88/jquery.cycle.all.js"></script> 
+
+	<script type="text/javascript" src="/style%20library/scripts/thickbox.js"></script>
+    <link rel="stylesheet" href="/style%20library/css/thickbox.css" type="text/css" media="screen" />
+    
+    <script src="/Style%20Library/js/jquery.readmore.js" type="text/javascript"></script> 
+
+
+
+	<!-- Text Size Scripts -->
+	<link id="ctl00_textsize" href="/style%20library/css/hide_text.css" rel="stylesheet" type="text/css" /></head>
+
+<body onload="javascript:_spBodyOnLoadWrapper();">
+
+    <form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm">
+<input type="hidden" name="__SPSCEditMenu" id="__SPSCEditMenu" value="true" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="InvalidFormDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIED2QWDgIBD2QWAmYPZBYCZg8PFgIeB1Zpc2libGVoZGQCBw9kFgJmD2QWAgIBDxYCHgRUZXh0BY0GPGxpIGNsYXNzPSJob21lIj48YSB0aXRsZT0iaG9tZSIgaHJlZj0iL1BhZ2VzL2RlZmF1bHQuYXNweCI+SG9tZTwvYT48L2xpPg0KPGxpIGNsYXNzPSJBYm91dC1VcyI+PGEgdGl0bGU9ImFib3V0IHVzIiBocmVmPSIvQWJvdXQtVXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5BYm91dCBVczwvYT48L2xpPg0KPGxpIGNsYXNzPSJZb3VyLU5laWdoYm91cmhvb2QiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnBvbGljZS51ay9wdS95b3VyLWFyZWEvZHVyaGFtLWNvbnN0YWJ1bGFyeS8iPllvdXIgTmVpZ2hib3VyaG9vZOKAizwvYT48L2xpPg0KPGxpIGNsYXNzPSJDb250YWN0LXVzIj48YSB0aXRsZT0iY29udGFjdCB1cyIgaHJlZj0iL0NvbnRhY3QtdXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5Db250YWN0IFVzPC9hPjwvbGk+DQo8bGkgY2xhc3M9IkxhdGVzdC1uZXdzIj48YSB0aXRsZT0ibGF0ZXN0IG5ld3MiIGhyZWY9Ii9uZXdzLWFuZC1ldmVudHMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5OZXdzICZhbXA7IEV2ZW50czwvYT48L2xpPg0KPGxpIGNsYXNzPSJJbmZvcm1hdGlvbi1hbmQtYWR2aWNlIj48YSB0aXRsZT0iaW5mb3JtYXRpb24gYW5kIGFkdmljZSIgaHJlZj0iL0luZm9ybWF0aW9uLWFuZC1hZHZpY2UvUGFnZXMvZGVmYXVsdC5hc3B4Ij5JbmZvcm1hdGlvbiAmYW1wOyBBZHZpY2U8L2E+PC9saT4NCjxsaSBjbGFzcz0iSm9pbi11cyBlbmQiPjxhIHRpdGxlPSJqb2luIHVzIiBocmVmPSIvSm9pbi11cy9QYWdlcy9kZWZhdWx0LmFzcHgiPkpvaW4gVXM8L2E+PC9saT4NCuKAi+KAi+KAi2QCCw9kFgQFJmdfYTE4NjdiNmRfYzYxYl80MDExX2E0OGRfMjYzNTY4ZDc3ODYwD2QWAmYPZBYCAgEPFgIeC18hSXRlbUNvdW50AhMWJmYPZBYGAgEPDxYEHgtOYXZpZ2F0ZVVybAVDaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL08uYXNweB8BBTdNdWx0aS1mb3JjZSBvcGVyYXRpb24gdGFyZ2V0cyBDb3VudHkgTGluZXMgZHJ1ZyBkZWFsaW5nFgIeBXRpdGxlBTdNdWx0aS1mb3JjZSBvcGVyYXRpb24gdGFyZ2V0cyBDb3VudHkgTGluZXMgZHJ1ZyBkZWFsaW5nZAICDxUCEzI1dGggU2VwdGVtYmVyIDIwMjBX4oCLT2ZmaWNlcnMgdG9vayB0byB0aGUgc3RyZWV0cyBpbiBhIHRhcmdldGVkIG9wZXJhdGlvbiBhZ2FpbnN0IGRydWcgZGVhbGluZyBsYXN0IHdlZWsuZAIDDw8WAh8DBUNodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvTy5hc3B4FgIfBAVHUmVhZCBNb3JlIGFib3V0IE11bHRpLWZvcmNlIG9wZXJhdGlvbiB0YXJnZXRzIENvdW50eSBMaW5lcyBkcnVnIGRlYWxpbmdkAgEPZBYGAgEPDxYEHwMFYmh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9Qcm9qZWN0LUVkd2FyZC13ZWVrZW5kLW9mLWFjdGlvbi5hc3B4HwEFIFByb2plY3QgRWR3YXJkIHdlZWtlbmQgb2YgYWN0aW9uFgIfBAUgUHJvamVjdCBFZHdhcmQgd2Vla2VuZCBvZiBhY3Rpb25kAgIPFQITMjR0aCBTZXB0ZW1iZXIgMjAyMDDigItEbyB5b3UgdGhpbmsgOThtcGggaW4gYSA2MG1waCBpcyBhY2NlcHRhYmxlPyBkAgMPDxYCHwMFYmh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9Qcm9qZWN0LUVkd2FyZC13ZWVrZW5kLW9mLWFjdGlvbi5hc3B4FgIfBAUwUmVhZCBNb3JlIGFib3V0IFByb2plY3QgRWR3YXJkIHdlZWtlbmQgb2YgYWN0aW9uZAICD2QWBgIBDw8WBB8DBXJodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvVHdvLWluLWNvdXJ0LWZvbGxvd2luZy1EYXJsaW5ndG9uLWNvdXJpZXItZnJhdWQtLmFzcHgfAQUvVHdvIGluIGNvdXJ0IGZvbGxvd2luZyBEYXJsaW5ndG9uIGNvdXJpZXIgZnJhdWQWAh8EBS9Ud28gaW4gY291cnQgZm9sbG93aW5nIERhcmxpbmd0b24gY291cmllciBmcmF1ZGQCAg8VAhMyM3JkIFNlcHRlbWJlciAyMDIwaFR3byBwZW9wbGUgaGF2ZSBhcHBlYXJlZCBhdCBjb3VydCBhZnRlciBhbiBlbGRlcmx5IG1hbiB3YXMgY29ubmVkIGludG8gaGFuZGluZyBvdmVyIG1vcmUgdGhhbiDCozEwMCwwMDAuZAIDDw8WAh8DBXJodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvVHdvLWluLWNvdXJ0LWZvbGxvd2luZy1EYXJsaW5ndG9uLWNvdXJpZXItZnJhdWQtLmFzcHgWAh8EBT9SZWFkIE1vcmUgYWJvdXQgVHdvIGluIGNvdXJ0IGZvbGxvd2luZyBEYXJsaW5ndG9uIGNvdXJpZXIgZnJhdWRkAgMPZBYGAgEPDxYEHwMFfWh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9BcHBlYWwtYWZ0ZXItZWxkZXJseS1wZWRlc3RyaWFuLXN0cnVjay1ieS1jYXItaW4tRGFybGluZ3Rvbi5hc3B4HwEFO0FwcGVhbCBhZnRlciBlbGRlcmx5IHBlZGVzdHJpYW4gc3RydWNrIGJ5IGNhciBpbiBEYXJsaW5ndG9uFgIfBAU7QXBwZWFsIGFmdGVyIGVsZGVybHkgcGVkZXN0cmlhbiBzdHJ1Y2sgYnkgY2FyIGluIERhcmxpbmd0b25kAgIPFQITMjFzdCBTZXB0ZW1iZXIgMjAyMKYBVGhlIHBlZGVzdHJpYW4gd2FzIHdhbGtpbmcgYmVoaW5kIGEgc21hbGwsIGRhcmsgc2lsdmVyIGNhciAtIHBvc3NpYmx5IGEgVG95b3RhIEF5Z28gLSB0aGF0IHdhcyBwYXJrZWQgaW4gYSBkaXNhYmxlZCBiYXksIHdoaWNoIHRoZW4gcmV2ZXJzZWQsIGtub2NraW5nIHRoZSB3b21hbiBvdmVyLmQCAw8PFgIfAwV9aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0FwcGVhbC1hZnRlci1lbGRlcmx5LXBlZGVzdHJpYW4tc3RydWNrLWJ5LWNhci1pbi1EYXJsaW5ndG9uLmFzcHgWAh8EBUtSZWFkIE1vcmUgYWJvdXQgQXBwZWFsIGFmdGVyIGVsZGVybHkgcGVkZXN0cmlhbiBzdHJ1Y2sgYnkgY2FyIGluIERhcmxpbmd0b25kAgQPZBYGAgEPDxYEHwMFfmh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9FbGRlcmx5LW1lbi1jb25uZWQtb3V0LW9mLXRob3VzYW5kcy1vZi1wb3VuZHMtYnktZnJhdWRzdGVycy0uYXNweB8BBTtFbGRlcmx5IG1lbiBjb25uZWQgb3V0IG9mIHRob3VzYW5kcyBvZiBwb3VuZHMgYnkgZnJhdWRzdGVycxYCHwQFO0VsZGVybHkgbWVuIGNvbm5lZCBvdXQgb2YgdGhvdXNhbmRzIG9mIHBvdW5kcyBieSBmcmF1ZHN0ZXJzZAICDxUCEzE4dGggU2VwdGVtYmVyIDIwMjBtVGhlIHR3byB2aWN0aW1zLCB3aG8gYXJlIGluIHRoZWlyIGxhdGUgc2l4dGllcyBhbmQgZWlnaHRpZXMsIGVhY2ggaGFuZGVkIG92ZXIgYXJvdW5kIMKjMjAsMDAwIHRvIHRoZSBjb25tZW4uIGQCAw8PFgIfAwV+aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0VsZGVybHktbWVuLWNvbm5lZC1vdXQtb2YtdGhvdXNhbmRzLW9mLXBvdW5kcy1ieS1mcmF1ZHN0ZXJzLS5hc3B4FgIfBAVLUmVhZCBNb3JlIGFib3V0IEVsZGVybHkgbWVuIGNvbm5lZCBvdXQgb2YgdGhvdXNhbmRzIG9mIHBvdW5kcyBieSBmcmF1ZHN0ZXJzZAIFD2QWBgIBDw8WBB8DBW5odHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvTmV3LUNPVklELTE5LXJlc3RyaWN0aW9ucy1mb3ItQ291bnR5LUR1cmhhbS0uYXNweB8BBStOZXcgQ292aWQtMTkgcmVzdHJpY3Rpb25zIGZvciBDb3VudHkgRHVyaGFtFgIfBAUrTmV3IENvdmlkLTE5IHJlc3RyaWN0aW9ucyBmb3IgQ291bnR5IER1cmhhbWQCAg8VAhMxOHRoIFNlcHRlbWJlciAyMDIwiAHigItUaGUgbmV3IGxvY2FsIHJlZ3VsYXRpb25zIGVmZmVjdGl2ZSBmcm9tIDE4IFNlcHRlbWJlciAyMDIwIGFyZSBpbiBhZGRpdGlvbiB0byB0aGUgbmF0aW9uYWwgcmVndWxhdGlvbnMgYW5ub3VuY2VkIGVhcmxpZXIgaW4gdGhlIHdlZWsuZAIDDw8WAh8DBW5odHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvTmV3LUNPVklELTE5LXJlc3RyaWN0aW9ucy1mb3ItQ291bnR5LUR1cmhhbS0uYXNweBYCHwQFO1JlYWQgTW9yZSBhYm91dCBOZXcgQ292aWQtMTkgcmVzdHJpY3Rpb25zIGZvciBDb3VudHkgRHVyaGFtZAIGD2QWBgIBDw8WBB8DBWJodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvSXQncy1idXNpbmVzcy1hcy11c3VhbC1mb3Itb3VyLVAuYXNweB8BBTlJdCdzIGJ1c2luZXNzIGFzIHVzdWFsIGZvciBEdXJoYW1zIFB1YmxpYyBQcm90ZWN0aW9uIHVuaXQWAh8EBTlJdCdzIGJ1c2luZXNzIGFzIHVzdWFsIGZvciBEdXJoYW1zIFB1YmxpYyBQcm90ZWN0aW9uIHVuaXRkAgIPFQITMTZ0aCBTZXB0ZW1iZXIgMjAyMJoB4oCcSW4gdGhlIHBhc3QgZmV3IG1vbnRocyB0aGUgdGVhbSBoYXZlIGNvbnRpbnVlZCB0byBzdXBlcnZpc2UgdGhlc2Ugb2ZmZW5kZXJzIGFuZCBzZXZlcmFsIGFycmVzdHMgaGF2ZSBoYWQgdG8gYmUgbWFkZSBpbiBvcmRlciB0byBwcmVzZXJ2ZSBwdWJsaWMgc2FmZXR5LmQCAw8PFgIfAwViaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0l0J3MtYnVzaW5lc3MtYXMtdXN1YWwtZm9yLW91ci1QLmFzcHgWAh8EBUlSZWFkIE1vcmUgYWJvdXQgSXQncyBidXNpbmVzcyBhcyB1c3VhbCBmb3IgRHVyaGFtcyBQdWJsaWMgUHJvdGVjdGlvbiB1bml0ZAIHD2QWBgIBDw8WBB8DBYkBaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0EtbWFuLWhhcy1kaWVkLWZvbGxvd2luZy1hLWNvbGxpc2lvbi1pbi1Xb2xzaW5naGFtLW9uLVNhdHVyZGF5MDkxNC03MzI1LmFzcHgfAQU+QSBtYW4gaGFzIGRpZWQgZm9sbG93aW5nIGEgY29sbGlzaW9uIGluIFdvbHNpbmdoYW0gb24gU2F0dXJkYXkWAh8EBT5BIG1hbiBoYXMgZGllZCBmb2xsb3dpbmcgYSBjb2xsaXNpb24gaW4gV29sc2luZ2hhbSBvbiBTYXR1cmRheWQCAg8VAhMxNHRoIFNlcHRlbWJlciAyMDIwLFRyaWJ1dGVzIGhhdmUgYmVlbiBwYWlkIHRvIHRoZSA2NS15ZWFyLW9sZC4gZAIDDw8WAh8DBYkBaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0EtbWFuLWhhcy1kaWVkLWZvbGxvd2luZy1hLWNvbGxpc2lvbi1pbi1Xb2xzaW5naGFtLW9uLVNhdHVyZGF5MDkxNC03MzI1LmFzcHgWAh8EBU5SZWFkIE1vcmUgYWJvdXQgQSBtYW4gaGFzIGRpZWQgZm9sbG93aW5nIGEgY29sbGlzaW9uIGluIFdvbHNpbmdoYW0gb24gU2F0dXJkYXlkAggPZBYGAgEPDxYEHwMFd2h0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9QYXJ0bmVyc2hpcC13b3JraW5nLWhhcy1zdG9wcGVkLWZyYXVkLXZpY3RpbXMtbG9zaW5nLS5hc3B4HwEFPVBhcnRuZXJzaGlwIHdvcmtpbmcgaGFzIHN0b3BwZWQgZnJhdWQgdmljdGltcyBiZWluZyBkZWZyYXVkZWQWAh8EBT1QYXJ0bmVyc2hpcCB3b3JraW5nIGhhcyBzdG9wcGVkIGZyYXVkIHZpY3RpbXMgYmVpbmcgZGVmcmF1ZGVkZAICDxUCEzEwdGggU2VwdGVtYmVyIDIwMjCOAUFuIGlubm92YXRpdmUgc2NoZW1lIGRldmlzZWQgaGFzIHN0b3BwZWQgdnVsbmVyYWJsZSBwZW9wbGUgaGFuZGluZyBvdmVyIG1vcmUgdGhhbiDCozcwMCwwMDAgb2YgdGhlaXIgaGFyZC1lYXJuZWQgY2FzaCB0byB1bnNjcnVwdWxvdXMgc2NhbW1lcnNkAgMPDxYCHwMFd2h0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9QYXJ0bmVyc2hpcC13b3JraW5nLWhhcy1zdG9wcGVkLWZyYXVkLXZpY3RpbXMtbG9zaW5nLS5hc3B4FgIfBAVNUmVhZCBNb3JlIGFib3V0IFBhcnRuZXJzaGlwIHdvcmtpbmcgaGFzIHN0b3BwZWQgZnJhdWQgdmljdGltcyBiZWluZyBkZWZyYXVkZWRkAgkPZBYGAgEPDxYEHwMFeWh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9EaWQteW91LXdpdG5lc3MtYW4tYXNzYXVsdC1pbi1Dcm9vay1vbi1GcmlkYXktYWZ0ZXJub29uLmFzcHgfAQU4RGlkIHlvdSB3aXRuZXNzIGFuIGFzc2F1bHQgaW4gQ3Jvb2sgb24gRnJpZGF5IGFmdGVybm9vbj8WAh8EBThEaWQgeW91IHdpdG5lc3MgYW4gYXNzYXVsdCBpbiBDcm9vayBvbiBGcmlkYXkgYWZ0ZXJub29uP2QCAg8VAhI4dGggU2VwdGVtYmVyIDIwMjBh4oCLRGV0ZWN0aXZlcyBhcmUgYXBwZWFsaW5nIGZvciB3aXRuZXNzZXMgYWZ0ZXIgYSB3b21hbiB3YXMgYXNzYXVsdGVkIGFuZCBoYWQgaGVyIGhhbmRiYWcgc3RvbGVuLmQCAw8PFgIfAwV5aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0RpZC15b3Utd2l0bmVzcy1hbi1hc3NhdWx0LWluLUNyb29rLW9uLUZyaWRheS1hZnRlcm5vb24uYXNweBYCHwQFSFJlYWQgTW9yZSBhYm91dCBEaWQgeW91IHdpdG5lc3MgYW4gYXNzYXVsdCBpbiBDcm9vayBvbiBGcmlkYXkgYWZ0ZXJub29uP2QCCg9kFgYCAQ8PFgQfAwVaaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL09wZXJhdGlvbi1Db2JyYS1sYXVuY2hlZC5hc3B4HwEFGE9wZXJhdGlvbiBDb2JyYSBsYXVuY2hlZBYCHwQFGE9wZXJhdGlvbiBDb2JyYSBsYXVuY2hlZGQCAg8VAhI3dGggU2VwdGVtYmVyIDIwMjBHQSBuZXcgcG9saWNlIG9wZXJhdGlvbiBoYXMgYmVlbiBsYXVuY2hlZCBpbiB0aGUgRGFsZXMgdG8gZGV0ZXIgdGhpZXZlcy5kAgMPDxYCHwMFWmh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9PcGVyYXRpb24tQ29icmEtbGF1bmNoZWQuYXNweBYCHwQFKFJlYWQgTW9yZSBhYm91dCBPcGVyYXRpb24gQ29icmEgbGF1bmNoZWRkAgsPZBYGAgEPDxYEHwMFfGh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9XaXRuZXNzLWFwcGVhbC1hZnRlci1tb3BlZC1yaWRlci1zdWZmZXJzLWNyaXRpY2FsLWluanVyaWVzLmFzcHgfAQU6V2l0bmVzcyBhcHBlYWwgYWZ0ZXIgbW9wZWQgcmlkZXIgc3VmZmVycyBjcml0aWNhbCBpbmp1cmllcxYCHwQFOldpdG5lc3MgYXBwZWFsIGFmdGVyIG1vcGVkIHJpZGVyIHN1ZmZlcnMgY3JpdGljYWwgaW5qdXJpZXNkAgIPFQISN3RoIFNlcHRlbWJlciAyMDIwXUEgTU9QRUQgcmlkZXIgaGFzIGJlZW4gdGFrZW4gdG8gaG9zcGl0YWwgd2l0aCBjcml0aWNhbCBpbmp1cmllcyBhZnRlciBjb21pbmcgb2ZmIGhpcyB2ZWhpY2xlLmQCAw8PFgIfAwV8aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL1dpdG5lc3MtYXBwZWFsLWFmdGVyLW1vcGVkLXJpZGVyLXN1ZmZlcnMtY3JpdGljYWwtaW5qdXJpZXMuYXNweBYCHwQFSlJlYWQgTW9yZSBhYm91dCBXaXRuZXNzIGFwcGVhbCBhZnRlciBtb3BlZCByaWRlciBzdWZmZXJzIGNyaXRpY2FsIGluanVyaWVzZAIMD2QWBgIBDw8WBB8DBWtodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvU2Vjb25kLXBlcnNvbi1kaWVzLWFmdGVyLUhvcmRlbi1jb2xsaXNpb24uYXNweB8BBSlTZWNvbmQgcGVyc29uIGRpZXMgYWZ0ZXIgSG9yZGVuIGNvbGxpc2lvbhYCHwQFKVNlY29uZCBwZXJzb24gZGllcyBhZnRlciBIb3JkZW4gY29sbGlzaW9uZAICDxUCEjR0aCBTZXB0ZW1iZXIgMjAyMHzigItQb2xpY2UgY2FuIG5vdyBjb25maXJtIHRoYXQgYSBzZWNvbmQgcGVyc29uIGhhcyB0cmFnaWNhbGx5IGRpZWQgZm9sbG93aW5nIGEgc2VyaW91cyBjb2xsaXNpb24gb24gV2VkbmVzZGF5IChTZXB0ZW1iZXIgMikuZAIDDw8WAh8DBWtodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvU2Vjb25kLXBlcnNvbi1kaWVzLWFmdGVyLUhvcmRlbi1jb2xsaXNpb24uYXNweBYCHwQFOVJlYWQgTW9yZSBhYm91dCBTZWNvbmQgcGVyc29uIGRpZXMgYWZ0ZXIgSG9yZGVuIGNvbGxpc2lvbmQCDQ9kFgYCAQ8PFgQfAwV4aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0phaWwtZm9yLWJ1cmdsYXItd2hvLWNyYXNoZWQtc3RvbGVuLWNhci1pbnRvLWxhbXBwb3N0LS5hc3B4HwEFNUphaWwgZm9yIGJ1cmdsYXIgd2hvIGNyYXNoZWQgc3RvbGVuIGNhciBpbnRvIGxhbXBwb3N0FgIfBAU1SmFpbCBmb3IgYnVyZ2xhciB3aG8gY3Jhc2hlZCBzdG9sZW4gY2FyIGludG8gbGFtcHBvc3RkAgIPFQISNHRoIFNlcHRlbWJlciAyMDIwgAFKb2huIEtpcmsgYnJva2UgaW50byBhIGhvdXNlIG9uIFN0b29wZXJkYWxlIEF2ZW51ZSwgaW4gRGFybGluZ3Rvbiwgb24gdGhlIG5pZ2h0IG9mIEp1bHkgMjggYW5kIHN0b2xlIHRoZSBrZXlzIHRvIGEgRm9yZCBNb25kZW8uIGQCAw8PFgIfAwV4aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0phaWwtZm9yLWJ1cmdsYXItd2hvLWNyYXNoZWQtc3RvbGVuLWNhci1pbnRvLWxhbXBwb3N0LS5hc3B4FgIfBAVFUmVhZCBNb3JlIGFib3V0IEphaWwgZm9yIGJ1cmdsYXIgd2hvIGNyYXNoZWQgc3RvbGVuIGNhciBpbnRvIGxhbXBwb3N0ZAIOD2QWBgIBDw8WBB8DBYUBaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL1J1cmFsLWNyaW1pbmFscy13YXJuZWQtdG8tc3RheS1vdXQtb2YtQ291bnR5LUR1cmhhbS1hbmQtRGFybGluZ3Rvbi0uYXNweB8BBUJSdXJhbCBjcmltaW5hbHMgd2FybmVkIHRvIHN0YXkgb3V0IG9mIENvdW50eSBEdXJoYW0gYW5kIERhcmxpbmd0b24WAh8EBUJSdXJhbCBjcmltaW5hbHMgd2FybmVkIHRvIHN0YXkgb3V0IG9mIENvdW50eSBEdXJoYW0gYW5kIERhcmxpbmd0b25kAgIPFQISNHRoIFNlcHRlbWJlciAyMDIwkAHigItQb2xpY2UgYXJlIHdhcm5pbmcgcnVyYWwgY3JpbWluYWxzIHRvIHN0YXkgb3V0IG9mIERhcmxpbmd0b24gYW5kIENvdW50eSBEdXJoYW0gYXMgb2ZmaWNlcnMgYmVnaW4gc3BlY2lmaWMgcnVyYWwgcGF0cm9scyBpbiBoaWdoIGNyaW1lIGFyZWFzLiBkAgMPDxYCHwMFhQFodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvUnVyYWwtY3JpbWluYWxzLXdhcm5lZC10by1zdGF5LW91dC1vZi1Db3VudHktRHVyaGFtLWFuZC1EYXJsaW5ndG9uLS5hc3B4FgIfBAVSUmVhZCBNb3JlIGFib3V0IFJ1cmFsIGNyaW1pbmFscyB3YXJuZWQgdG8gc3RheSBvdXQgb2YgQ291bnR5IER1cmhhbSBhbmQgRGFybGluZ3RvbmQCDw9kFgYCAQ8PFgQfAwV7aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0NoaWVmLUNvbnN0YWJsZSdzLUNvbW1lbmRhdGlvbi1mb3Itdm9sdW50ZWVyLW9mLTM3LXllYXJzLS5hc3B4HwEFOENoaWVmIENvbnN0YWJsZSdzIENvbW1lbmRhdGlvbiBmb3Igdm9sdW50ZWVyIG9mIDM3IHllYXJzFgIfBAU4Q2hpZWYgQ29uc3RhYmxlJ3MgQ29tbWVuZGF0aW9uIGZvciB2b2x1bnRlZXIgb2YgMzcgeWVhcnNkAgIPFQISM3JkIFNlcHRlbWJlciAyMDIwnwHigItBIG1hbiB3aG8gaGFzIGRlZGljYXRlZCBhbG1vc3QgZm91ciBkZWNhZGVzIG9mIGhpcyBsaWZlIHRvIGltcHJvdmluZyByZWxhdGlvbnMgYmV0d2VlbiBtaW5vcml0eSBncm91cHMgYW5kIHRoZSBwb2xpY2UgaGFzIGJlZW4gaG9ub3VyZWQgd2l0aCBhIGNvbW1lbmRhdGlvbi5kAgMPDxYCHwMFe2h0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9DaGllZi1Db25zdGFibGUncy1Db21tZW5kYXRpb24tZm9yLXZvbHVudGVlci1vZi0zNy15ZWFycy0uYXNweBYCHwQFSFJlYWQgTW9yZSBhYm91dCBDaGllZiBDb25zdGFibGUncyBDb21tZW5kYXRpb24gZm9yIHZvbHVudGVlciBvZiAzNyB5ZWFyc2QCEA9kFgYCAQ8PFgQfAwV2aHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL1RocmVlLXllYXItb2xkLWdpcmwtZGllcy1mb2xsb3dpbmctSG9yZGVuLWNvbGxpc2lvbi0uYXNweB8BBTNUaHJlZS15ZWFyLW9sZCBnaXJsIGRpZXMgZm9sbG93aW5nIEhvcmRlbiBjb2xsaXNpb24WAh8EBTNUaHJlZS15ZWFyLW9sZCBnaXJsIGRpZXMgZm9sbG93aW5nIEhvcmRlbiBjb2xsaXNpb25kAgIPFQISM3JkIFNlcHRlbWJlciAyMDIwkwHigItBIHRocmVlLXllYXItb2xkIGdpcmwgaGFzIHRyYWdpY2FsbHkgZGllZCBmb2xsb3dpbmcgYSBjb2xsaXNpb24geWVzdGVyZGF5LiBUaGUgaW5jaWRlbnQgaGFwcGVuZWQgYXQgYWJvdXQgMi4zMHBtIG9uIHRoZSBDb2FzdCBSb2FkLCBpbiBIb3JkZW4uDQpkAgMPDxYCHwMFdmh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy9UaHJlZS15ZWFyLW9sZC1naXJsLWRpZXMtZm9sbG93aW5nLUhvcmRlbi1jb2xsaXNpb24tLmFzcHgWAh8EBUNSZWFkIE1vcmUgYWJvdXQgVGhyZWUteWVhci1vbGQgZ2lybCBkaWVzIGZvbGxvd2luZyBIb3JkZW4gY29sbGlzaW9uZAIRD2QWBgIBDw8WBB8DBZMBaHR0cDovL2R1cmhhbS5wb2xpY2UudWsvL25ld3MtYW5kLWV2ZW50cy9QYWdlcy9OZXdzIEFydGljbGVzL0ZpZ3VyZXMtcmV2ZWFsLWFzc2F1bHRzLW9uLUR1cmhhbS1Db25zdGFidWxhcnktb2ZmaWNlcnMtaW5jcmVhc2VkLWR1cmluZy1sb2NrZG93bi5hc3B4HwEFNUFzc2F1bHRzIG9uIER1cmhhbSBvZmZpY2VycyBpbmNyZWFzZWQgZHVyaW5nIGxvY2tkb3duFgIfBAU1QXNzYXVsdHMgb24gRHVyaGFtIG9mZmljZXJzIGluY3JlYXNlZCBkdXJpbmcgbG9ja2Rvd25kAgIPFQISMm5kIFNlcHRlbWJlciAyMDIwpQFEdXJoYW0gQ29uc3RhYnVsYXJ5IHJlY29yZGVkIDIyOCBhc3NhdWx0cyBvbiBvZmZpY2VycyBhbmQgc3RhZmYgYmV0d2VlbiBNYXJjaCBhbmQgSnVseSB0aGlzIHllYXIg4oCTIGFuIGluY3JlYXNlIG9mIDI2JSB3aGVuIGNvbXBhcmVkIHdpdGggdGhlIHNhbWUgcGVyaW9kIGxhc3QgeWVhci5kAgMPDxYCHwMFkwFodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvRmlndXJlcy1yZXZlYWwtYXNzYXVsdHMtb24tRHVyaGFtLUNvbnN0YWJ1bGFyeS1vZmZpY2Vycy1pbmNyZWFzZWQtZHVyaW5nLWxvY2tkb3duLmFzcHgWAh8EBUVSZWFkIE1vcmUgYWJvdXQgQXNzYXVsdHMgb24gRHVyaGFtIG9mZmljZXJzIGluY3JlYXNlZCBkdXJpbmcgbG9ja2Rvd25kAhIPZBYGAgEPDxYEHwMFjAFodHRwOi8vZHVyaGFtLnBvbGljZS51ay8vbmV3cy1hbmQtZXZlbnRzL1BhZ2VzL05ld3MgQXJ0aWNsZXMvwqM4MDAsMDAwLXRvLWJlLXNwZW50LW9uLXJlZHVjaW5nLWJ1cmdsYXJ5LWluLUNvdW50eS1EdXJoYW0tYW5kLURhcmxpbmd0b24uYXNweB8BBUrCozgwMCwwMDAgdG8gYmUgc3BlbnQgb24gcmVkdWNpbmcgYnVyZ2xhcnkgaW4gQ291bnR5IER1cmhhbSBhbmQgRGFybGluZ3RvbhYCHwQFSsKjODAwLDAwMCB0byBiZSBzcGVudCBvbiByZWR1Y2luZyBidXJnbGFyeSBpbiBDb3VudHkgRHVyaGFtIGFuZCBEYXJsaW5ndG9uZAICDxUCEDI4dGggQXVndXN0IDIwMjCoAeKAi0xvY2tzIGFuZCBsaWdodHMgd2lsbCBiZSBmaXR0ZWQgdG8gaHVuZHJlZHMgb2YgaG9tZXMgaW4gQ291bnR5IER1cmhhbSBhbmQgRGFybGluZ3RvbiBhcyBwYXJ0IG9mIGFuIMKjODAwLDAwMCBzY2hlbWUgdG8gcmVkdWNlIGJ1cmdsYXJ5IGFuZCBpbXByb3ZlIGNvbW11bml0eSBzYWZldHkuIGQCAw8PFgIfAwWMAWh0dHA6Ly9kdXJoYW0ucG9saWNlLnVrLy9uZXdzLWFuZC1ldmVudHMvUGFnZXMvTmV3cyBBcnRpY2xlcy/CozgwMCwwMDAtdG8tYmUtc3BlbnQtb24tcmVkdWNpbmctYnVyZ2xhcnktaW4tQ291bnR5LUR1cmhhbS1hbmQtRGFybGluZ3Rvbi5hc3B4FgIfBAVaUmVhZCBNb3JlIGFib3V0IMKjODAwLDAwMCB0byBiZSBzcGVudCBvbiByZWR1Y2luZyBidXJnbGFyeSBpbiBDb3VudHkgRHVyaGFtIGFuZCBEYXJsaW5ndG9uZAUmZ19hYmQwYmI5Ml8yM2QzXzRjMTRfYTViN19jYTNjNTFlZGQ2MmQPZBYCZg9kFgICAg9kFgICAQ8WAh8BBcECPGEgY2xhc3M9InR3aXR0ZXItdGltZWxpbmUiIGRhdGEtd2lkZ2V0LWlkPSIyNTg5MDkwNTA3NTI4NjQyNTYiPlR3ZWV0czwvYT48c2NyaXB0PiFmdW5jdGlvbihkLHMsaWQpe3ZhciBqcyxmanM9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXTtpZighZC5nZXRFbGVtZW50QnlJZChpZCkpe2pzPWQuY3JlYXRlRWxlbWVudChzKTtqcy5pZD1pZDtqcy5zcmM9Ii8vcGxhdGZvcm0udHdpdHRlci5jb20vd2lkZ2V0cy5qcyI7ZmpzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGpzLGZqcyk7fX0oZG9jdW1lbnQsInNjcmlwdCIsInR3aXR0ZXItd2pzIik7PC9zY3JpcHQ+ZAIND2QWAmYPZBYCAgEPFgIfAQUMVUEtMTY1NTkwOC0xZAIPD2QWAgIBD2QWBGYPZBYCAgEPFgIfAGgWAmYPZBYEAgIPZBYGAgEPFgIfAGhkAgMPFggeE0NsaWVudE9uQ2xpY2tTY3JpcHQFkgFqYXZhU2NyaXB0OkNvcmVJbnZva2UoJ1Rha2VPZmZsaW5lVG9DbGllbnRSZWFsJywxLCA1MywgJ2h0dHBzOlx1MDAyZlx1MDAyZmR1cmhhbS5wb2xpY2UudWtcdTAwMmZuZXdzLWFuZC1ldmVudHNcdTAwMmZMYXRlc3QtbmV3cycsIC0xLCAtMSwgJycsICcnKR4YQ2xpZW50T25DbGlja05hdmlnYXRlVXJsZB4oQ2xpZW50T25DbGlja1NjcmlwdENvbnRhaW5pbmdQcmVmaXhlZFVybGQeDEhpZGRlblNjcmlwdAUiVGFrZU9mZmxpbmVEaXNhYmxlZCgxLCA1MywgLTEsIC0xKWQCBQ8WAh8AaGQCAw8PFgoeCUFjY2Vzc0tleQUBLx4PQXJyb3dJbWFnZVdpZHRoAgUeEEFycm93SW1hZ2VIZWlnaHQCAx4RQXJyb3dJbWFnZU9mZnNldFhmHhFBcnJvd0ltYWdlT2Zmc2V0WQLrA2RkAgEPZBYCAgUPZBYCZg9kFgJmDxQrAANkZGRkAhEPZBYCAgQPZBYKAgUPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAgsPFgIfDgsrBAFkAg0PFgIfDgsrBAFkAg8PFgIfDgsrBAFkAhMPFgIfDgsrBAFkAh0PZBYCZg9kFgJmDxYCHwEF2QY8ZGl2IGNsYXNzPSJsaW5rcy1ib3giPjx1bD48bGkgY2xhc3M9ImhlYWRpbmciPkluZm9ybWF0aW9uPC9saT4NCjxsaT48YSBocmVmPSIvSW5mb3JtYXRpb24tYW5kLWFkdmljZS9QYWdlcy9Mb2NhbC1SZXNpbGllbmNlLUZvcnVtLmFzcHgiIHRhcmdldD0iX2JsYW5rIj5QcmVwYXJpbmcgZm9yIEVtZXJnZW5jaWVzPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iL0Fib3V0LVVzL1RyYW5zcGFyZW5jeS1hbmQtSW50ZWdyaXR5LVByb2dyYW1tZS9QYWdlcy9kZWZhdWx0LmFzcHgiIHRhcmdldD0iX2JsYW5rIj5UcmFuc3BhcmVuY3kgJmFtcDsgSW50ZWdyaXR5IFByb2dyYW1tZTwvYT48L2xpPjwvdWw+PC9kaXY+DQo8ZGl2IGNsYXNzPSJsaW5rcy1ib3giPjx1bD48bGkgY2xhc3M9ImhlYWRpbmciPkxlZ2FsPC9saT4NCjxsaT48YSBocmVmPSIvcGFnZXMvcHJpdmFjeS1wb2xpY3kuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPkNvb2tpZXM8L2E+PC9saT4NCjxsaT48YSBocmVmPSIvQWJvdXQtVXMvRnJlZWRvbS1vZi1pbmZvcm1hdGlvbi9HZW5lcmFsL1BhZ2VzL1ByaXZhY3ktTm90aWNlLmFzcHgiIHRhcmdldD0iX2JsYW5rIj5Qcml2YWN5IE5vdGljZTwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Ii9QYWdlcy9UZXJtcy1hbmQtQ29uZGl0aW9ucy1vZi1Vc2UuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlRlcm1zICZhbXA7IENvbmRpdGlvbnMgb2YgVXNlPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iL1BhZ2VzL0UtTWFpbCUyMGFuZCUyMFNNUyUyMFRleHQlMjBEaXNjbGFpbWVyLmFzcHgiIHRhcmdldD0iX2JsYW5rIj5FbWFpbCAmYW1wOyBTTVMgVGV4dCBEaXNjbGFpbWVyPC9hPjwvbGk+PC91bD48L2Rpdj4NCjxwPuKAi8KgPC9wPmQYAQUfY3RsMDAkUGxhY2VIb2xkZXJNYWluJEdsb2JhbE5hdg8PZAULTGF0ZXN0IG5ld3NkMcY4OGe6qYhQVzJzJDITPR7iOZI=" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#2';
+var g_wsaListTemplateId = 850;
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fnews-and-events\u002fLatest-news", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,pageListId:"{d5ffd73c-9ede-44f8-9e17-97b24559e8c3}",pageItemId:1, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};//]]>
+</script>
+<script type='text/javascript' src='https://durham.police.uk/style%20library/js/textsize.js'></script>
+<script type="text/javascript">
+//<![CDATA[
+var _spWebPartComponents = new Object();//]]>
+</script>
+
+<script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKHxPvxAgK3+sjSDgLD6IqxBvguSufwhvfVpYW7VUTQVuI5HEIp" />
+       
+    
+	<div id="ctl00_g_c317d0e3_0c08_46f8_a764_9e02151ed10b" __MarkupType="vsattributemarkup" __WebPartId="{c317d0e3-0c08-46f8-a764-9e02151ed10b}" WebPart="true">
+	
+
+</div>
+        
+        <div id="header"> 
+   		<div id="titlebar">
+   		<p class="skipNavigation"><a href="#maincontent" title="Skip Navigation">Skip Navigation</a></p>
+   		<img id="titlepicture" alt="Member of Durham Constabulary staff"src="/Style%20Library/Images/Redesign/titlepicturecrop.jpg"/>
+
+		
+		<div id="banner-top-l">
+			<div id="banner-top-l-links">
+				&nbsp;<div id="ctl00_g_2afd175c_4998_486a_b113_efb47ac23b2a" __MarkupType="vsattributemarkup" __WebPartId="{2afd175c-4998-486a-b113-efb47ac23b2a}" WebPart="true">
+	
+<span id="textSizeLinks">
+Text Size: <a id="ts1" href="javascript:setsize('1');" class="a1" title="Small Text">A</a><a  id="ts2" href="javascript:setsize('2');" class="a2" title="Medium Text">A</a><a  id="ts3" href="javascript:setsize('3');" class="a3" title="Large Text">A</a> | 
+</span>
+
+</div><a href="/Pages/Accessibility.aspx " title="Accessibility">Accessibility</a> | <a href="/Pages/Site-Map.aspx " title="Site Map">Site Map</a>
+			</div>
+			<div id="banner-top-r-trans">
+				<div id="google_translate_element"></div>
+			</div>
+			<script type="text/javascript">
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+				}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+
+
+        <!-- banner 
+                        <a href="http://durham.activclient.com/Pages/default.aspx" title="Home"><img id="crest" src="/Style%20Library/Images/Redesign/crestsmall.png" alt="Durham Constabulary Crest "title="Home"/>
+                		<div id="title">
+						Durham Constabulary
+						</div>
+						<div id="subtitle">
+						Altogether Better Policing.
+						</div></a>      
+			-->
+			<img alt="Durham Constabulary Logo" src="/Style%20Library/Images/Redesign/logo-durham.png"/>
+			
+			
+            <div id="banner-right">
+            	<div class="toppanel clearfix">
+            		<div id="banner-top-r">
+            			<div id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28" __MarkupType="vsattributemarkup" __WebPartId="{70bc48d8-a848-43e0-a1cb-8cf49fc64d28}" WebPart="true">
+	<div>
+		
+<div id="site-search" class="clearfix">
+                	<div id="site-search-r"><input type="submit" name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_cmdSearch" /></div>
+                    <div id="site-search-l"><input name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$txtSearch" type="text" value="Search Site..." id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_txtSearch" title="Search Site" onclick="this.value = '';" /></div>
+</div>
+
+	</div>
+
+</div>
+            		</div>
+            	</div>
+                <div class="minicom"><a href="/Contact-us/General-contact-information/Pages/default.aspx" title="Contact for deaf users">Helplines for deaf users</a></div>
+                <div class="durham101 clearfix">
+					                <a href="/Contact-us/Pages/default.aspx" title="When it's less urgent than 999"><img id="phone" title="When it's less urgent than 999" alt="When it's less urgent than 999 call 101. In an emergency always call 999." src="/Style%20Library/Images/Redesign/101.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="navigation">
+        <div id="navigationwrapper">
+		 <div id="ctl00_g_0505093c_fd61_4d54_bdc2_ae5be1c41fcc" __MarkupType="vsattributemarkup" __WebPartId="{0505093c-fd61-4d54-bdc2-ae5be1c41fcc}" WebPart="true">
+	
+<!-- navigation -->
+<div id="navigation" class="clearfix">
+    <ul class="clearfix">
+        <li class="home"><a title="home" href="/Pages/default.aspx">Home</a></li>
+<li class="About-Us"><a title="about us" href="/About-Us/Pages/default.aspx">About Us</a></li>
+<li class="Your-Neighbourhood"><a href="https://www.police.uk/pu/your-area/durham-constabulary/">Your Neighbourhood​</a></li>
+<li class="Contact-us"><a title="contact us" href="/Contact-us/Pages/default.aspx">Contact Us</a></li>
+<li class="Latest-news"><a title="latest news" href="/news-and-events/Pages/default.aspx">News &amp; Events</a></li>
+<li class="Information-and-advice"><a title="information and advice" href="/Information-and-advice/Pages/default.aspx">Information &amp; Advice</a></li>
+<li class="Join-us end"><a title="join us" href="/Join-us/Pages/default.aspx">Join Us</a></li>
+​​​
+    </ul>
+</div>
+
+</div> 
+		 </div>
+		</div>
+      <div id="container">
+       <!--form-->
+	<img id="backgroundimage" src="/Style%20Library/Images/Redesign/background12.jpg"/>
+        <!-- handles SharePoint scripts -->
+        
+
+        <!-- controls the web parts and zones -->
+        
+
+
+        
+        <!-- =====  Start Scrolling Body Area  JLBW REMOVED============================================================ -->
+        
+           
+        <!-- top navigation area -->
+        <div class="s4-notdlg">
+            <!-- top navigation publishing data source -->
+        </div>
+    
+        <!-- navigation -->
+<div id="ctl00_g_e08de639_4ef2_4f9f_bf59_f445cd760112" __MarkupType="vsattributemarkup" __WebPartId="{e08de639-4ef2-4f9f-bf59-f445cd760112}" WebPart="true">
+	
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1655908-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+
+
+ 
+
+</div>
+
+                <!-- =====  Begin Ribbon ============================================================ -->
+        
+        <!-- =====  End Ribbon and other Top Content ============================================================ -->
+
+        <!-- page editing status bar -->
+        <div class="s4-notdlg">
+            <div id="s4-statusbarcontainer" class="s4-notdlg">
+                <div id="pageStatusBar" class="s4-status-s1">
+                </div>
+            </div>
+        </div>
+   
+        <!-- mos_contentdiv helps SharePoint put the web part editing pane in the main body on the right -->
+        <div id="ctl00_MSO_ContentDiv">
+            <!-- styles needed to have left nav to the left of the main area -->
+         <!-- JLBW REMOVED Custom Nav Holder -->
+         
+            <!-- customBodyHolder class handles margin that allows for left margin to hold nav and hides it when dialogs are up -->
+            <!--<div >-->
+           <!-- JLBW Removed title and description placeholders -->
+       <!--<div class="s4-notdlg">-->
+                    <!-- page title -->
+                   <!-- 
+	default
+-->
+               <!-- </div>-->
+                <!-- page description -->
+                <!-- JLBW Removed Description Place Holder -->
+     		<!-- content -->
+		<a name="maincontent" id="maincontent"></a>
+		<div id="content" class="clearfix">
+          
+
+
+<div id="content-left">
+        <div class="edit-mode-border">
+      <div class="sideheading"><span>In this section</span></div>
+			<div id="zz1_GlobalNav" class="side-links clearfix">
+	<div class="menu vertical menu-vertical">
+		<ul class="root static">
+			<li class="static selected"><a class="static selected menu-item" href="/news-and-events/Latest-news/Pages/default.aspx"><span class="additional-background"><span class="menu-item-text">Latest news</span><span class="ms-hidden">Currently selected</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/News-archive/Pages/default.aspx"><span class="additional-background"><span class="menu-item-text">News archive</span></span></a></li><li class="static"><a class="static menu-item" href="/Pages/Event-Listing.aspx"><span class="additional-background"><span class="menu-item-text">Events</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Contact-us-about-the-Herbert-Prpt.aspx"><span class="additional-background"><span class="menu-item-text">Contact us about the Herbert Protocol</span></span></a></li><li class="static"><a class="static menu-item" title="Public Hearings scheduled and outcomes" href="/news-and-events/Pages/Public-Hearings.aspx"><span class="additional-background"><span class="menu-item-text">Public Hearings</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Challenge-is-planned-to-incomprehensible-decision.aspx"><span class="additional-background"><span class="menu-item-text">Challenge is planned to &quot;incomprehensible decision&quot;</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Pensioner-hails-return-of-stolen-purse-a-miracle-.aspx"><span class="additional-background"><span class="menu-item-text">Pensioner hails return of stolen purse &quot;a miracle&quot;</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Life-as-a-Control-Room-Inspector--.aspx"><span class="additional-background"><span class="menu-item-text">Life as a Control Room Inspector...</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Have-you-seen-this-scooter.aspx"><span class="additional-background"><span class="menu-item-text">Have you seen this scooter?</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-delighted-with-.aspx"><span class="additional-background"><span class="menu-item-text">Police delighted with sentence given to criminals who destructed village</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Reward-offered-to-solve-.aspx"><span class="additional-background"><span class="menu-item-text">Family and detectives hoping for breakthrough in murder case</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Appeal-after-high-value-mountain-bikes-stolen.aspx"><span class="additional-background"><span class="menu-item-text">Appeal after high value mountain bikes stolen</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-are-investigating-a-burglary-in-Darlington.aspx"><span class="additional-background"><span class="menu-item-text">Police are investigating a burglary in Darlington</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Three-arrests-following-robbery-and-fire-at-a-convenience-store-in-Tudhoe.aspx"><span class="additional-background"><span class="menu-item-text">Arrests following robbery and fire at a convenience store in Tudhoe</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Drug-raid-at-sweet-shop-two-arrested.aspx"><span class="additional-background"><span class="menu-item-text">Two arrested during drug raids at sweet shop</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Girl,-7,-remains-in-critical-condition-following-house-fire.aspx"><span class="additional-background"><span class="menu-item-text">Girl, 7, remains in critical condition following house fire</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/It&#39;s-been-a-busy-month-for-our-force-musicians.aspx"><span class="additional-background"><span class="menu-item-text">It&#39;s been a busy month for our force musicians</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Family-pay-tribute-to-much-loved-crash-victim.aspx"><span class="additional-background"><span class="menu-item-text">Family pay tribute to &quot;much loved&quot; crash victim</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/A-man-has-suffered-serious-facial-injuries-following-an-assault-in-Seaham.aspx"><span class="additional-background"><span class="menu-item-text">A man has suffered serious facial injuries following an assault in Seaham</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Four-horses-rescued-by-police-in-Bishop-Auckland.aspx"><span class="additional-background"><span class="menu-item-text">Four horses rescued by police in Bishop Auckland</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/The-family-of-a-Shildon-pensioner-have-paid-tribute-to-him.aspx"><span class="additional-background"><span class="menu-item-text">The family of a Shildon pensioner have paid tribute to him</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Two-men-.aspx"><span class="additional-background"><span class="menu-item-text">Two men sentenced following racist attack in Spennymoor</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/A-mother-and-son-duo-have-been-recognised-for-their-outstanding-efforts.aspx"><span class="additional-background"><span class="menu-item-text">Mother and son duo recognised for their outstanding efforts</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/A-driver-has-died-after-suffering-a-cardiac-arrest-at-the-wheel.aspx"><span class="additional-background"><span class="menu-item-text">A driver has died after suffering a cardiac arrest at the wheel</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Hero-cop-.aspx"><span class="additional-background"><span class="menu-item-text">Top cop retires after completing 30 years’ service</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Horse-injured-.aspx"><span class="additional-background"><span class="menu-item-text">Horse injured following a collision at Lanchester</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Do-you-recognise-these-men.aspx"><span class="additional-background"><span class="menu-item-text">Do you recognise these men?</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Another-Success-for-Operation-Tramline-.aspx"><span class="additional-background"><span class="menu-item-text">Another success for Operation Tramline</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-issue-warning-to-dog-owners-after-a-sheep-was-injured.aspx"><span class="additional-background"><span class="menu-item-text">Police issue warning to dog owners after a sheep was injured</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Local-businesses-could-play.aspx"><span class="additional-background"><span class="menu-item-text">Businesses could play crucial role in helping victims escape exploitation</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-appeal-following-an-assault-in-Durham-City-last-night.aspx"><span class="additional-background"><span class="menu-item-text">Appeal following assault in Durham City market place</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Appeal-to-find-missing-Mackenzie-Keenan,-16.aspx"><span class="additional-background"><span class="menu-item-text">Appeal to find missing Mackenzie Keenan, 16</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Darlington-man-jailed-after-carrying-out-repeated-attacks-on-young-girl.aspx"><span class="additional-background"><span class="menu-item-text">Darlington man jailed after carrying out repeated attacks on young girl</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-to-work-with-Autistic-advocate-.aspx"><span class="additional-background"><span class="menu-item-text">Police to work with autistic advocate</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Mysterious-artefacts-.aspx"><span class="additional-background"><span class="menu-item-text">Mysterious police artefacts uncovered from the River Wear</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Fishing-equipment-and-money-stolen-in-Darlington-burglary-.aspx"><span class="additional-background"><span class="menu-item-text">Fishing equipment and money stolen in Darlington burglary</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Officers-appeal-.aspx"><span class="additional-background"><span class="menu-item-text">Do you know who smashed a ground floor window in Newton Aycliffe?</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Body-found-in-river-confirmed-as-Timothy-Stephenson.aspx"><span class="additional-background"><span class="menu-item-text">Body found in River Wear confirmed as Timothy Stephenson</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Did-you-witness-a-serious-assault-in-Chester-le-Street.aspx"><span class="additional-background"><span class="menu-item-text">Did you witness a serious assault in Chester-le-Street?</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-officer-to-take-on-London-Marathon-for-charity.aspx"><span class="additional-background"><span class="menu-item-text">Police officer to take on London Marathon for charity</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/WATCH-the-moment-officer-brings-pursuit-to-an-end.aspx"><span class="additional-background"><span class="menu-item-text">WATCH the moment officer brings pursuit to an end</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-arrest-16-in-crackdown-.aspx"><span class="additional-background"><span class="menu-item-text">Police arrest 16 in crackdown on drug dealers</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/How-do-authorised-firearms-officers-make-critical-decisions.aspx"><span class="additional-background"><span class="menu-item-text">How do authorised firearms officers make decisions?</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Police-appeal-after-.aspx"><span class="additional-background"><span class="menu-item-text">Police appeal after a man was found unconscious in Stanhope</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Don&#39;t-be-scammed-on-your-doorstep.aspx"><span class="additional-background"><span class="menu-item-text">Don&#39;t be scammed on your doorstep</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/A-night-in-the-life-of-a-custody-sergeant.aspx"><span class="additional-background"><span class="menu-item-text">A night in the life of a custody sergeant</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Preferred-candidate-for-Durham-Chief-Constable-announced.aspx"><span class="additional-background"><span class="menu-item-text">Preferred candidate for Durham Chief Constable announced</span></span></a></li><li class="static"><a class="static menu-item" href="/news-and-events/Pages/Young-mother-praises-services-for-What3words-rescue.aspx"><span class="additional-background"><span class="menu-item-text">Young mother praises services for What3words rescue</span></span></a></li>
+		</ul>
+	</div>
+</div>
+   <div id="ctl00_PlaceHolderMain_LeftCol_label" style='display:none'>Left Page Content</div><div id="ctl00_PlaceHolderMain_LeftCol__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_LeftCol_label"></div>
+        </div>
+    </div>
+   
+    <div id="content-middle">
+    
+    	<div id="breadcrumb" class="clearfix">
+	    	<div class="breadcrumb-trail">
+			<span SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider" HideInteriorRootNodes="true"><span><a title="Home Page" class="breadcrumbRootNode" href="/Pages/default.aspx">Home</a></span><span> &gt; </span><span><a class="breadcrumbNode" href="/news-and-events/Pages/default.aspx">News and Events</a></span><span> &gt; </span><span class="breadcrumbCurrentNode">Latest news</span></span></div>
+		    <div id="ctl00_PlaceHolderMain_g_299990b2_90e4_4ad9_a0c9_45557240450e" __MarkupType="vsattributemarkup" __WebPartId="{299990b2-90e4-4ad9-a0c9-45557240450e}" WebPart="true">
+	
+
+
+
+
+      
+
+</div>		    
+		</div> 
+
+		<div class="text-content">
+			<h1>
+			Latest News</h1>
+			<div id="ctl00_PlaceHolderMain_ctl02_label" style='display:none'>Rollup Image</div><div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label"><div class="ms-rtestate-field"></div></div>
+	        <div class="edit-mode-border">
+	            <div id="ctl00_PlaceHolderMain_CenterCol_label" style='display:none'>Page Content</div><div id="ctl00_PlaceHolderMain_CenterCol__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_CenterCol_label">​ <div class="ms-rtestate-read ms-rte-wpbox"><div class="ms-rtestate-notify  ms-rtestate-read a1867b6d-c61b-4011-a48d-263568d77860" id="div_a1867b6d-c61b-4011-a48d-263568d77860"><table style='width:100%' cellpadding='0' cellspacing='0'><tr><td id="MSOZoneCell_WebPartctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860" valign="top" class="s4-wpcell-plain"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top"><div WebPartID="c8c1ad9a-d192-4162-ad7b-bfc1cb8f56d9" WebPartID2="a1867b6d-c61b-4011-a48d-263568d77860" HasPers="false" id="WebPartctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860" width="100%" class="ms-WPBody" allowRemove="false" allowDelete="false" allowExport="false" style="" ><div id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860">
+			
+<div class="text-content">
+    
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl00_hlLink" title="Multi-force operation targets County Lines drug dealing" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/O.aspx">Multi-force operation targets County Lines drug dealing</a></h2>
+                <p class="date">
+                    25th September 2020</p>
+                <p class="justifyText">
+                    ​Officers took to the streets in a targeted operation against drug dealing last week.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl00_HyperLink1" class="readmore" title="Read More about Multi-force operation targets County Lines drug dealing" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/O.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl01_hlLink" title="Project Edward weekend of action" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Project-Edward-weekend-of-action.aspx">Project Edward weekend of action</a></h2>
+                <p class="date">
+                    24th September 2020</p>
+                <p class="justifyText">
+                    ​Do you think 98mph in a 60mph is acceptable? </p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl01_HyperLink1" class="readmore" title="Read More about Project Edward weekend of action" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Project-Edward-weekend-of-action.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl02_hlLink" title="Two in court following Darlington courier fraud" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Two-in-court-following-Darlington-courier-fraud-.aspx">Two in court following Darlington courier fraud</a></h2>
+                <p class="date">
+                    23rd September 2020</p>
+                <p class="justifyText">
+                    Two people have appeared at court after an elderly man was conned into handing over more than £100,000.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl02_HyperLink1" class="readmore" title="Read More about Two in court following Darlington courier fraud" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Two-in-court-following-Darlington-courier-fraud-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl03_hlLink" title="Appeal after elderly pedestrian struck by car in Darlington" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Appeal-after-elderly-pedestrian-struck-by-car-in-Darlington.aspx">Appeal after elderly pedestrian struck by car in Darlington</a></h2>
+                <p class="date">
+                    21st September 2020</p>
+                <p class="justifyText">
+                    The pedestrian was walking behind a small, dark silver car - possibly a Toyota Aygo - that was parked in a disabled bay, which then reversed, knocking the woman over.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl03_HyperLink1" class="readmore" title="Read More about Appeal after elderly pedestrian struck by car in Darlington" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Appeal-after-elderly-pedestrian-struck-by-car-in-Darlington.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl04_hlLink" title="Elderly men conned out of thousands of pounds by fraudsters" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Elderly-men-conned-out-of-thousands-of-pounds-by-fraudsters-.aspx">Elderly men conned out of thousands of pounds by fraudsters</a></h2>
+                <p class="date">
+                    18th September 2020</p>
+                <p class="justifyText">
+                    The two victims, who are in their late sixties and eighties, each handed over around £20,000 to the conmen. </p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl04_HyperLink1" class="readmore" title="Read More about Elderly men conned out of thousands of pounds by fraudsters" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Elderly-men-conned-out-of-thousands-of-pounds-by-fraudsters-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl05_hlLink" title="New Covid-19 restrictions for County Durham" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/New-COVID-19-restrictions-for-County-Durham-.aspx">New Covid-19 restrictions for County Durham</a></h2>
+                <p class="date">
+                    18th September 2020</p>
+                <p class="justifyText">
+                    ​The new local regulations effective from 18 September 2020 are in addition to the national regulations announced earlier in the week.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl05_HyperLink1" class="readmore" title="Read More about New Covid-19 restrictions for County Durham" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/New-COVID-19-restrictions-for-County-Durham-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl06_hlLink" title="It's business as usual for Durhams Public Protection unit" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/It's-business-as-usual-for-our-P.aspx">It's business as usual for Durhams Public Protection unit</a></h2>
+                <p class="date">
+                    16th September 2020</p>
+                <p class="justifyText">
+                    “In the past few months the team have continued to supervise these offenders and several arrests have had to be made in order to preserve public safety.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl06_HyperLink1" class="readmore" title="Read More about It's business as usual for Durhams Public Protection unit" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/It's-business-as-usual-for-our-P.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl07_hlLink" title="A man has died following a collision in Wolsingham on Saturday" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/A-man-has-died-following-a-collision-in-Wolsingham-on-Saturday0914-7325.aspx">A man has died following a collision in Wolsingham on Saturday</a></h2>
+                <p class="date">
+                    14th September 2020</p>
+                <p class="justifyText">
+                    Tributes have been paid to the 65-year-old. </p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl07_HyperLink1" class="readmore" title="Read More about A man has died following a collision in Wolsingham on Saturday" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/A-man-has-died-following-a-collision-in-Wolsingham-on-Saturday0914-7325.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl08_hlLink" title="Partnership working has stopped fraud victims being defrauded" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Partnership-working-has-stopped-fraud-victims-losing-.aspx">Partnership working has stopped fraud victims being defrauded</a></h2>
+                <p class="date">
+                    10th September 2020</p>
+                <p class="justifyText">
+                    An innovative scheme devised has stopped vulnerable people handing over more than £700,000 of their hard-earned cash to unscrupulous scammers</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl08_HyperLink1" class="readmore" title="Read More about Partnership working has stopped fraud victims being defrauded" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Partnership-working-has-stopped-fraud-victims-losing-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl09_hlLink" title="Did you witness an assault in Crook on Friday afternoon?" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Did-you-witness-an-assault-in-Crook-on-Friday-afternoon.aspx">Did you witness an assault in Crook on Friday afternoon?</a></h2>
+                <p class="date">
+                    8th September 2020</p>
+                <p class="justifyText">
+                    ​Detectives are appealing for witnesses after a woman was assaulted and had her handbag stolen.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl09_HyperLink1" class="readmore" title="Read More about Did you witness an assault in Crook on Friday afternoon?" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Did-you-witness-an-assault-in-Crook-on-Friday-afternoon.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl10_hlLink" title="Operation Cobra launched" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Operation-Cobra-launched.aspx">Operation Cobra launched</a></h2>
+                <p class="date">
+                    7th September 2020</p>
+                <p class="justifyText">
+                    A new police operation has been launched in the Dales to deter thieves.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl10_HyperLink1" class="readmore" title="Read More about Operation Cobra launched" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Operation-Cobra-launched.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl11_hlLink" title="Witness appeal after moped rider suffers critical injuries" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Witness-appeal-after-moped-rider-suffers-critical-injuries.aspx">Witness appeal after moped rider suffers critical injuries</a></h2>
+                <p class="date">
+                    7th September 2020</p>
+                <p class="justifyText">
+                    A MOPED rider has been taken to hospital with critical injuries after coming off his vehicle.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl11_HyperLink1" class="readmore" title="Read More about Witness appeal after moped rider suffers critical injuries" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Witness-appeal-after-moped-rider-suffers-critical-injuries.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl12_hlLink" title="Second person dies after Horden collision" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Second-person-dies-after-Horden-collision.aspx">Second person dies after Horden collision</a></h2>
+                <p class="date">
+                    4th September 2020</p>
+                <p class="justifyText">
+                    ​Police can now confirm that a second person has tragically died following a serious collision on Wednesday (September 2).</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl12_HyperLink1" class="readmore" title="Read More about Second person dies after Horden collision" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Second-person-dies-after-Horden-collision.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl13_hlLink" title="Jail for burglar who crashed stolen car into lamppost" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Jail-for-burglar-who-crashed-stolen-car-into-lamppost-.aspx">Jail for burglar who crashed stolen car into lamppost</a></h2>
+                <p class="date">
+                    4th September 2020</p>
+                <p class="justifyText">
+                    John Kirk broke into a house on Stooperdale Avenue, in Darlington, on the night of July 28 and stole the keys to a Ford Mondeo. </p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl13_HyperLink1" class="readmore" title="Read More about Jail for burglar who crashed stolen car into lamppost" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Jail-for-burglar-who-crashed-stolen-car-into-lamppost-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl14_hlLink" title="Rural criminals warned to stay out of County Durham and Darlington" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Rural-criminals-warned-to-stay-out-of-County-Durham-and-Darlington-.aspx">Rural criminals warned to stay out of County Durham and Darlington</a></h2>
+                <p class="date">
+                    4th September 2020</p>
+                <p class="justifyText">
+                    ​Police are warning rural criminals to stay out of Darlington and County Durham as officers begin specific rural patrols in high crime areas. </p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl14_HyperLink1" class="readmore" title="Read More about Rural criminals warned to stay out of County Durham and Darlington" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Rural-criminals-warned-to-stay-out-of-County-Durham-and-Darlington-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl15_hlLink" title="Chief Constable's Commendation for volunteer of 37 years" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Chief-Constable's-Commendation-for-volunteer-of-37-years-.aspx">Chief Constable's Commendation for volunteer of 37 years</a></h2>
+                <p class="date">
+                    3rd September 2020</p>
+                <p class="justifyText">
+                    ​A man who has dedicated almost four decades of his life to improving relations between minority groups and the police has been honoured with a commendation.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl15_HyperLink1" class="readmore" title="Read More about Chief Constable's Commendation for volunteer of 37 years" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Chief-Constable's-Commendation-for-volunteer-of-37-years-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl16_hlLink" title="Three-year-old girl dies following Horden collision" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Three-year-old-girl-dies-following-Horden-collision-.aspx">Three-year-old girl dies following Horden collision</a></h2>
+                <p class="date">
+                    3rd September 2020</p>
+                <p class="justifyText">
+                    ​A three-year-old girl has tragically died following a collision yesterday. The incident happened at about 2.30pm on the Coast Road, in Horden.
+</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl16_HyperLink1" class="readmore" title="Read More about Three-year-old girl dies following Horden collision" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Three-year-old-girl-dies-following-Horden-collision-.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl17_hlLink" title="Assaults on Durham officers increased during lockdown" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Figures-reveal-assaults-on-Durham-Constabulary-officers-increased-during-lockdown.aspx">Assaults on Durham officers increased during lockdown</a></h2>
+                <p class="date">
+                    2nd September 2020</p>
+                <p class="justifyText">
+                    Durham Constabulary recorded 228 assaults on officers and staff between March and July this year – an increase of 26% when compared with the same period last year.</p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl17_HyperLink1" class="readmore" title="Read More about Assaults on Durham officers increased during lockdown" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/Figures-reveal-assaults-on-Durham-Constabulary-officers-increased-during-lockdown.aspx">Read More</a>
+            </div>
+        
+            <div class="news-item">
+                <h2>
+                    <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl18_hlLink" title="£800,000 to be spent on reducing burglary in County Durham and Darlington" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/%c2%a3800,000-to-be-spent-on-reducing-burglary-in-County-Durham-and-Darlington.aspx">£800,000 to be spent on reducing burglary in County Durham and Darlington</a></h2>
+                <p class="date">
+                    28th August 2020</p>
+                <p class="justifyText">
+                    ​Locks and lights will be fitted to hundreds of homes in County Durham and Darlington as part of an £800,000 scheme to reduce burglary and improve community safety. </p>
+                <a id="ctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860_ctl00_rptFullNews_ctl18_HyperLink1" class="readmore" title="Read More about £800,000 to be spent on reducing burglary in County Durham and Darlington" href="http://durham.police.uk//news-and-events/Pages/News%20Articles/%c2%a3800,000-to-be-spent-on-reducing-burglary-in-County-Durham-and-Darlington.aspx">Read More</a>
+            </div>
+        
+</div>
+
+		</div></div></td>
+	</tr>
+</table></td></tr></table></div>
+<div id="vid_a1867b6d-c61b-4011-a48d-263568d77860" style="display:none"></div></div>
+</div>
+	        </div>
+        </div>
+        
+    </div>
+    
+    <div id="content-right">
+        <div class="edit-mode-border">
+	        <div id="ctl00_PlaceHolderMain_g_fead77cc_8c59_425e_a475_e6f369a5e68c" __MarkupType="vsattributemarkup" __WebPartId="{fead77cc-8c59-425e-a475-e6f369a5e68c}" WebPart="true">
+	
+
+</div>
+            <div id="ctl00_PlaceHolderMain_RightCol_label" style='display:none'>Right Page Content</div><div id="ctl00_PlaceHolderMain_RightCol__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_RightCol_label">​<div class="ms-rtestate-read ms-rte-wpbox"><div class="ms-rtestate-notify  ms-rtestate-read abd0bb92-23d3-4c14-a5b7-ca3c51edd62d" id="div_abd0bb92-23d3-4c14-a5b7-ca3c51edd62d"><table style='width:100%' cellpadding='0' cellspacing='0'><tr><td id="MSOZoneCell_WebPartctl00_ctl26_g_abd0bb92_23d3_4c14_a5b7_ca3c51edd62d" valign="top" class="s4-wpcell-plain"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top"><div WebPartID="4f786398-6430-4ff3-8d15-5938b1306b87" WebPartID2="abd0bb92-23d3-4c14-a5b7-ca3c51edd62d" HasPers="false" id="WebPartctl00_ctl26_g_abd0bb92_23d3_4c14_a5b7_ca3c51edd62d" width="100%" class="ms-WPBody" allowRemove="false" allowDelete="false" allowExport="false" style="" ><div id="ctl00_ctl26_g_abd0bb92_23d3_4c14_a5b7_ca3c51edd62d">
+			
+
+<div id="ctl00_ctl26_g_abd0bb92_23d3_4c14_a5b7_ca3c51edd62d_ctl00_pnlTwitter">
+				
+    <a class="twitter-timeline" data-widget-id="258909050752864256">Tweets</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			</div>
+
+
+
+
+		</div></div></td>
+	</tr>
+</table></td></tr></table></div>
+<div id="vid_abd0bb92-23d3-4c14-a5b7-ca3c51edd62d" style="display:none"></div></div></div>
+        </div>
+    </div>
+    
+ 
+
+
+   
+
+ </div>
+            <!--</div>-->
+
+
+
+        </div>
+     
+        <!-- the developer dashboard can be turned on by administrators and shows debuging and performance info for the page -->
+        <div id="DeveloperDashboard" class="ms-developerdashboard">
+            
+        </div>
+      
+        <!-- =====  End scrolling body area with these two previous div's JLBW REMOVED ============================================================ -->
+      
+      
+        <!-- The form digest security control used to for security validation on forms -->
+        
+			
+        
+        <!-- =====  Hidden Placeholders ============================================================ -->
+        
+        <!-- Handle Search "enter" key from Firefox -->
+        <input type="text" name="__spDummyText1" style="display: none;" size="1" title="Dummy1"/>
+        <input type="text" name="__spDummyText2" style="display: none;" size="1" title="Dummy2"/>
+<!--Form-->       
+
+
+        <!-- extra form for some instances -->
+        
+        
+
+ <!-- footer -->
+        <div id="footer" class="clearfix">
+            <div id="footer-inner">
+                <div id="footer-left" class="clearfix">
+	                <div id="ctl00_g_210cefdb_c7e3_4268_a5d1_d8594a316a9f" __MarkupType="vsattributemarkup" __WebPartId="{210cefdb-c7e3-4268-a5d1-d8594a316a9f}" WebPart="true">
+	<div class="links-box"><ul><li class="heading">Information</li>
+<li><a href="/Information-and-advice/Pages/Local-Resilience-Forum.aspx" target="_blank">Preparing for Emergencies</a></li>
+<li><a href="/About-Us/Transparency-and-Integrity-Programme/Pages/default.aspx" target="_blank">Transparency &amp; Integrity Programme</a></li></ul></div>
+<div class="links-box"><ul><li class="heading">Legal</li>
+<li><a href="/pages/privacy-policy.aspx" target="_blank">Cookies</a></li>
+<li><a href="/About-Us/Freedom-of-information/General/Pages/Privacy-Notice.aspx" target="_blank">Privacy Notice</a></li>
+<li><a href="/Pages/Terms-and-Conditions-of-Use.aspx" target="_blank">Terms &amp; Conditions of Use</a></li>
+<li><a href="/Pages/E-Mail%20and%20SMS%20Text%20Disclaimer.aspx" target="_blank">Email &amp; SMS Text Disclaimer</a></li></ul></div>
+<p>​ </p>
+
+
+</div>
+				</div>
+				
+                <!--<div id="footer-right" class="clearfix">
+                    <div class="footer-social-l">
+                        Find us on</div>
+                    <div class="footer-social-r clearfix">
+                        <div class="footer-social-icon">
+                            <a href="http://www.flickr.com/photos/durhamconstabularyinpix" target="_blank" title="Durham Constabulary on Flickr">
+                                <img src="/Style%20Library/img/footer-icn-flickr.jpg" alt="Flickr" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://www.youtube.com/durhampolice999" target="_blank" title="Durham Constabulary on YouTube">
+                                <img src="/Style%20Library/img/footer-icn-youtube.jpg" alt="YouTube" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://twitter.com/DurhamPolice" target="_blank" title="Durham Constabulary on Twitter">
+                                <img src="/Style%20Library/img/footer-icn-twitter.jpg" alt="Twitter" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://www.facebook.com/pages/Durham-Constabulary/224330430978915" target="_blank" title="Durham Constabulary on Facebook">
+                                <img src="/Style%20Library/img/footer-icn-facebook.jpg" alt="Facebook" /></a></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+     <div id="ctl00_panelZone">
+	<div style='display:none' id='hidZone'><table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td id="MSOZoneCell_WebPartctl00_ctl26_g_abd0bb92_23d3_4c14_a5b7_ca3c51edd62d" valign="top" class="s4-wpcell-plain"><div class="ms-PartSpacingVertical"></div></td>
+		</tr><tr>
+			<td id="MSOZoneCell_WebPartctl00_ctl26_g_a1867b6d_c61b_4011_a48d_263568d77860" valign="top" class="s4-wpcell-plain"></td>
+		</tr>
+	</table></div>
+</div><input type='hidden' id='_wpcmWpid' name='_wpcmWpid' value='' /><input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);
+function EnsureScripts(scriptInfoList, finalFunction)
+{
+if (scriptInfoList.length == 0)
+{
+finalFunction();
+}
+else
+{
+var scriptInfo = scriptInfoList.shift();
+var rest = function () { EnsureScripts(scriptInfoList, finalFunction); };
+var defd;
+try
+{
+eval('defd = typeof(' + scriptInfo[1] + ');');
+}
+catch (e)
+{
+defd = 'undefined';
+}
+if (scriptInfo[2])
+{
+EnsureScript(scriptInfo[0], defd, null);
+ExecuteOrDelayUntilScriptLoaded(rest, scriptInfo[0]);
+}
+else
+{
+EnsureScript(scriptInfo[0], defd, rest);
+}
+}
+}
+function PublishingRibbonUpdateRibbon()
+{
+var pageManager = SP.Ribbon.PageManager.get_instance();
+if (pageManager)
+{
+pageManager.get_commandDispatcher().executeCommand('appstatechanged', null);
+}
+}var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{d5ffd73c-9ede-44f8-9e17-97b24559e8c3}",itemId: 1,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fnews-and-events\u002fLatest-news\u002fPages",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+}
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js"); var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';//]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// ]]>
+</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002fsp.core.js?rev=7ByNlH\u00252BvcgRJg\u00252BRCctdC0w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=b6\u00252FcRx1a6orhAQ\u00252FcF\u00252B0ytQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002fsp.ui.dialog.js?rev=IuXtJ2CrScK6oX4zOTTy\u00252BA\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.core.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f1033\u002fcore.js?rev=thUAOrLfyaU\u00252Fgyxy0eiMiw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002fsp.runtime.js?rev=9sKdsC9N6p2BiRk3313M7Q\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.core.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002fsp.js?rev=SpGB4\u00252FzYmCWpwoPWNG2dsg\u00253D\u00253D");RegisterSodDep("sp.js", "sp.core.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002fcui.js?rev=k\u00252B4HtUzT9\u00252B3mSycgD7gPaQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002finplview.js?rev=ZfVDYd30Z2D01DIRRl8ETA\u00253D\u00253D");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002fsp.ribbon.js?rev=F\u00252BUEJ66rbXzSvpf7nN69wQ\u00253D\u00253D");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("sp.publishing.resources.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252EPublishing\u00252EResources\u0026rev=q6nxzZIVVXE5X1SPZIMD3A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.pub.ribbon.js", "\u002f_layouts\u002fsp.ui.pub.ribbon.js?rev=RGQSBI9Dm0E345iq\u00252FxUpHg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("msstring.js", "\u002f_layouts\u002f1033\u002fmsstring.js?rev=QtiIcPH3HV7LgVSO7vONFg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f1033\u002fnon_ie.js?rev=EVTj1bu32\u00252FMla6SDN\u00252FsNTA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSodDep("browserScript", "msstring.js");</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+function init_zz1_GlobalNav() {$create(SP.UI.AspMenu, null, null, null, $get('zz1_GlobalNav'));}ExecuteOrDelayUntilScriptLoaded(init_zz1_GlobalNav, 'sp.js');
+//]]>
+</script>
+</form>
+
+ 
+</body>
+</html>
+<!-- Rendered using cache profile:Public Internet (Purely Anonymous) at: 2020-09-27T23:52:26 -->
