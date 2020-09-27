@@ -1,0 +1,787 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-us" xml:lang="en-us">
+<head id="ctl00_Head1"><meta http-equiv="x-ua-compatible" content="IE=8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" />
+
+    <!-- robots -->
+    
+    
+
+    <!-- page title - overridden by asp:content on pages or page layouts -->
+    <title>
+	
+	Frequently Asked Questions
+ 
+</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Style%20Library/img/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!-- all OOTB css -->
+        <link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/Menu.css?rev=yPVeKt0FHzxA%2FW4JR0hJng%3D%3D" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=iIikGkMuXBs8CWzKDAyjsQ%3D%3D" />
+
+ <!--   <link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=3TRomkG1g2gMGz4rekMIQg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/overridecorev4.css"/>
+-->
+    <link rel="stylesheet" type="text/css" href="/Style%20Library/css/reset.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/css/indexrevised.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Core%20Styles/page-layouts-21.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=3TRomkG1g2gMGz4rekMIQg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/css/overridecorev4.css"/>
+
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/Style%20Library/css/ie7.css" />
+	<![endif]-->
+
+    <!-- page manager -->
+    
+
+    <!-- unified logging service -->
+    
+
+    <!-- required for some scrolling? -->
+    <script type="text/javascript">
+        var _fV4UI = true;
+        
+        function FixRibbonAndWorkspaceDimensions(){
+  ULSxSy:;
+  g_frl = true;
+  var elmRibbon = GetCachedElement("s4-ribbonrow");
+  var elmWorkspace = GetCachedElement("s4-workspace");
+  var elmTitleArea = GetCachedElement("s4-titlerow");
+  var elmBodyTable = GetCachedElement("s4-bodyContainer");
+  if(!elmRibbon || !elmWorkspace || !elmBodyTable){
+    return;
+  }
+  if (!g_setWidthInited){
+    var setWidth = true;
+    if (elmWorkspace.className.indexOf("s4-nosetwidth") > -1)
+      setWidth = false;
+    g_setWidth = setWidth;
+    g_setWidthInited = true;
+  }
+  else{
+    var setWidth = g_setWidth;
+  }
+  var baseRibbonHeight = RibbonIsMinimized() ? 44 : 135;
+  var ribbonHeight = baseRibbonHeight + g_wpadderHeight;
+  if(GetCurrentEltStyle(elmRibbon, "visibility") == "hidden"){
+    ribbonHeight = 0;
+  }
+
+  // Override default resizing behavior
+  // -- adds padding to the top of the "s4-workspace" <div> if the ribbon exists and has content
+  // -- allows the ribbon to be positioned using CSS instead of JavaScript (more accessible)
+  // -- checks to see if the page is inside a "no-ribbon" dialog
+  if(elmRibbon.children.length > 0 && document.getElementsByTagName("html")[0].className.indexOf('ms-dialog-nr') == -1){
+    elmWorkspace.style.paddingTop = ribbonHeight + 'px';
+  }
+  
+		
+}
+    </script>
+
+    <!-- load SharePoint javascript -->
+    <script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=lEi61hsCxcBAfvfQNZA%2FsQ%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=Ht1_arwafpCwM2FjkVBIsOc8L_ddcDO8Dps-qMSv2TYHFWj5wezD3-Zr6FJbAcipRjR_O-RmUN04QzKBQvqW7UBmx76Ko5wWHnfYz_66eZW3AAByoyzTzP2ih1ICxBJQVQeGUP-FGyI3y7USFi-TEXmnpqI1&amp;t=3f4a792d"></' + 'script>');
+document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
+// ]]>
+</script>
+
+
+    <style type="text/css">
+        /* fix scrolling on list pages */
+        #s4-bodyContainer
+        {
+            position: relative;
+        }
+        
+        /* hide body scrolling (SharePoint will handle) */
+        body
+        {
+            /*height: 100%;
+       
+            width: 100%;*/
+        }
+        
+        /* popout breadcrumb menu needs background color for firefox */
+        .s4-breadcrumb-menu
+        {
+            background: #F2F2F2;
+        }
+        
+        /* left nav needs some space to hold the nav */
+        .customLeftNavHolder
+        {
+            float: left;
+            width: 155px;
+        }
+        
+        /* body area needs to allow room for left nav */
+        /*.customBodyHolder
+        {
+            margin-left: 155px;
+            margin-right: 0;
+            min-height: 324px;
+        }
+        
+        /* hide the left margin when dialog is up */
+        .ms-dialog .customBodyHolder
+        /*{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            min-height: 0 !important;
+            min-width: 0 !important;
+            width: 100% !important;
+        }
+        .ms-wpContentDivSpace{
+	
+	margin:0px !important;
+	
+}
+
+
+	.edit-mode-border {
+    border: 0px !Important;
+    margin: 0px !Important;
+    padding: 0px !Important;
+    }
+    
+  */
+  @-moz-document url-prefix() {
+	
+       #postcode-r input{
+       left: 110px;
+       }
+       }
+
+    </style>
+
+    <!-- link to our custom css  -->
+    
+    <!-- javascript to override the active-x message in ie 
+		// See support.microsoft.com/default.aspx/kb/931509 for info on the issue
+		// Remove if the IM pressence icons are needed in SharePoint
+	-->
+
+    <script type="text/javascript">
+        function ProcessImn() { }
+        function ProcessImnMarkers() { }	
+    </script>
+
+    <!-- additional header delegate control -->
+    <!-- _lcid="1033" _version="14.0.6136" _dal="1" -->
+<!-- _LocalBinding -->
+<span id="ctl00_ctl21_iprRibbon"><span></span></span>
+
+
+    <!-- additional header placeholder - overridden by asp:content on pages or page layouts -->
+    
+	
+	
+
+	
+
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.cycle/2.88/jquery.cycle.all.js"></script> 
+
+	<script type="text/javascript" src="/style%20library/scripts/thickbox.js"></script>
+    <link rel="stylesheet" href="/style%20library/css/thickbox.css" type="text/css" media="screen" />
+    
+    <script src="/Style%20Library/js/jquery.readmore.js" type="text/javascript"></script> 
+
+
+
+	<!-- Text Size Scripts -->
+	<link id="ctl00_textsize" href="/style%20library/css/hide_text.css" rel="stylesheet" type="text/css" /></head>
+
+<body onload="javascript:_spBodyOnLoadWrapper();">
+
+    <form name="aspnetForm" method="post" action="Frequently-Asked-Questions.aspx" id="aspnetForm">
+<input type="hidden" name="__SPSCEditMenu" id="__SPSCEditMenu" value="true" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="InvalidFormDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIED2QWDAIBD2QWAmYPZBYCZg8PFgIeB1Zpc2libGVoZGQCBw9kFgJmD2QWAgIBDxYCHgRUZXh0BZQGPGxpIGNsYXNzPSJob21lIj48YSB0aXRsZT0iaG9tZSIgaHJlZj0iL1BhZ2VzL2RlZmF1bHQuYXNweCI+SG9tZTwvYT48L2xpPg0KPGxpIGNsYXNzPSJBYm91dC1VcyI+PGEgdGl0bGU9ImFib3V0IHVzIiBocmVmPSIvQWJvdXQtVXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5BYm91dCBVczwvYT48L2xpPg0KPGxpIGNsYXNzPSJZb3VyLU5laWdoYm91cmhvb2QiPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnBvbGljZS51ay9wdS95b3VyLWFyZWEvZHVyaGFtLWNvbnN0YWJ1bGFyeS8iPllvdXIgTmVpZ2hib3VyaG9vZOKAizwvYT48L2xpPg0KPGxpIGNsYXNzPSJDb250YWN0LXVzIj48YSB0aXRsZT0iY29udGFjdCB1cyIgaHJlZj0iL0NvbnRhY3QtdXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5Db250YWN0IFVzPC9hPjwvbGk+DQo8bGkgY2xhc3M9IkxhdGVzdC1uZXdzIj48YSB0aXRsZT0ibGF0ZXN0IG5ld3MiIGhyZWY9Ii9uZXdzLWFuZC1ldmVudHMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5OZXdzICZhbXA7IEV2ZW50czwvYT48L2xpPg0KPGxpIGNsYXNzPSJJbmZvcm1hdGlvbi1hbmQtYWR2aWNlIGFjdGl2ZSI+PGEgdGl0bGU9ImluZm9ybWF0aW9uIGFuZCBhZHZpY2UiIGhyZWY9Ii9JbmZvcm1hdGlvbi1hbmQtYWR2aWNlL1BhZ2VzL2RlZmF1bHQuYXNweCI+SW5mb3JtYXRpb24gJmFtcDsgQWR2aWNlPC9hPjwvbGk+DQo8bGkgY2xhc3M9IkpvaW4tdXMgZW5kIj48YSB0aXRsZT0iam9pbiB1cyIgaHJlZj0iL0pvaW4tdXMvUGFnZXMvZGVmYXVsdC5hc3B4Ij5Kb2luIFVzPC9hPjwvbGk+DQrigIvigIvigItkAg0PZBYCZg9kFgICAQ8WAh8BBQxVQS0xNjU1OTA4LTFkAg8PZBYCAgEPZBYEZg9kFgICAQ8WAh8AaBYCZg9kFgQCAg9kFgYCAQ8WAh8AaGQCAw8WCB4TQ2xpZW50T25DbGlja1NjcmlwdAWtAWphdmFTY3JpcHQ6Q29yZUludm9rZSgnVGFrZU9mZmxpbmVUb0NsaWVudFJlYWwnLDEsIDUzLCAnaHR0cHM6XHUwMDJmXHUwMDJmZHVyaGFtLnBvbGljZS51a1x1MDAyZkluZm9ybWF0aW9uLWFuZC1hZHZpY2VcdTAwMmZmaXJlYXJtcy1hbmQtZmlyZWFybXMtbGljZW5zaW5nJywgLTEsIC0xLCAnJywgJycpHhhDbGllbnRPbkNsaWNrTmF2aWdhdGVVcmxkHihDbGllbnRPbkNsaWNrU2NyaXB0Q29udGFpbmluZ1ByZWZpeGVkVXJsZB4MSGlkZGVuU2NyaXB0BSJUYWtlT2ZmbGluZURpc2FibGVkKDEsIDUzLCAtMSwgLTEpZAIFDxYCHwBoZAIDDw8WCh4JQWNjZXNzS2V5BQEvHg9BcnJvd0ltYWdlV2lkdGgCBR4QQXJyb3dJbWFnZUhlaWdodAIDHhFBcnJvd0ltYWdlT2Zmc2V0WGYeEUFycm93SW1hZ2VPZmZzZXRZAusDZGQCAQ9kFgICBQ9kFgJmD2QWAmYPFCsAA2RkZGQCEQ9kFgICBA9kFgoCBQ8WAh4TUHJldmlvdXNDb250cm9sTW9kZQspiAFNaWNyb3NvZnQuU2hhcmVQb2ludC5XZWJDb250cm9scy5TUENvbnRyb2xNb2RlLCBNaWNyb3NvZnQuU2hhcmVQb2ludCwgVmVyc2lvbj0xNC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03MWU5YmNlMTExZTk0MjljAWQCCw8WAh8LCysEAWQCDQ8WAh8LCysEAWQCDw8WAh8LCysEAWQCEw8WBB8LCysEAR8AaGQCHQ9kFgJmD2QWAmYPFgIfAQXZBjxkaXYgY2xhc3M9ImxpbmtzLWJveCI+PHVsPjxsaSBjbGFzcz0iaGVhZGluZyI+SW5mb3JtYXRpb248L2xpPg0KPGxpPjxhIGhyZWY9Ii9JbmZvcm1hdGlvbi1hbmQtYWR2aWNlL1BhZ2VzL0xvY2FsLVJlc2lsaWVuY2UtRm9ydW0uYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlByZXBhcmluZyBmb3IgRW1lcmdlbmNpZXM8L2E+PC9saT4NCjxsaT48YSBocmVmPSIvQWJvdXQtVXMvVHJhbnNwYXJlbmN5LWFuZC1JbnRlZ3JpdHktUHJvZ3JhbW1lL1BhZ2VzL2RlZmF1bHQuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlRyYW5zcGFyZW5jeSAmYW1wOyBJbnRlZ3JpdHkgUHJvZ3JhbW1lPC9hPjwvbGk+PC91bD48L2Rpdj4NCjxkaXYgY2xhc3M9ImxpbmtzLWJveCI+PHVsPjxsaSBjbGFzcz0iaGVhZGluZyI+TGVnYWw8L2xpPg0KPGxpPjxhIGhyZWY9Ii9wYWdlcy9wcml2YWN5LXBvbGljeS5hc3B4IiB0YXJnZXQ9Il9ibGFuayI+Q29va2llczwvYT48L2xpPg0KPGxpPjxhIGhyZWY9Ii9BYm91dC1Vcy9GcmVlZG9tLW9mLWluZm9ybWF0aW9uL0dlbmVyYWwvUGFnZXMvUHJpdmFjeS1Ob3RpY2UuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPlByaXZhY3kgTm90aWNlPC9hPjwvbGk+DQo8bGk+PGEgaHJlZj0iL1BhZ2VzL1Rlcm1zLWFuZC1Db25kaXRpb25zLW9mLVVzZS5hc3B4IiB0YXJnZXQ9Il9ibGFuayI+VGVybXMgJmFtcDsgQ29uZGl0aW9ucyBvZiBVc2U8L2E+PC9saT4NCjxsaT48YSBocmVmPSIvUGFnZXMvRS1NYWlsJTIwYW5kJTIwU01TJTIwVGV4dCUyMERpc2NsYWltZXIuYXNweCIgdGFyZ2V0PSJfYmxhbmsiPkVtYWlsICZhbXA7IFNNUyBUZXh0IERpc2NsYWltZXI8L2E+PC9saT48L3VsPjwvZGl2Pg0KPHA+4oCLwqA8L3A+ZBgBBR9jdGwwMCRQbGFjZUhvbGRlck1haW4kR2xvYmFsTmF2Dw9kBRpGcmVxdWVudGx5IEFza2VkIFF1ZXN0aW9uc2TwmMU89lcTcnFHXCMVR6KIaA/CVQ==" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#2';
+var g_wsaListTemplateId = 850;
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fInformation-and-advice\u002ffirearms-and-firearms-licensing", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,pageListId:"{9d27d87b-812a-40e3-b938-37a54a4dff0d}",pageItemId:48, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};//]]>
+</script>
+<script type='text/javascript' src='https://durham.police.uk/style%20library/js/textsize.js'></script>
+<script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLrte6uAgK3+sjSDgLD6IqxBq/XXv8PYMyxgZ+o5jgZBhi4n/2X" />
+       
+    
+	<div id="ctl00_g_c317d0e3_0c08_46f8_a764_9e02151ed10b" __MarkupType="vsattributemarkup" __WebPartId="{c317d0e3-0c08-46f8-a764-9e02151ed10b}" WebPart="true">
+	
+
+</div>
+        
+        <div id="header"> 
+   		<div id="titlebar">
+   		<p class="skipNavigation"><a href="#maincontent" title="Skip Navigation">Skip Navigation</a></p>
+   		<img id="titlepicture" alt="Member of Durham Constabulary staff"src="/Style%20Library/Images/Redesign/titlepicturecrop.jpg"/>
+
+		
+		<div id="banner-top-l">
+			<div id="banner-top-l-links">
+				&nbsp;<div id="ctl00_g_2afd175c_4998_486a_b113_efb47ac23b2a" __MarkupType="vsattributemarkup" __WebPartId="{2afd175c-4998-486a-b113-efb47ac23b2a}" WebPart="true">
+	
+<span id="textSizeLinks">
+Text Size: <a id="ts1" href="javascript:setsize('1');" class="a1" title="Small Text">A</a><a  id="ts2" href="javascript:setsize('2');" class="a2" title="Medium Text">A</a><a  id="ts3" href="javascript:setsize('3');" class="a3" title="Large Text">A</a> | 
+</span>
+
+</div><a href="/Pages/Accessibility.aspx " title="Accessibility">Accessibility</a> | <a href="/Pages/Site-Map.aspx " title="Site Map">Site Map</a>
+			</div>
+			<div id="banner-top-r-trans">
+				<div id="google_translate_element"></div>
+			</div>
+			<script type="text/javascript">
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+				}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+
+
+        <!-- banner 
+                        <a href="http://durham.activclient.com/Pages/default.aspx" title="Home"><img id="crest" src="/Style%20Library/Images/Redesign/crestsmall.png" alt="Durham Constabulary Crest "title="Home"/>
+                		<div id="title">
+						Durham Constabulary
+						</div>
+						<div id="subtitle">
+						Altogether Better Policing.
+						</div></a>      
+			-->
+			<img alt="Durham Constabulary Logo" src="/Style%20Library/Images/Redesign/logo-durham.png"/>
+			
+			
+            <div id="banner-right">
+            	<div class="toppanel clearfix">
+            		<div id="banner-top-r">
+            			<div id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28" __MarkupType="vsattributemarkup" __WebPartId="{70bc48d8-a848-43e0-a1cb-8cf49fc64d28}" WebPart="true">
+	<div>
+		
+<div id="site-search" class="clearfix">
+                	<div id="site-search-r"><input type="submit" name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch" value="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_cmdSearch" /></div>
+                    <div id="site-search-l"><input name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$txtSearch" type="text" value="Search Site..." id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_txtSearch" title="Search Site" onclick="this.value = '';" /></div>
+</div>
+
+	</div>
+
+</div>
+            		</div>
+            	</div>
+                <div class="minicom"><a href="/Contact-us/General-contact-information/Pages/default.aspx" title="Contact for deaf users">Helplines for deaf users</a></div>
+                <div class="durham101 clearfix">
+					                <a href="/Contact-us/Pages/default.aspx" title="When it's less urgent than 999"><img id="phone" title="When it's less urgent than 999" alt="When it's less urgent than 999 call 101. In an emergency always call 999." src="/Style%20Library/Images/Redesign/101.png"/></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="navigation">
+        <div id="navigationwrapper">
+		 <div id="ctl00_g_0505093c_fd61_4d54_bdc2_ae5be1c41fcc" __MarkupType="vsattributemarkup" __WebPartId="{0505093c-fd61-4d54-bdc2-ae5be1c41fcc}" WebPart="true">
+	
+<!-- navigation -->
+<div id="navigation" class="clearfix">
+    <ul class="clearfix">
+        <li class="home"><a title="home" href="/Pages/default.aspx">Home</a></li>
+<li class="About-Us"><a title="about us" href="/About-Us/Pages/default.aspx">About Us</a></li>
+<li class="Your-Neighbourhood"><a href="https://www.police.uk/pu/your-area/durham-constabulary/">Your Neighbourhood​</a></li>
+<li class="Contact-us"><a title="contact us" href="/Contact-us/Pages/default.aspx">Contact Us</a></li>
+<li class="Latest-news"><a title="latest news" href="/news-and-events/Pages/default.aspx">News &amp; Events</a></li>
+<li class="Information-and-advice active"><a title="information and advice" href="/Information-and-advice/Pages/default.aspx">Information &amp; Advice</a></li>
+<li class="Join-us end"><a title="join us" href="/Join-us/Pages/default.aspx">Join Us</a></li>
+​​​
+    </ul>
+</div>
+
+</div> 
+		 </div>
+		</div>
+      <div id="container">
+       <!--form-->
+	<img id="backgroundimage" src="/Style%20Library/Images/Redesign/background12.jpg"/>
+        <!-- handles SharePoint scripts -->
+        
+
+        <!-- controls the web parts and zones -->
+        
+
+
+        
+        <!-- =====  Start Scrolling Body Area  JLBW REMOVED============================================================ -->
+        
+           
+        <!-- top navigation area -->
+        <div class="s4-notdlg">
+            <!-- top navigation publishing data source -->
+        </div>
+    
+        <!-- navigation -->
+<div id="ctl00_g_e08de639_4ef2_4f9f_bf59_f445cd760112" __MarkupType="vsattributemarkup" __WebPartId="{e08de639-4ef2-4f9f-bf59-f445cd760112}" WebPart="true">
+	
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1655908-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+
+
+ 
+
+</div>
+
+                <!-- =====  Begin Ribbon ============================================================ -->
+        
+        <!-- =====  End Ribbon and other Top Content ============================================================ -->
+
+        <!-- page editing status bar -->
+        <div class="s4-notdlg">
+            <div id="s4-statusbarcontainer" class="s4-notdlg">
+                <div id="pageStatusBar" class="s4-status-s1">
+                </div>
+            </div>
+        </div>
+   
+        <!-- mos_contentdiv helps SharePoint put the web part editing pane in the main body on the right -->
+        <div id="ctl00_MSO_ContentDiv">
+            <!-- styles needed to have left nav to the left of the main area -->
+         <!-- JLBW REMOVED Custom Nav Holder -->
+         
+            <!-- customBodyHolder class handles margin that allows for left margin to hold nav and hides it when dialogs are up -->
+            <!--<div >-->
+           <!-- JLBW Removed title and description placeholders -->
+       <!--<div class="s4-notdlg">-->
+                    <!-- page title -->
+                   <!-- 
+	Frequently-Asked-Questions
+-->
+               <!-- </div>-->
+                <!-- page description -->
+                <!-- JLBW Removed Description Place Holder -->
+     		<!-- content -->
+		<a name="maincontent" id="maincontent"></a>
+		<div id="content" class="clearfix">
+          
+
+
+<div id="content-left">
+        <div class="edit-mode-border">
+      <div class="sideheading"><span>In this section</span></div>
+			<div id="zz1_GlobalNav" class="side-links clearfix">
+	<div class="menu vertical menu-vertical">
+		<ul class="root static">
+			<li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/_layouts/viewlsts.aspx?BaseType=1"><span class="additional-background"><span class="menu-item-text">Libraries</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Adaptation-of-Shotgun-Magazines.aspx"><span class="additional-background"><span class="menu-item-text">Adaptation of Shotgun Magazines</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Age-Restrictions.aspx"><span class="additional-background"><span class="menu-item-text">Age Restrictions</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Air-Weapons.aspx"><span class="additional-background"><span class="menu-item-text">Air Weapons</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Buying-Selling-or-Transferring.aspx"><span class="additional-background"><span class="menu-item-text">Buying, Selling or Transferring Shotguns</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Buying-and-Transferring-Firearms.aspx"><span class="additional-background"><span class="menu-item-text">Buying, Selling or Transferring Firearms</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Clubs-and-Target-Shooting.aspx"><span class="additional-background"><span class="menu-item-text">Clubs and Target Shooting</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Criteria-for-Home-Office-Approval.aspx"><span class="additional-background"><span class="menu-item-text">Criteria for Home Office Approval</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Deer-Stalking.aspx"><span class="additional-background"><span class="menu-item-text">Deer Stalking</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Fees-and-Charges.aspx"><span class="additional-background"><span class="menu-item-text">Fees and Charges</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Firearm-Safety.aspx"><span class="additional-background"><span class="menu-item-text">Firearm Safety</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Fitness-to-be-Entrusted-with-Firearms.aspx"><span class="additional-background"><span class="menu-item-text">Fitness to be Entrusted with Firearms</span></span></a></li><li class="static selected"><a class="static selected menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Frequently-Asked-Questions.aspx"><span class="additional-background"><span class="menu-item-text">Frequently Asked Questions</span><span class="ms-hidden">Currently selected</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Good-Reason.aspx"><span class="additional-background"><span class="menu-item-text">Good Reason</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Home-Office-Approved-Clubs-and-Approval.aspx"><span class="additional-background"><span class="menu-item-text">Home Office Approved Clubs and Approval</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/How-Do-I-Join-the-Club.aspx"><span class="additional-background"><span class="menu-item-text">How Do I Join the Club?</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Links.aspx"><span class="additional-background"><span class="menu-item-text">Links</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Memorandum-on-black-powder-guns.aspx"><span class="additional-background"><span class="menu-item-text">Memorandum on black powder guns</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Prohibited-Weapons.aspx"><span class="additional-background"><span class="menu-item-text">Prohibited Weapons</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Proof-Houses.aspx"><span class="additional-background"><span class="menu-item-text">Proof Houses</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Proof-Law.aspx"><span class="additional-background"><span class="menu-item-text">Proof Law</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Proof-Marks.aspx"><span class="additional-background"><span class="menu-item-text">Proof Marks</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Proof-of-Shotguns-and-Small-Arms.aspx"><span class="additional-background"><span class="menu-item-text">Proof of Shotguns and Small Arms</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Proof-Procedure.aspx"><span class="additional-background"><span class="menu-item-text">Proof Procedure</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Purpose--Brief-History.aspx"><span class="additional-background"><span class="menu-item-text">Purpose &amp; Brief History</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Police-Register.aspx"><span class="additional-background"><span class="menu-item-text">Police Register</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Records-of-Transactions.aspx"><span class="additional-background"><span class="menu-item-text">Records of Transactions</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Registered-Firearms-Dealers.aspx"><span class="additional-background"><span class="menu-item-text">Registered Firearms Dealers</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Removal-of-Dealer-from-Police-Register.aspx"><span class="additional-background"><span class="menu-item-text">Removal of Dealer from Police Register</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Renewal-of-a-Firearm-Certificate.aspx"><span class="additional-background"><span class="menu-item-text">Renewal of Firearm &amp; Shotgun Certificate(s)</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Reproof.aspx"><span class="additional-background"><span class="menu-item-text">Reproof</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Security.aspx"><span class="additional-background"><span class="menu-item-text">Security</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Shotgun-Safety.aspx"><span class="additional-background"><span class="menu-item-text">Shot Gun Safety</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Shotguns.aspx"><span class="additional-background"><span class="menu-item-text">Shotguns</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Sound-Moderators.aspx"><span class="additional-background"><span class="menu-item-text">Sound Moderators</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Variation-of-a-Firearm-Certificate.aspx"><span class="additional-background"><span class="menu-item-text">Variation of a Firearm Certificate</span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Air-Weapons---Scotland.aspx"><span class="additional-background"><span class="menu-item-text">Air Weapons - Scotland</span></span></a></li><li class="static"><a class="static menu-item" title="Test" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Expanding-Ammunition.aspx"><span class="additional-background"><span class="menu-item-text">Expanding Ammunition </span></span></a></li><li class="static"><a class="static menu-item" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/De-activated-Firearms.aspx"><span class="additional-background"><span class="menu-item-text">De-activated Firearms</span></span></a></li>
+		</ul>
+	</div>
+</div>
+   <div id="ctl00_PlaceHolderMain_LeftCol_label" style='display:none'>Left Page Content</div><div id="ctl00_PlaceHolderMain_LeftCol__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_LeftCol_label"></div>
+        </div>
+    </div>
+   
+    <div id="content-middle">
+    
+    	<div id="breadcrumb" class="clearfix">
+	    	<div class="breadcrumb-trail">
+			<span SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider" HideInteriorRootNodes="true"><span><a title="Home Page" class="breadcrumbRootNode" href="/Pages/default.aspx">Home</a></span><span> &gt; </span><span><a class="breadcrumbNode" href="/Information-and-advice/Pages/default.aspx">Information &amp; advice</a></span><span> &gt; </span><span><a class="breadcrumbNode" href="/Information-and-advice/firearms-and-firearms-licensing/Pages/default.aspx">Firearms and Firearms Licensing</a></span><span> &gt; </span><span class="breadcrumbCurrentNode">Frequently Asked Questions</span></span></div>
+		    <div id="ctl00_PlaceHolderMain_g_299990b2_90e4_4ad9_a0c9_45557240450e" __MarkupType="vsattributemarkup" __WebPartId="{299990b2-90e4-4ad9-a0c9-45557240450e}" WebPart="true">
+	
+
+
+
+
+      
+
+</div>		    
+		</div> 
+
+		<div class="text-content">
+			<h1>
+			Frequently Asked Questions</h1>
+			<div id="ctl00_PlaceHolderMain_ctl02_label" style='display:none'>Rollup Image</div><div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label"><div class="ms-rtestate-field"></div></div>
+	        <div class="edit-mode-border">
+	            <div id="ctl00_PlaceHolderMain_CenterCol_label" style='display:none'>Page Content</div><div id="ctl00_PlaceHolderMain_CenterCol__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_CenterCol_label"><p style="text-align:justify">​</p>
+<p style="text-align:justify"><strong>Q: What do I do if I move address?</strong></p>
+<p style="text-align:justify"><strong>A: </strong>As the holder of either a shotgun or firearm certificate you are legally required by the conditions of that certificate to inform the Chief Constable by whom it was issued of your change of address without undue delay. If your new address remains within the jurisdiction of the authority who issued your certificate please notify the Firearms Licensing Office in writing together with your certificate ensuring where possible that a day time contact number is included.</p>
+<p style="text-align:justify">When moving home it is your direct responsibility to ensure that your weapons are secure during the moving process. Alternatively you may wish to store your firearms with a Registered Firearms Dealer. Shotguns can be temporarily stored with another shotgun certificate holder, providing his/he storage can safely secure all shotguns concerned. However, if he/she holds them on your behalf for more than 72 hours then your shotgun(s) must be registered on that person's shotgun certificate and written notification by both parties is necessary to the Chief Constable of Police.</p>
+<p style="text-align:justify">If you have been unable to temporarily store your weapons elsewhere, you should immediately secure your cabinet, with rawl-bolts, to a solid brick wall inside your new home.</p>
+<p style="text-align:justify">A Firearm Enquiry Officer will contact you and arrange for a security inspection at your new address. Should it be necessary to upgrade your security measures you will be permitted a reasonable length of time to complete such matters.</p>
+<p style="text-align:justify">Where security measures are found to be totally inadequate, with little likelihood of meeting the required standard in the foreseeable future, you will be required to store your weapons elsewhere until the matter is resolved.</p>
+<p style="text-align:justify">If you are moving to a different Firearms Licensing authority area contact the Firearms Licensing Office for your new area, and they will inform you of what their procedure is. You should also inform your present Firearms Licensing office of your intended move, in order that your existing file can be passed to your new authority. It is advised in such cases that you retain your current certificate until the new Firearms Licensing authority requests its submission for replacement/amendment.</p>
+<div> </div>
+<div><strong>Q: What is an 'antique' firearm?</strong></div>
+<p style="text-align:justify"><strong>A: </strong>The word &quot;antique&quot; is not defined anywhere within any of the Firearms Acts or Regulations, so how do we know what is acceptable as &quot;antique&quot;?</p>
+<p style="text-align:justify">Dictionary definitions include &quot;not of our time&quot; and &quot;a relic of former times&quot;. Consequently it must be accepted that modern reproductions, even of very old flintlocks, etc., cannot be antique.</p>
+<p style="text-align:justify">Many people use the old maxim that over 100 years old means it is antique. To a great extent this will prove to be true, but there are always the exceptions to the rule. </p>
+<p style="text-align:justify">There are some old weapons which are still capable of firing a modern centre fire cartridge, and are therefore not classified as antique.</p>
+<p style="text-align:justify">It may be easier to understand what is acceptable as antique, if we first establish what is &quot;modern&quot;. Modern, in relation to firearms, has now been established as: manufactured since or during the Second World War. The following tables are a guide as to what may or may not be antique. In reality every case will need to be judged on its own merit.</p>
+<p style="text-align:justify"><strong>Antiques</strong></p>
+<ul style="text-align:justify"><li>All muzzle loading firearms, except those of &quot;modern&quot; manufacture.</li>
+<li>Breech loading firearms capable of discharging a rim fire cartridge exceeding .23&quot; calibre (or its metric equivalent), but not 9mm.</li>
+<li>Breech loading firearms using ignition systems other than rim fire or centre fire. (e.g. pin-fire and needle-fire).</li>
+<li>Breech loading firearms incapable of firing a centre fire cartridge.</li></ul>
+<p style="text-align:justify"> </p>
+<p style="text-align:justify"><strong>Not Antiques</strong></p>
+<ul style="text-align:justify"><li>Breech loading firearms capable of firing either: </li>
+<li>a centre fire cartridge, or</li>
+<li>a rim fire cartridge not exceeding .23&quot; (or its metric equivalent), or</li>
+<li>a 9mm rim fire cartridge.</li>
+<li>All firearms of &quot;Modern&quot; manufacture.</li>
+<li>All ammunition</li></ul>
+<p style="text-align:justify"> </p>
+<p style="text-align:justify">If a firearm falls within the accepted definition of antique, then it is no longer subject to the provisions of the Firearms Acts, providing it is kept as a curio or ornament. It will be seen above that no ammunition can be classified as antique and the possession of suitable ammunition, for use with an otherwise antique firearm, may indicate that the firearm is not possessed as a curio or ornament. Also the intent to fire an antique weapon even with blank ammunition or change (i.e. historical enactment) would take it beyond the term of being held as a curiosity or ornament.</p>
+<p style="text-align:justify">For further information please visit <a href="http://www.homeoffice.gov.uk/police/police-use-firearms/" target="_blank">The Home Office guidance on Antique firearms and the Law </a></p>
+<p style="text-align:justify"><strong>Q: What are 'deactivated' weapons?</strong></p>
+<p style="text-align:justify"><strong>A: </strong>Deactivated weapons are any firearms which have been converted, in such a manner that they can no longer discharge any shot, bullet or other missile. More importantly, deactivation is intended to be permanent and such firearms should be incapable of being reactivated without specialist tools or skills.</p>
+<p style="text-align:justify">Deactivation work carried out in the UK since 1st July 1989 will generally have been endorsed by one of the Proof Houses, the weapon proof-marked and a certificate of deactivation issued. To these ends, any weapon, even a prohibited weapon such as a machine gun, can be deactivated. The outcome is that the weapon is no longer a firearm within the meaning of the Firearms Acts, and consequently may be possessed without a firearm or shotgun certificate and may be displayed in the owner's home, rather than be locked in a gun cabinet.</p>
+<p style="text-align:justify">Deactivation of a firearm is not something to be undertaken by the layman. There are stringent requirements before a weapon can be proofed as deactivated and such work is best left to a gunsmith. A Registered Firearms Dealer is the best person to speak to if you require a weapon to be deactivated. He can make all the necessary arrangements for you, including deactivation of the weapon and getting it proofed. You should not &quot;deactivate&quot; a weapon yourself; for instance by filling in the barrel or filing off the firing pin. In such circumstances the weapon will still remain a &quot;firearm&quot; and require to be held on a certificate. Deactivation needs to be carried out by a qualified gunsmith in order to meet the standard necessary for proofing.</p>
+<p style="text-align:justify">Although the above references to proofing and certification do not preclude the possibility that a firearm which has been deactivated in some other way may also have ceased to be a firearm within the meaning of the 1968 Act (as amended), it is important that care is taken when acquiring any firearm which is described as deactivated. You should ensure that you are shown the Proof House mark and deactivation certificate issued in respect of any gun deactivated in the UK since 1st July 1989.</p>
+<p style="text-align:justify">Further advice may be sought from the Firearms Licensing Office, Registered Firearms Dealers or the Proof Houses.</p>
+<div>See also <strong>Deactivation of firearms. (Link to Deactivation of firearms page)</strong></div>
+<div> </div>
+<div><strong>Q: How can I take my licensed weapons abroad?</strong></div>
+<div><strong>A: </strong>If you are the holder of a shotgun or firearms certificate and you wish to take your weapons abroad <strong>within the EEC</strong>, then you will need a European Firearms Pass. This is issued free of charge upon written application to your Firearms Licensing Office. You will need to specify what weapons you will be taking with you. A European Firearms Pass cannot have an expiry date later than the expiry date on the firearms or shotgun certificate on which the weapons are held.</div>
+<div> </div>
+<div style="text-align:justify">If you wish to take your weapons to any other country, whether in or outside the EEC, you should seek advice from the embassy or consulate of that country. Even within the EEC other documents may be required other than your European Firearms Pass. Advice should also be sought from the air line authorities as to their requirements for the transportation of firearms/shotguns/ammunition when booking your flight.</div>
+<div style="text-align:justify"> </div>
+<div style="text-align:justify">All weapons <strong>must </strong>be declared to Customs and to the travel company carrying you, whether by land, sea or air.</div>
+<div style="text-align:justify"> </div>
+<p style="text-align:justify">Holders of British firearm and shotgun certificates, wishing to take their firearms to Northern Ireland, should be aware that a valid certificate of approval, from the Chief Constable of the Police Service of Northern Ireland, is also required in addition to their firearm and shotgun certificates.</p>
+<p style="text-align:justify">It should be noted that air weapons are also currently required to be licensed in Northern Ireland, and approval as above is necessary to take them there.</p>
+<p style="text-align:justify"><a href="http://www.homeoffice.gov.uk/police/police-use-firearms/">Advice on obtaining approval.</a></p>
+<div><strong>Q: Unexpected possession of a firearm - What should I do?</strong></div>
+<div><strong>A: </strong>The first criteria is not to panic into doing something silly or even illegal.</div>
+<div style="text-align:justify">There have been many incidents where unlicensed people have suddenly found themselves in &quot;possession&quot; of firearms or shotguns, for example, the death of a certificate holder may leave a widow or widower or another direct member of the family in possession of such items.</div>
+<div> </div>
+<p style="text-align:justify">Contact to the Firearms Licensing Office can result in appropriate advice on such matters and in certain circumstances the police are empowered to issue a temporary permit to allow lawful access to the firearms, thus allowing time for the weapons to be disposed of properly.</p>
+<p>For <strong>&quot;What is a firearms permit?&quot;</strong> see below.</p>
+<p style="text-align:justify">If you find unlicensed weapons in your &quot;possession&quot;, for instance discovering them in your loft having just moved into a new address; do not handle them, they could be loaded and in a dangerous condition. Immediately call your local police who will make them safe and dispose of them for you.</p>
+<p style="text-align:justify">Should you find yourself &quot;inheriting&quot; firearms you have a number of choices. If you are a certificate holder then you can request that they be added to your own certificate. This would depend on the weapons not being lost or stolen, and you having capacity to store them and, in the case of a firearms certificate, the authority to possess that type of weapon. You could also request the required authority but would need to satisfy good reason.</p>
+<p style="text-align:justify">If you are not a certificate holder you could first request a permit allowing you access to the weapons, this would give you the time to get them to a Registered Firearms Dealer for storage, whilst you decided what to do next. You could then apply for a certificate yourself to allow you to keep the guns, but remember you would need to satisfy <a href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Good-Reason.aspx">good reason.</a></p>
+<p style="text-align:justify">Another alternative would be to have the weapons deactivated therefore removing them from all legislation relating to firearms. They would still retain the original appearance but would be incapable of discharging a missile.</p>
+<div style="text-align:justify">In all cases of doubt, contact your local police or the Firearms Licensing Office. They will deal sympathetically with your problem and help you find the right solution. The last thing anybody wants is for unlicensed firearms to get into the wrong hands.</div>
+<div style="text-align:justify"> </div>
+<div><strong>Q: What is a firearms permit?</strong></div>
+<p><strong>A: </strong>A permit can be issued by the Chief Officer of Police, as a temporary authority, for the possession of firearms or shotguns. It is not normally issued to a certificate holder, but to someone who, unexpectedly, finds the need to have legal access to weapons (see example above).</p>
+<p>The authority is usually of a restrictive nature and may not allow use of the weapons for shooting. The permit, by nature of the fact that it is temporary, has a limited life span, probably about thirty days. This can be extended in exceptional circumstances.</p>
+<p>The idea of the permit is to allow the holder to transfer or transport weapons, perhaps to a Registered Firearms Dealer or another certificate holder. It is not designed as a legal authority in place of a normal certificate.</p>
+<p>You could look on a permit as a temporary &quot;cover-note&quot;.</p>
+<p><strong>Q: How do I import or export firearms?</strong></p>
+<p><strong>A: </strong>To permanently import or export firearms will normally require the grant of a licence from the Department of Trade and Industry. The import and export of firearms is a complex subject and advice should be sought from the following:</p>
+<p><strong>Import</strong></p>
+<p class="ms-rteThemeForeColor-2-0 ms-rteThemeBackColor-4-1">Department of Trade &amp; Industry,<br />Import Licensing Branch,<br />Queensway House,<br />West Precinct,<br />Billingham,<br />TS23 2NF<br /><br />Telephone: 01642 364351<br />Fax: 01642 364269<br />Email: <a href="mailto:enquiries.ilb@dti.gsi.gov.uk">enquiries.ilb@dti.gsi.gov.uk</a></p>
+<p>For more information on importing firearms, read the guide at the British High Commission - Press and Public Affairs Section</p>
+<p><strong>Export</strong></p>
+<p class="ms-rteThemeForeColor-2-0 ms-rteThemeBackColor-4-1">Department of Trade &amp; Industry,<br />Export Licensing Unit,<br />4 Abbey Orchard Street,<br />London,<br />SW1P 2HT,<br /><br />Telephone: 020 7215 8070<br />Fax: 020 7215 0558<br />Email: <a href="mailto:eco.help@dti.gsi.gov.uk">eco.help@dti.gsi.gov.uk</a> </p>
+<p>For more information on exporting firearms, visit  Department of Trade and industry Export Control.    </p>
+<p><strong>Q: How can a visitor to the UK possess firearms or shotguns?</strong></p>
+<p><strong>A:</strong> Under section 17 of the 1988 Act a visitor to Great Britain may, if he is granted a visitor's permit, have in his possession firearms, shotguns or ammunition without holding a certificate. The holder of a visitor's firearms permit may have in his possession any firearm (but not purchase one), and purchase, acquire or have in his possession any ammunition, to which section 1 of the 1968 Act applies.</p>
+<p style="text-align:justify">The holder of a visitor's shotgun permit may have in his possession, purchase or acquire shotguns and is exempt from the requirement to produce a shotgun certificate when purchasing cartridges. Both permits are valid for a period of up to 12 months and must show the full details of weapons covered and, in the case of a firearms permit, show details of the quantity of ammunition to be purchased/acquired and held. Similarly, territorial and other conditions as would appear on a firearm certificate, will normally be imposed on a visitor firearms permit.</p>
+<p style="text-align:justify">Separate permits for each police area are not required as both permits will cover the visitor throughout Great Britain.</p>
+<div>For cost of a permit visit the section on <a href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Fees-and-Charges.aspx">Fees and Charges.</a></div>
+<div> </div>
+<div><strong>Q: How do I apply for a visitor's permit?</strong></div>
+<p><strong>A: </strong>Applications for visitor's permits must be made on Firearms Form 107 on behalf of the visitor by a sponsor or representative who lives in Great Britain, and in the case of a visitor from the EU States, must be accompanied by the visitors European Firearms Pass. The sponsor must apply to the Chief officer of Police for the area where he/she resides and in most cases a private sponsor will himself be a certificate holder, but this is not a requirement. Additionally the sponsor may make application in the capacity of a club, shooting syndicate, country estate or shooting organisation.</p>
+<p style="text-align:justify">Group applications can be made for parties of between 6 and 20 people provided they are all shooting at the same location and at the same time, or are participating in the same event or competition. In such circumstances a reduced fee is payable. See <a href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Fees-and-Charges.aspx">Fees and Charges.</a></p>
+<p style="text-align:justify">Applications should be made well in advance of the required date, to allow the proper enquiries to be made by the police, application should be received usually six to eight weeks before the visitor intends to travel. Application Form 107 can be obtained from the Firearms Licensing Office or by the available website facilities.</p>
+<div> </div>
+<div><strong>Q: What is the criteria for granting a visitor permit</strong></div>
+<p>A: A Chief Officer of Police <strong>must not </strong>grant a permit to any person in respect of whom he has reason to believe:</p>
+<ul style="text-align:justify"><li>That his possession of the ammunition or weapons in question would represent a danger to public safety or to the peace; <strong>or</strong></li>
+<li>That he is prohibited from possessing such weapons or ammunition.</li></ul>
+<p> </p>
+<p style="text-align:justify">If the grant is not precluded on the above grounds, the Chief Officer of Police must be satisfied that:</p>
+<ul style="text-align:justify"><li>The applicant is visiting or intends to visit Great Britain; and <strong>either</strong></li>
+<li>In the case of a visitor's firearm permit, the applicant has good reason for having each firearm and the ammunition to which the permit relates in his possession, or, as respects ammunition, for purchasing or acquiring it whilst a visitor to Great Britain;<strong> or</strong></li>
+<li>In the case of a visitor's shotgun permit, the applicant has a good reason for having each shotgun to which the permit relates in his possession, or for purchase or acquiring it, whilst he is a visitor to Great Britain.</li></ul>
+<p> </p>
+<p style="text-align:justify">When a permit is granted it will be sent to the sponsor who should forward it to the visitor in his country of origin, for presentation to customs on his arrival in Great Britain. The visitor's permit will be accepted in lieu of a Department of Trade &amp; Industry import licence. Failure to produce the permit at the time of importation may render the firearms/shotguns liable to detention or seizure.</p>
+<p style="text-align:justify">Members of EU countries must be in possession of a European Firearms Pass which should be forwarded with the application for the permit.</p>
+<div>Should an application for the grant of a visitor's permit be refused there is no right of appeal. However notification of such refusals will, circumstances allowing, be detailed by letter in good time to prevent any unnecessary travel costs.</div>
+<div> </div>
+<div><strong>Q: What is a prohibited person?</strong></div>
+<p><strong>A: </strong>Section 21, Firearms Act, 1968 sets out restrictions on the possession of firearms by certain categories of persons convicted of crime. A person who has been <strong>sentenced to</strong> preventive detention or to imprisonment or to corrective training for a term of<strong> three years or more</strong>; or who has been sentenced to be detained in a young offenders' institution in Scotland, shall not, <strong>at any time</strong>, have a firearm or ammunition in his possession. This means <strong>for life</strong> and includes all firearms, even air weapons, air gun pellets and shotgun ammunition.</p>
+<p style="text-align:justify">A person who has been <strong>sentenced </strong>to borstal training, to corrective training for less than three years, or to imprisonment for a term of <strong>three months or more</strong>, but less than three years; or who has been sentenced to be detained for such a term in a detention centre or in a young offenders' institution in Scotland, shall not at any time <strong>before the expiration of a period of five years</strong>, from the date of his release, have a firearm or ammunition in his possession.</p>
+<div>It is also an offence for a person to sell or transfer a firearm or ammunition to, or repair, test or prove a firearm or ammunition for, a person whom he knows or has reasonable grounds for believing to be prohibited from having a firearm or ammunition in his possession.</div>
+<div> </div>
+<div><strong>Q: Can I try shooting without holding a certificate?</strong></div>
+<p><strong>A:</strong> In short, yes you can, under certain circumstances.</p>
+<p style="text-align:justify">Many approved shotgun clubs and even some Registered Firearms Dealers hold special &quot;open days&quot; where non-certificate holders can fire club shotguns to test their interest in the sport. The club or dealer must have a Section 11(6) permit, issued by the police, which allows such an operation on a limited number of days per year.</p>
+<p style="text-align:justify">Approved rifle and muzzle-loading clubs will allow you to shoot club guns providing you are a club member. There are normally provisions within the club rules which allow non-members to become &quot;guests&quot;, sponsored by a club member, and to use club weapons to shoot on a limited number of days.</p>
+<p style="text-align:justify">Another way to shoot shotguns and even rifles without a certificate is when you are accompanied by the landowner or his agent, (e.g. game warden), shooting on his land, using his weapons, within the limitations of the authorities on the certificate, for that weapon.</p>
+<div>However, as a non-certificate holder, you cannot borrow another person's gun, if he is not the occupier of the land you intend to shoot on.</div>
+<div> </div>
+<div><strong>Q: What is a 'restricted' shotgun?</strong></div>
+<p><strong>A: </strong>The Firearms Amendment Act 1988 reclassified &quot;pump-action&quot; and &quot;semi-automatic&quot; shotguns, which had a magazine capable of holding more than two cartridges, as Section 1 firearms and since that time, can only be legally held on a firearms certificate.</p>
+<p style="text-align:justify">However, many shotgun certificate holders already possessed such weapons, and consequently either had to dispose of them or have them &quot;restricted&quot;.</p>
+<p style="text-align:justify">Restriction is the adaptation of the shotgun magazine allowing it to hold no more than two conventional size cartridges. A third cartridge can still be held in the breech, and this is quite legal.</p>
+<p style="text-align:justify">The adaptation must be done in a manner approved by the Secretary of State and should be carried out by a fully qualified gunsmith. The adaptation is not legal until the shotgun has been proved by one of the two Proof Houses, duly proof marked and a certificate issued by the Proof House.</p>
+<p style="text-align:justify">If you plan to acquire a &quot;pump-action&quot; or &quot;semi-automatic&quot; shotgun on a shotgun certificate, you must ensure that the magazine is incapable of holding more than two cartridges by manufacture or adaptation. In the latter case the shotgun must be so proof marked and accompanied by a certificate from the issuing Proof House. The magazine must also be non-detachable as this alone will make the shotgun a Section 1 firearm.</p>
+<p style="text-align:justify">Failure to ensure these points may expose you to being in unlawful possession of Section 1 firearms.</p>
+<div>See also <a href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Adaptation-of-Shotgun-Magazines.aspx">Adaptation of shotgun magazines by the Proof House.</a> </div>
+<div> </div>
+<div><strong>Q: Do I need a certificate for an air weapon?</strong></div>
+<p><strong>A: </strong>Conventional air guns, air rifles and air pistols do not require to be held on a firearm certificate, unless they are of a type declared specially dangerous by the Firearms, (Dangerous Air Weapons) Rules 1969.</p>
+<p style="text-align:justify">It is possible to measure the velocity of pellets discharged, to a satisfactory degree of accuracy, by use of an electronic chronograph. These measurements allow the calculation of the kinetic energy of the pellet, at the muzzle.</p>
+<p style="text-align:justify">The Rules provide that any air weapon is specially dangerous, which is capable of discharging a missile with a kinetic energy in excess of:</p>
+<ul style="text-align:justify"><li>In the case of an air pistol: 6 ft/lbs or</li>
+<li>In the case of an air weapon other than an air pistol: 12 ft/lbs</li></ul>
+<p> </p>
+<p style="text-align:justify">Such air weapons, exceeding these prescribed limits, or any other air weapon which uses or is designed or adapted for use with a self contained gas cartridge system, can only be lawfully held on a firearm certificate and are subject to all the rules and regulations pertaining to a Section One firearm.</p>
+<p style="text-align:justify"> </p>
+<div>See also <a href="/Information-and-advice/firearms-and-firearms-licensing/Pages/Air-Weapons.aspx">Air Weapons </a></div>
+<div> </div>
+<div><strong>Q: How do I dispose of an unwanted weapon?</strong></div>
+<p><strong>A: </strong>If you possess a shotgun, legally held on a shotgun certificate, and you decide that you no longer wish to keep it, you have various options as to its disposal:</p>
+<ul style="text-align:justify"><li>You may sell, give, transfer its ownership to another shotgun certificate holder or a Registered Firearms Dealer.</li>
+<li>You may surrender the shotgun to a police station for destruction unless it is deemed to be of historical interest and then in that case a decision may be taken to give it to a museum or other interested official party.</li>
+<li>You may have the shotgun deactivated after which it is no longer deemed to be a 'firearm' within the meaning of the Acts and Regulations. Deactivation must be done officially and proved at one of The Proof Houses who issue the weapon with a deactivation certificate and also proof mark it. This renders the weapon incapable of being fired and, more importantly, incapable of being converted back to a firing condition.</li></ul>
+<p> </p>
+<p style="text-align:justify">See also What are <strong>'Deactivated' Weapons?  and Deactivation of Firearms. (Link both to deactivation of firearms page) </strong></p>
+<p style="text-align:justify">If you hold weapons on a firearm certificate, the scenario is slightly different with regard to selling, giving or transferring them to another firearm certificate holder. Firearm certificate holders can only possess those firearms authorised on their certificate and therefore, before transferring firearms to another firearm certificate holder, you must ensure that their certificate carries the authority for the calibre and weapon in question.</p>
+<p style="text-align:justify">No such restrictions usually apply to Registered Firearms Dealers, except possibly in respect of Section 5 (prohibited) weapons. Even Registered Firearms Dealers need special authorisation from The Home Office to handle prohibited weapons. The option to surrender weapons at a police station or have them properly deactivated, applies equally to firearms as it does to shotguns.</p>
+<p style="text-align:justify">You should never destroy and/or dispose of a shotgun or firearm yourself. Every weapon needs to be accounted for and irrespective of what you do with a licensed weapon, you must inform the police authority which issued your certificate, exactly what you have done with it.</p>
+<p style="text-align:justify">Section 1 ammunition can be disposed of through another authorised firearm certificate holder (again one that is duly authorised by way of that certificate), a Registered Firearms Dealer, your target shooting club or surrendered at any police station for destruction.</p></div>
+	        </div>
+        </div>
+        
+    </div>
+    
+    <div id="content-right">
+        <div class="edit-mode-border">
+	        <div id="ctl00_PlaceHolderMain_g_fead77cc_8c59_425e_a475_e6f369a5e68c" __MarkupType="vsattributemarkup" __WebPartId="{fead77cc-8c59-425e-a475-e6f369a5e68c}" WebPart="true">
+	
+
+</div>
+            
+        </div>
+    </div>
+    
+ 
+
+
+   
+
+ </div>
+            <!--</div>-->
+
+
+
+        </div>
+     
+        <!-- the developer dashboard can be turned on by administrators and shows debuging and performance info for the page -->
+        <div id="DeveloperDashboard" class="ms-developerdashboard">
+            
+        </div>
+      
+        <!-- =====  End scrolling body area with these two previous div's JLBW REMOVED ============================================================ -->
+      
+      
+        <!-- The form digest security control used to for security validation on forms -->
+        
+			
+        
+        <!-- =====  Hidden Placeholders ============================================================ -->
+        
+        <!-- Handle Search "enter" key from Firefox -->
+        <input type="text" name="__spDummyText1" style="display: none;" size="1" title="Dummy1"/>
+        <input type="text" name="__spDummyText2" style="display: none;" size="1" title="Dummy2"/>
+<!--Form-->       
+
+
+        <!-- extra form for some instances -->
+        
+        
+
+ <!-- footer -->
+        <div id="footer" class="clearfix">
+            <div id="footer-inner">
+                <div id="footer-left" class="clearfix">
+	                <div id="ctl00_g_210cefdb_c7e3_4268_a5d1_d8594a316a9f" __MarkupType="vsattributemarkup" __WebPartId="{210cefdb-c7e3-4268-a5d1-d8594a316a9f}" WebPart="true">
+	<div class="links-box"><ul><li class="heading">Information</li>
+<li><a href="/Information-and-advice/Pages/Local-Resilience-Forum.aspx" target="_blank">Preparing for Emergencies</a></li>
+<li><a href="/About-Us/Transparency-and-Integrity-Programme/Pages/default.aspx" target="_blank">Transparency &amp; Integrity Programme</a></li></ul></div>
+<div class="links-box"><ul><li class="heading">Legal</li>
+<li><a href="/pages/privacy-policy.aspx" target="_blank">Cookies</a></li>
+<li><a href="/About-Us/Freedom-of-information/General/Pages/Privacy-Notice.aspx" target="_blank">Privacy Notice</a></li>
+<li><a href="/Pages/Terms-and-Conditions-of-Use.aspx" target="_blank">Terms &amp; Conditions of Use</a></li>
+<li><a href="/Pages/E-Mail%20and%20SMS%20Text%20Disclaimer.aspx" target="_blank">Email &amp; SMS Text Disclaimer</a></li></ul></div>
+<p>​ </p>
+
+
+</div>
+				</div>
+				
+                <!--<div id="footer-right" class="clearfix">
+                    <div class="footer-social-l">
+                        Find us on</div>
+                    <div class="footer-social-r clearfix">
+                        <div class="footer-social-icon">
+                            <a href="http://www.flickr.com/photos/durhamconstabularyinpix" target="_blank" title="Durham Constabulary on Flickr">
+                                <img src="/Style%20Library/img/footer-icn-flickr.jpg" alt="Flickr" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://www.youtube.com/durhampolice999" target="_blank" title="Durham Constabulary on YouTube">
+                                <img src="/Style%20Library/img/footer-icn-youtube.jpg" alt="YouTube" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://twitter.com/DurhamPolice" target="_blank" title="Durham Constabulary on Twitter">
+                                <img src="/Style%20Library/img/footer-icn-twitter.jpg" alt="Twitter" /></a></div>
+                        <div class="footer-social-icon">
+                            <a href="http://www.facebook.com/pages/Durham-Constabulary/224330430978915" target="_blank" title="Durham Constabulary on Facebook">
+                                <img src="/Style%20Library/img/footer-icn-facebook.jpg" alt="Facebook" /></a></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+     <div id="ctl00_panelZone">
+	<div style='display:none' id='hidZone'><menu class="ms-SrvMenuUI">
+		<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu></div>
+</div><input type='hidden' id='_wpcmWpid' name='_wpcmWpid' value='' /><input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);
+function EnsureScripts(scriptInfoList, finalFunction)
+{
+if (scriptInfoList.length == 0)
+{
+finalFunction();
+}
+else
+{
+var scriptInfo = scriptInfoList.shift();
+var rest = function () { EnsureScripts(scriptInfoList, finalFunction); };
+var defd;
+try
+{
+eval('defd = typeof(' + scriptInfo[1] + ');');
+}
+catch (e)
+{
+defd = 'undefined';
+}
+if (scriptInfo[2])
+{
+EnsureScript(scriptInfo[0], defd, null);
+ExecuteOrDelayUntilScriptLoaded(rest, scriptInfo[0]);
+}
+else
+{
+EnsureScript(scriptInfo[0], defd, rest);
+}
+}
+}
+function PublishingRibbonUpdateRibbon()
+{
+var pageManager = SP.Ribbon.PageManager.get_instance();
+if (pageManager)
+{
+pageManager.get_commandDispatcher().executeCommand('appstatechanged', null);
+}
+}var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{9d27d87b-812a-40e3-b938-37a54a4dff0d}",itemId: 48,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fInformation-and-advice\u002ffirearms-and-firearms-licensing\u002fPages",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+}
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js"); var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';//]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// ]]>
+</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002fsp.core.js?rev=7ByNlH\u00252BvcgRJg\u00252BRCctdC0w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=b6\u00252FcRx1a6orhAQ\u00252FcF\u00252B0ytQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002fsp.ui.dialog.js?rev=IuXtJ2CrScK6oX4zOTTy\u00252BA\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.core.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f1033\u002fcore.js?rev=thUAOrLfyaU\u00252Fgyxy0eiMiw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002fsp.runtime.js?rev=9sKdsC9N6p2BiRk3313M7Q\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.core.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002fsp.js?rev=SpGB4\u00252FzYmCWpwoPWNG2dsg\u00253D\u00253D");RegisterSodDep("sp.js", "sp.core.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002fcui.js?rev=k\u00252B4HtUzT9\u00252B3mSycgD7gPaQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002finplview.js?rev=ZfVDYd30Z2D01DIRRl8ETA\u00253D\u00253D");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002fsp.ribbon.js?rev=F\u00252BUEJ66rbXzSvpf7nN69wQ\u00253D\u00253D");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("sp.publishing.resources.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252EPublishing\u00252EResources\u0026rev=q6nxzZIVVXE5X1SPZIMD3A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.pub.ribbon.js", "\u002f_layouts\u002fsp.ui.pub.ribbon.js?rev=RGQSBI9Dm0E345iq\u00252FxUpHg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("msstring.js", "\u002f_layouts\u002f1033\u002fmsstring.js?rev=QtiIcPH3HV7LgVSO7vONFg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f1033\u002fnon_ie.js?rev=EVTj1bu32\u00252FMla6SDN\u00252FsNTA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSodDep("browserScript", "msstring.js");</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+function init_zz1_GlobalNav() {$create(SP.UI.AspMenu, null, null, null, $get('zz1_GlobalNav'));}ExecuteOrDelayUntilScriptLoaded(init_zz1_GlobalNav, 'sp.js');
+//]]>
+</script>
+</form>
+
+ 
+</body>
+</html>
+<!-- Rendered using cache profile:Public Internet (Purely Anonymous) at: 2020-09-27T23:56:23 -->
