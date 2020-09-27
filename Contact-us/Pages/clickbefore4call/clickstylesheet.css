@@ -1,0 +1,150 @@
+
+
+* { -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased; font-smoothing:antialiased; }
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+	font-weight:300;
+	margin-left: 5px;	
+	margin-bottom: 40px;
+}
+h2{
+	margin:0px;
+  padding-top: 5px;
+	font-weight:300;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+	margin:0px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+  margin-top: 15px;
+  
+}
+.clickcontainer{
+	margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+	-webkit-transform:scale(0.9);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+a.clickwide, a.clickbox{
+	text-decoration:none;
+	color:#fff;
+	-webkit-transition: -webkit-transform 0.1s;
+	position:relative;
+	overflow:hidden;
+  
+
+}
+
+a.clickwide h2, a.clickbox h2{
+
+	bottom:5px;
+}
+
+a.clickwide h2.top, a.clickbox h2.top{
+	position:static;
+	font-size:14px;
+}
+a.clickwide i, a.clickbox i{
+font-size: 50px;
+text-align: center;
+display: block;
+margin-top: 10px; /* outside Codepen is actually 30px */
+}
+a.clickwide:hover, a.clickbox:hover{
+	-webkit-transform: scale(1.05);
+}
+
+a.clickwide:active, a.clickbox:active{
+	-webkit-transform: scale(1);
+}
+.clickwide{
+	width:270px;
+	height:120px;
+	overflow:hidden;
+	font-size:13px;
+	padding:10px;
+	display:block;
+	float:left;
+	margin: 5px;
+}
+
+.clickbox{
+	width:120px;
+	height:120px;
+	overflow:hidden;
+	font-size:13px;
+	padding:10px;
+	display:block;
+	float:left;
+	margin:5px;
+}
+.lime{background:#61b812;}
+.orange{background:#e76022;}
+.blue{background:#1E90FF;}
+.redgay{background:#DA312E;}
+.yellow{background:#dbb701;}
+.bluefish{background:#02b9e3;}
+.magenta{background:#d22a4e;}
+.policeblue{background:#3a54a3;}
+
+.spacer3x{
+	width:300px;
+}
+
+
+#wrapper {
+  
+  margin: 0 auto;
+}
+
+
+.mac-book-pro-display {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 465px;
+  border: 20px solid #000000;
+  border-radius: 20px;
+  background: white;
+  background-image: url("https://www.durham.police.uk/Contact-us/Pages/clickbefore4call/Tablet-BG-Light.jpg");
+  background-size: cover;
+  
+}
+
+.camera {
+  position: absolute;
+  left: 300px;
+  top: 467px;
+  background-color: #222222;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+.clickwide::after .clickwide::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+.clickbox::after .clickbox:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
