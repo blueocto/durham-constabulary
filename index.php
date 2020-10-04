@@ -4,7 +4,7 @@
 <head id="ctl00_Head1">
 	
 	<meta charset="utf-8" />
-	<meta http-equiv="Expires" content="0" />
+
 	<title>Home</title>
 	
 	<!-- favicon -->
