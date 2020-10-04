@@ -23,3 +23,6 @@ By putting this on a public repo, I hope that if anything can be improved, then 
 ## Project setup
 
 I've ripped the site, using Site Sucker. Using PHP in this case, as it's open-source, easy to learn, many Developers will know it (instead of using new/edge-case tech).
+
+I'm using `valet` to run this locally on Mac OSX, feel free to use a setup of your choice to get PHP running. There is no database. 
+I might add instructions later, however, as each computer has a unique setup and versioning, this is a challenge currently and not a high priority.
