@@ -16,7 +16,9 @@
 </head>
 
 <body onload="javascript:_spBodyOnLoadWrapper();">
+	
 	<form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm">
+		
 		<input type="hidden" name="__SPSCEditMenu" id="__SPSCEditMenu" value="true" />
 		<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
 		<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
@@ -71,79 +73,12 @@
 
 		<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
 		<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwKTkrieBwK3+sjSDgLD6IqxBgL477yNCgKppO6LBwK719b2DQK+i+HLCkT94pubCn3MhJ9E0hhPVi4OSX1y" />
+		
 		<div id="ctl00_g_c317d0e3_0c08_46f8_a764_9e02151ed10b" __MarkupType="vsattributemarkup" __WebPartId="{c317d0e3-0c08-46f8-a764-9e02151ed10b}" WebPart="true"></div>
 
-		<div id="header">
-			<div id="titlebar">
-				<p class="skipNavigation"><a href="#maincontent" title="Skip Navigation">Skip Navigation</a></p>
-				<img id="titlepicture" alt="Member of Durham Constabulary staff" src="/Style%20Library/Images/Redesign/titlepicturecrop.jpg" />
-				<div id="banner-top-l">
-					<div id="banner-top-l-links">
-						&nbsp;<div id="ctl00_g_2afd175c_4998_486a_b113_efb47ac23b2a" __MarkupType="vsattributemarkup" __WebPartId="{2afd175c-4998-486a-b113-efb47ac23b2a}" WebPart="true">
-							<span id="textSizeLinks">
-								Text Size: <a id="ts1" href="javascript:setsize('1');" class="a1" title="Small Text">A</a><a id="ts2" href="javascript:setsize('2');" class="a2" title="Medium Text">A</a><a id="ts3" href="javascript:setsize('3');" class="a3" title="Large Text">A</a> |
-							</span>
-						</div><a href="/Pages/Accessibility.aspx " title="Accessibility">Accessibility</a> | <a href="/Pages/Site-Map.aspx " title="Site Map">Site Map</a>
-					</div>
-					<div id="banner-top-r-trans">
-						<div id="google_translate_element"></div>
-					</div>
-					<script type="text/javascript">
-					function googleTranslateElementInit() {
-						new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-					}
-					</script>
-					<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-				</div>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/includes/header.php'; ?>
 
-				<img alt="Durham Constabulary Logo" src="/Style%20Library/Images/Redesign/logo-durham.png" />
-				
-				<div id="banner-right">
-					
-					<div class="toppanel clearfix">
-						<div id="banner-top-r">
-							<div id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28" __MarkupType="vsattributemarkup" __WebPartId="{70bc48d8-a848-43e0-a1cb-8cf49fc64d28}" WebPart="true">
-								<div>
-									<div id="site-search" class="clearfix">
-										<div id="site-search-r"><input type="submit" name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch" value="Go" id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_cmdSearch" /></div>
-										<div id="site-search-l"><input name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$txtSearch" type="text" value="Search Site..." id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_txtSearch" title="Search Site" onclick="this.value = '';" /></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="minicom">
-						<a href="/Contact-us/General-contact-information/Pages/default.aspx" title="Contact for deaf users">Helplines for deaf users</a>
-					</div>
-					
-					<div class="durham101 clearfix">
-						<a href="/Contact-us/Pages/default.aspx" title="When it's less urgent than 999"><img id="phone" title="When it's less urgent than 999" alt="When it's less urgent than 999 call 101. In an emergency always call 999." src="/Style%20Library/Images/Redesign/101.png" /></a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div id="navigation">
-			<div id="navigationwrapper">
-				<div id="ctl00_g_0505093c_fd61_4d54_bdc2_ae5be1c41fcc" __MarkupType="vsattributemarkup" __WebPartId="{0505093c-fd61-4d54-bdc2-ae5be1c41fcc}" WebPart="true">
-					<!-- navigation -->
-					<div id="navigation" class="clearfix">
-						<ul class="clearfix">
-							<li class="home active"><a title="home" href="/Pages/default.aspx">Home</a></li>
-							<li class="About-Us"><a title="about us" href="/About-Us/Pages/default.aspx">About Us</a></li>
-							<li class="Your-Neighbourhood"><a href="https://www.police.uk/pu/your-area/durham-constabulary/">Your Neighbourhood​</a></li>
-							<li class="Contact-us"><a title="contact us" href="/Contact-us/Pages/default.aspx">Contact Us</a></li>
-							<li class="Latest-news"><a title="latest news" href="/news-and-events/Pages/default.aspx">News &amp; Events</a></li>
-							<li class="Information-and-advice"><a title="information and advice" href="/Information-and-advice/Pages/default.aspx">Information &amp; Advice</a></li>
-							<li class="Join-us end"><a title="join us" href="/Join-us/Pages/default.aspx">Join Us</a></li>
-							​​​
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/includes/navigation.php'; ?>
 
 		<div id="container">
 			<!--form-->
