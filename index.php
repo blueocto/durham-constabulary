@@ -82,7 +82,7 @@
 
 		<div id="container">
 			<!--form-->
-			<img id="backgroundimage" src="/Style%20Library/Images/Redesign/background12.jpg" />
+			<img id="backgroundimage" src="/Style%20Library/Images/Redesign/background12.jpg" alt="" />
 			<!-- handles SharePoint scripts -->
 			<!-- controls the web parts and zones -->
 			<!-- =====  Start Scrolling Body Area  JLBW REMOVED============================================================ -->
