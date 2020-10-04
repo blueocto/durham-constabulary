@@ -170,11 +170,11 @@
 												<td>
 													<table>
 														<tr class="ms-WPHeader">
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 															<td title="Policing Your Neighbourhood - My Visual WebPart" id="WebPartTitlectl00_ctl26_g_ce883c2f_2b5f_4e67_bf2a_ee3baf1cf514" class="ms-WPHeaderTd">
 																<h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle">&nbsp;<span>Policing Your Neighbourhood</span><span id="WebPartCaptionctl00_ctl26_g_ce883c2f_2b5f_4e67_bf2a_ee3baf1cf514"></span></h3>
 															</td>
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 														</tr>
 													</table>
 												</td>
@@ -301,11 +301,11 @@
 												<td>
 													<table>
 														<tr class="ms-WPHeader">
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 															<td title="Latest News - My Visual WebPart" id="WebPartTitlectl00_ctl26_g_4f77765c_921a_43a1_a929_ec1253d51abd" class="ms-WPHeaderTd">
 																<h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle">&nbsp;<span>Latest News</span><span id="WebPartCaptionctl00_ctl26_g_4f77765c_921a_43a1_a929_ec1253d51abd"></span></h3>
 															</td>
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 														</tr>
 													</table>
 												</td>
@@ -406,11 +406,11 @@
 												<td>
 													<table>
 														<tr class="ms-WPHeader">
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 															<td title="Features - Add the MetroGrid web part to the page to start." id="WebPartTitlectl00_ctl26_g_e7b0850a_b506_4275_9ca6_764ddf8664d4" class="ms-WPHeaderTd">
 																<h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle">&nbsp;<span>Features</span><span id="WebPartCaptionctl00_ctl26_g_e7b0850a_b506_4275_9ca6_764ddf8664d4"></span></h3>
 															</td>
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 														</tr>
 													</table>
 												</td>
@@ -570,11 +570,11 @@
 												<td>
 													<table>
 														<tr class="ms-WPHeader">
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 															<td title="Useful Links - Add the MetroGrid web part to the page to start." id="WebPartTitlectl00_ctl26_g_ef3933e1_6d00_4f13_ba9d_da7ce7daeb11" class="ms-WPHeaderTd">
 																<h3 style="text-align:justify;" class="ms-standardheader ms-WPTitle">&nbsp;<span>Useful Links</span><span id="WebPartCaptionctl00_ctl26_g_ef3933e1_6d00_4f13_ba9d_da7ce7daeb11"></span></h3>
 															</td>
-															<td align="left" class="ms-wpTdSpace">&#160;</td>
+															<td class="ms-wpTdSpace">&#160;</td>
 														</tr>
 													</table>
 												</td>
