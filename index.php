@@ -133,10 +133,10 @@
 					</div>
 					<div id="webpartcontent">
 						<div id="mainstorieswrapper">
-							<table cellspacing="0" border="0">
+							<table border="0">
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ3" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="0" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="0" width="100%">
 											<tr>
 												<td valign="top">
 													<div WebPartID="ef144e9f-6524-49d7-8750-f33315878ecb" HasPers="false" id="WebPartWPQ3" width="100%" class="ms-WPBody noindex" allowMinimize="false" allowRemove="false" allowDelete="false" style="">​​<h2 class="ms-rteElement-H2"><a href="https://twitter.com/hashtag/ClickB4UCall?src=hash">#ClickB4UCall</a> - use the buttons below to find out more information - and help yourself. Often the solution to issues can be found online, saving you time and the need to call the police.</h2>
@@ -149,7 +149,7 @@
 								</tr>
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ4" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="0" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="0" width="100%">
 											<tr>
 												<td valign="top">
 													<div WebPartID="3c1fd456-ad4e-456b-a670-4aab29dfeb48" HasPers="false" id="WebPartWPQ4" width="100%" class="ms-WPBody noindex" allowDelete="false" style="height:540px;"><iframe title="Untitled ‭[2]‬" frameBorder="0" id="MSOPageViewerWebPart_WebPartWPQ4" name="MSOPageViewerWebPart_WebPartWPQ4" width="100%" height="100%" src="/Contact-us/Pages/clickbefore4call/clickcallframe.html" ddf_src="/Contact-us/Pages/clickbefore4call/clickcallframe.html">
@@ -163,10 +163,10 @@
 								</tr>
 								<tr>
 									<td id="MSOZoneCell_WebPartctl00_ctl26_g_ce883c2f_2b5f_4e67_bf2a_ee3baf1cf514" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="1" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="1" width="100%">
 											<tr>
 												<td>
-													<table border="0" cellspacing="0" width="100%">
+													<table border="0" width="100%">
 														<tr class="ms-WPHeader">
 															<td align="left" class="ms-wpTdSpace">&#160;</td>
 															<td title="Policing Your Neighbourhood - My Visual WebPart" id="WebPartTitlectl00_ctl26_g_ce883c2f_2b5f_4e67_bf2a_ee3baf1cf514" class="ms-WPHeaderTd">
@@ -294,10 +294,10 @@
 								</tr>
 								<tr>
 									<td id="MSOZoneCell_WebPartctl00_ctl26_g_4f77765c_921a_43a1_a929_ec1253d51abd" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="1" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="1" width="100%">
 											<tr>
 												<td>
-													<table border="0" cellspacing="0" width="100%">
+													<table border="0" width="100%">
 														<tr class="ms-WPHeader">
 															<td align="left" class="ms-wpTdSpace">&#160;</td>
 															<td title="Latest News - My Visual WebPart" id="WebPartTitlectl00_ctl26_g_4f77765c_921a_43a1_a929_ec1253d51abd" class="ms-WPHeaderTd">
@@ -367,10 +367,10 @@
 							</table>
 						</div>&nbsp;
 						<div id="socialmediawrapper">
-							<table cellspacing="0" border="0">
+							<table border="0">
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ1" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="0" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="0" width="100%">
 											<tr>
 												<td valign="top">
 													<div WebPartID="8bcc72ba-1269-482b-a989-1092b3b0440f" HasPers="false" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex" allowDelete="false" style=""><a class="twitter-timeline" href="https://twitter.com/DurhamPolice" data-widget-id="258909050752864256">Tweets by @DurhamPolice</a>
@@ -384,7 +384,7 @@
 								</tr>
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ2" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="0" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="0" width="100%">
 											<tr>
 												<td valign="top">
 													<div WebPartID="df302c2a-6779-49cb-a5ca-70b695f3ed24" HasPers="false" id="WebPartWPQ2" width="100%" class="ms-WPBody noindex" allowDelete="false" style=""><a href="http://www.facebook.com/pages/Durham-Constabulary/224330430978915"><img title="Durham Constabulary Facebook" id="facebookicon" alt="Facebook" src="/Style%20Library/Images/Redesign/FacebookIcon.png" /></a><a href="http://www.twitter.com/DurhamPolice"><img title="Durham Constabulary Twitter" id="twittericon" alt="Twitter" src="/Style%20Library/Images/Redesign/TwitterIcon.png" /></a><a href="http://www.youtube.com/DurhamPolice999"><img title="Durham Constabulary Youtube" id="youtubeicon" alt="Youtube" src="/Style%20Library/Images/Redesign/YoutubeIcon.png" /></a></div>
@@ -396,13 +396,13 @@
 							</table>
 						</div>
 						<div id="usefullinkswrapper">
-							<table cellspacing="0" border="0">
+							<table border="0">
 								<tr>
 									<td id="MSOZoneCell_WebPartctl00_ctl26_g_e7b0850a_b506_4275_9ca6_764ddf8664d4" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="1" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="1" width="100%">
 											<tr>
 												<td>
-													<table border="0" cellspacing="0" width="100%">
+													<table border="0" width="100%">
 														<tr class="ms-WPHeader">
 															<td align="left" class="ms-wpTdSpace">&#160;</td>
 															<td title="Features - Add the MetroGrid web part to the page to start." id="WebPartTitlectl00_ctl26_g_e7b0850a_b506_4275_9ca6_764ddf8664d4" class="ms-WPHeaderTd">
@@ -563,10 +563,10 @@
 								</tr>
 								<tr>
 									<td id="MSOZoneCell_WebPartctl00_ctl26_g_ef3933e1_6d00_4f13_ba9d_da7ce7daeb11" valign="top" class="s4-wpcell-plain">
-										<table class="s4-wpTopTable" border="1" cellspacing="0" width="100%">
+										<table class="s4-wpTopTable" border="1" width="100%">
 											<tr>
 												<td>
-													<table border="0" cellspacing="0" width="100%">
+													<table border="0" width="100%">
 														<tr class="ms-WPHeader">
 															<td align="left" class="ms-wpTdSpace">&#160;</td>
 															<td title="Useful Links - Add the MetroGrid web part to the page to start." id="WebPartTitlectl00_ctl26_g_ef3933e1_6d00_4f13_ba9d_da7ce7daeb11" class="ms-WPHeaderTd">
@@ -748,10 +748,10 @@
 		
 		<div id="ctl00_panelZone">
 			<div style='display:none' id='hidZone'>
-				<table cellspacing="0" border="0">
+				<table border="0">
 					<tr>
 						<td id="MSOZoneCell_WebPartctl00_ctl26_g_849b02c4_3ab6_43d4_bd70_1a3d691bd523" valign="top" class="s4-wpcell-plain">
-							<table class="s4-wpTopTable" border="0" cellspacing="0" width="100%">
+							<table class="s4-wpTopTable" border="0" width="100%">
 								<tr>
 									<td valign="top">
 										<div WebPartID="e9e03d08-e368-4544-97e9-fa63dd9ba759" WebPartID2="849b02c4-3ab6-43d4-bd70-1a3d691bd523" HasPers="false" id="WebPartctl00_ctl26_g_849b02c4_3ab6_43d4_bd70_1a3d691bd523" width="100%" class="ms-WPBody noindex" allowRemove="false" allowDelete="false" allowExport="false" style="">
@@ -868,7 +868,7 @@
 					</tr>
 					<tr>
 						<td id="MSOZoneCell_WebPartctl00_ctl26_g_01beaa8c_5f82_48a4_ada3_f97596c3a40e" valign="top" class="s4-wpcell-plain">
-							<table class="s4-wpTopTable" border="0" cellspacing="0" width="100%">
+							<table class="s4-wpTopTable" border="0" width="100%">
 								<tr>
 									<td valign="top">
 										<div WebPartID="0dc90b3a-0a4c-429c-be93-f55688638a46" WebPartID2="01beaa8c-5f82-48a4-ada3-f97596c3a40e" HasPers="false" id="WebPartctl00_ctl26_g_01beaa8c_5f82_48a4_ada3_f97596c3a40e" width="100%" class="ms-WPBody noindex" allowRemove="false" allowDelete="false" allowExport="false" style="">
