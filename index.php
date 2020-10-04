@@ -133,7 +133,7 @@
 					</div>
 					<div id="webpartcontent">
 						<div id="mainstorieswrapper">
-							<table border="0">
+							<table>
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ3" valign="top" class="s4-wpcell-plain">
 										<table class="s4-wpTopTable" >
@@ -152,9 +152,11 @@
 										<table class="s4-wpTopTable">
 											<tr>
 												<td valign="top">
-													<div WebPartID="3c1fd456-ad4e-456b-a670-4aab29dfeb48" HasPers="false" id="WebPartWPQ4" width="100%" class="ms-WPBody noindex" allowDelete="false" style="height:540px;"><iframe title="Untitled ‭[2]‬" frameBorder="0" id="MSOPageViewerWebPart_WebPartWPQ4" name="MSOPageViewerWebPart_WebPartWPQ4" width="100" height="100%" src="/Contact-us/Pages/clickbefore4call/clickcallframe.html" ddf_src="/Contact-us/Pages/clickbefore4call/clickcallframe.html">
+													<div WebPartID="3c1fd456-ad4e-456b-a670-4aab29dfeb48" HasPers="false" id="WebPartWPQ4" width="100%" class="ms-WPBody noindex" allowDelete="false" style="height:540px;">
+														<iframe title="Untitled &#8237;[2]&#8236;" frameborder="0" id="MSOPageViewerWebPart_WebPartWPQ4" name="MSOPageViewerWebPart_WebPartWPQ4" width="100%" height="100%" src="/Contact-us/Pages/clickbefore4call/clickcallframe.html" ddf_src="/Contact-us/Pages/clickbefore4call/clickcallframe.html">
 															<div class="UserGeneric">The current browser does not support Web pages that contain the IFRAME element. To use this Web Part, you must use a browser that supports this element, such as Internet Explorer 7.0 or later.</div>
-														</iframe></div>
+														</iframe>
+													</div>
 												</td>
 											</tr>
 										</table>
@@ -367,7 +369,7 @@
 							</table>
 						</div>&nbsp;
 						<div id="socialmediawrapper">
-							<table border="0">
+							<table>
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ1" valign="top" class="s4-wpcell-plain">
 										<table class="s4-wpTopTable">
@@ -396,7 +398,7 @@
 							</table>
 						</div>
 						<div id="usefullinkswrapper">
-							<table border="0">
+							<table>
 								<tr>
 									<td id="MSOZoneCell_WebPartctl00_ctl26_g_e7b0850a_b506_4275_9ca6_764ddf8664d4" valign="top" class="s4-wpcell-plain">
 										<table class="s4-wpTopTable" border="1" width="100%">
@@ -748,7 +750,7 @@
 		
 		<div id="ctl00_panelZone">
 			<div style='display:none' id='hidZone'>
-				<table border="0">
+				<table>
 					<tr>
 						<td id="MSOZoneCell_WebPartctl00_ctl26_g_849b02c4_3ab6_43d4_bd70_1a3d691bd523" valign="top" class="s4-wpcell-plain">
 							<table class="s4-wpTopTable">
