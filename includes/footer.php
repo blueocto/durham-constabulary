@@ -2,7 +2,7 @@
 <div id="footer" class="clearfix">
 	<div id="footer-inner">
 		<div id="footer-left" class="clearfix">
-			<div id="ctl00_g_210cefdb_c7e3_4268_a5d1_d8594a316a9f" __MarkupType="vsattributemarkup" __WebPartId="{210cefdb-c7e3-4268-a5d1-d8594a316a9f}" WebPart="true">
+			<div id="ctl00_g_210cefdb_c7e3_4268_a5d1_d8594a316a9f" data-markuptype="vsattributemarkup" __WebPartId="{210cefdb-c7e3-4268-a5d1-d8594a316a9f}" WebPart="true">
 				<div class="links-box">
 					<ul>
 						<li class="heading">Information</li>

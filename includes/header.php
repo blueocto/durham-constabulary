@@ -4,7 +4,7 @@
 		<img id="titlepicture" alt="Member of Durham Constabulary staff" src="/Style%20Library/Images/Redesign/titlepicturecrop.jpg" />
 		<div id="banner-top-l">
 			<div id="banner-top-l-links">
-				&nbsp;<div id="ctl00_g_2afd175c_4998_486a_b113_efb47ac23b2a" __MarkupType="vsattributemarkup" __WebPartId="{2afd175c-4998-486a-b113-efb47ac23b2a}" WebPart="true">
+				&nbsp;<div id="ctl00_g_2afd175c_4998_486a_b113_efb47ac23b2a" data-markuptype="vsattributemarkup" __WebPartId="{2afd175c-4998-486a-b113-efb47ac23b2a}" WebPart="true">
 					<span id="textSizeLinks">
 						Text Size: <a id="ts1" href="javascript:setsize('1');" class="a1" title="Small Text">A</a><a id="ts2" href="javascript:setsize('2');" class="a2" title="Medium Text">A</a><a id="ts3" href="javascript:setsize('3');" class="a3" title="Large Text">A</a> |
 					</span>
@@ -27,7 +27,7 @@
 			
 			<div class="toppanel clearfix">
 				<div id="banner-top-r">
-					<div id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28" __MarkupType="vsattributemarkup" __WebPartId="{70bc48d8-a848-43e0-a1cb-8cf49fc64d28}" WebPart="true">
+					<div id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28" data-markuptype="vsattributemarkup" __WebPartId="{70bc48d8-a848-43e0-a1cb-8cf49fc64d28}" WebPart="true">
 						<div>
 							<div id="site-search" class="clearfix">
 								<div id="site-search-r"><input type="submit" name="ctl00$g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28$ctl00$cmdSearch" value="Go" id="ctl00_g_70bc48d8_a848_43e0_a1cb_8cf49fc64d28_ctl00_cmdSearch" /></div>

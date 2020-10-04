@@ -1,6 +1,6 @@
 <div id="navigation">
 	<div id="navigationwrapper">
-		<div id="ctl00_g_0505093c_fd61_4d54_bdc2_ae5be1c41fcc" __MarkupType="vsattributemarkup" __WebPartId="{0505093c-fd61-4d54-bdc2-ae5be1c41fcc}" WebPart="true">
+		<div id="ctl00_g_0505093c_fd61_4d54_bdc2_ae5be1c41fcc" data-markuptype="vsattributemarkup" __WebPartId="{0505093c-fd61-4d54-bdc2-ae5be1c41fcc}" WebPart="true">
 			<!-- navigation -->
 			<div id="navigation" class="clearfix">
 				<ul class="clearfix">
