@@ -133,7 +133,7 @@
 					</div>
 					<div id="webpartcontent">
 						<div id="mainstorieswrapper">
-							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<table cellpadding="0" cellspacing="0" border="0">
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ3" valign="top" class="s4-wpcell-plain">
 										<table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -367,7 +367,7 @@
 							</table>
 						</div>&nbsp;
 						<div id="socialmediawrapper">
-							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<table cellpadding="0" cellspacing="0" border="0">
 								<tr>
 									<td id="MSOZoneCell_WebPartWPQ1" valign="top" class="s4-wpcell-plain">
 										<table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -396,7 +396,7 @@
 							</table>
 						</div>
 						<div id="usefullinkswrapper">
-							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<table cellpadding="0" cellspacing="0" border="0">
 								<tr>
 									<td id="MSOZoneCell_WebPartctl00_ctl26_g_e7b0850a_b506_4275_9ca6_764ddf8664d4" valign="top" class="s4-wpcell-plain">
 										<table class="s4-wpTopTable" border="1" cellpadding="0" cellspacing="0" width="100%">
@@ -748,7 +748,7 @@
 		
 		<div id="ctl00_panelZone">
 			<div style='display:none' id='hidZone'>
-				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<table cellpadding="0" cellspacing="0" border="0">
 					<tr>
 						<td id="MSOZoneCell_WebPartctl00_ctl26_g_849b02c4_3ab6_43d4_bd70_1a3d691bd523" valign="top" class="s4-wpcell-plain">
 							<table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
