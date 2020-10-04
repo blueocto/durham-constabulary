@@ -74,7 +74,7 @@
 		<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3" />
 		<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwKTkrieBwK3+sjSDgLD6IqxBgL477yNCgKppO6LBwK719b2DQK+i+HLCkT94pubCn3MhJ9E0hhPVi4OSX1y" />
 		
-		<div id="ctl00_g_c317d0e3_0c08_46f8_a764_9e02151ed10b" data-markuptype="vsattributemarkup" __WebPartId="{c317d0e3-0c08-46f8-a764-9e02151ed10b}" WebPart="true"></div>
+		<div id="ctl00_g_c317d0e3_0c08_46f8_a764_9e02151ed10b" data-markuptype="vsattributemarkup" data-webpartid="{c317d0e3-0c08-46f8-a764-9e02151ed10b}" WebPart="true"></div>
 
 		<?php include $_SERVER['DOCUMENT_ROOT'].'/includes/header.php'; ?>
 
@@ -91,7 +91,7 @@
 				<!-- top navigation publishing data source -->
 			</div>
 			<!-- navigation -->
-			<div id="ctl00_g_e08de639_4ef2_4f9f_bf59_f445cd760112" data-markuptype="vsattributemarkup" __WebPartId="{e08de639-4ef2-4f9f-bf59-f445cd760112}" WebPart="true">
+			<div id="ctl00_g_e08de639_4ef2_4f9f_bf59_f445cd760112" data-markuptype="vsattributemarkup" data-webpartid="{e08de639-4ef2-4f9f-bf59-f445cd760112}" WebPart="true">
 				<script type="text/javascript">
 				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -129,7 +129,7 @@
 				<!-- content -->
 				<a name="maincontent" id="maincontent"></a>
 				<div id="content" class="clearfix">
-					<div id="ctl00_PlaceHolderMain_g_3f60d8e6_2a1c_4ce2_96fb_422f0e765dab" data-markuptype="vsattributemarkup" __WebPartId="{3f60d8e6-2a1c-4ce2-96fb-422f0e765dab}" WebPart="true">
+					<div id="ctl00_PlaceHolderMain_g_3f60d8e6_2a1c_4ce2_96fb_422f0e765dab" data-markuptype="vsattributemarkup" data-webpartid="{3f60d8e6-2a1c-4ce2-96fb-422f0e765dab}" WebPart="true">
 					</div>
 					<div id="webpartcontent">
 						<div id="mainstorieswrapper">
