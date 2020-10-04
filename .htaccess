@@ -1,0 +1,9 @@
+# Fix Bad value X-UA-Compatible once and for all
+# ref: https://www.validatethis.co.uk/tag/x-ua-compatible/
+
+<FilesMatch "\.(htm|html|php)$">
+    <IfModule mod_headers.c>
+        BrowserMatch MSIE ie
+        Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+    </IfModule>
+</FilesMatch>
